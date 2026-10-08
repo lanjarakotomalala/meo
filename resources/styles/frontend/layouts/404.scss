@@ -1,0 +1,41 @@
+.error-404{
+  text-align: center;
+  padding: 150px 50px 50px;
+  position:relative;
+
+  .page-title::before{
+    content:'';
+    background-image: url(~@images/icon-grain.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 175px;
+    height: 160px;
+    position: absolute;
+    top:0;
+    left:50%;
+    transform: translateX(-50%) ;
+    opacity: .2;
+  }
+
+  .page-title {
+    font-size: 36px;
+    color: #222;
+  }
+
+  .page-content {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .btn-back-home {
+    display: inline-block;
+    background-color: $primary-text-color;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+
+}

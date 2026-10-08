@@ -1,0 +1,40 @@
+/* ------------------------------------------------------------ *\
+    Base style with parent theme override
+\* ------------------------------------------------------------ */
+
+*:focus, a:focus {
+	outline: none;
+}
+
+html {
+	font-family: $primary-font-family;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: $primary-text-color;
+}
+
+.clearfix {
+	&:after {
+		display: block;
+		content: "";
+		clear: both;
+	}
+}
+
+.site-content select.jdgm-form__reviewer-name-format-dropdown {
+  width: auto;
+  appearance: none;
+  border: 0;
+  max-width: inherit;
+  padding: 0 20px 0 0;
+  background: none;
+}
+
+.site-content {
+  z-index: 1;
+}

@@ -1,0 +1,273 @@
+body.home {
+
+	// Section abonnement
+	.wp-block-cover.alignwide {
+		&:after {
+			content: 'Abonnement';
+			font-size: 16px;
+			transform: rotate(-90deg);
+			text-transform: uppercase;
+			position: absolute;
+			left: -1.0em;
+			top: 50%;
+			color: $primary-bg-color;
+			z-index: 1;
+			min-height: 0;
+
+			@include md() {
+				content: none;
+			}
+		}
+
+		@include sm() {
+			margin-right: -1em !important;
+			margin-left: -1em !important;
+			width: calc(100% + 2em) !important;
+			border-radius: 0 !important;
+		}
+	}
+
+	// Section "machine" & "coffee times"
+	.wp-block-columns {
+		@include sm() {
+			.wp-block-cover {
+				min-height: 0;
+				padding: 30px 15px 15px 15px;
+			}
+		}
+
+		// Section "types de cafés"
+		&.alignwide {
+			@include sm() {
+				margin-bottom: 0 !important;
+			}
+
+			.wp-block-column {
+				&:last-child  {
+					@include sm() {
+						margin-bottom: 0;
+					}
+				}
+			}
+
+			.wp-block-image {
+				margin-bottom: 0;
+
+				@include sm() {
+					img {
+						width: 50px;
+					}
+				}
+			}
+
+			p.has-large-font-size {
+				font-size: 35px !important;
+				line-height: 1.0 !important;
+
+				@include sm() {
+					font-size: 24px !important;
+				}
+			}
+
+			a {
+				color: $primary-bg-color;
+				font-family: $title-font-family;
+
+				&:hover, &:focus {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+
+  .type-list{
+    row-gap: 1rem;
+
+    @include rwd(768px, min){
+      margin-bottom: 3rem;
+    }
+
+    & *{
+      transition: transform .5s ease;
+    }
+
+    .is-style-double-title{
+      position: relative;
+      background: white;
+      border-radius: 5px;
+      overflow:hidden;
+
+      p{
+        margin: 0;
+        font-family: $title-font-family;
+        font-size: 22px;
+        font-weight: bold;
+        line-height: 1.2;
+
+        strong{
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+          font-family: $title-font-brushwell;
+          font-size: 6rem;
+          line-height: 1;
+          opacity: 0.12;
+          width: 100%;
+          font-weight: 500;
+
+          @include md(){
+            font-size: 5rem;
+          }
+          @include rwd(1100px, min){
+            font-size: 6.1rem;
+          }
+        }
+
+        > a{
+          color: black;
+          padding: 30px 0;
+          display: block;
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+
+    .wp-block-column{
+      @include rwd(768px, max){
+        .is-light{
+        min-height: 230px !important;
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        }
+      }
+      &:hover{
+        .wp-block-cover__image-background{
+          transform: scale(1.2);
+        }
+        .wp-block-group.is-style-double-title{
+          p{
+            &:not(:has(strong)){
+              transform: scale(1.1);
+            }
+            strong{
+              transform: translateY(-50%) scale(1.1);
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  .wp-block-group{
+    &.has-background.meo-engage{
+      margin: 0 auto !important;
+      padding: 0 1rem;
+
+      h2{
+        font-size: 22px;
+        @include rwd(768px, min){
+          font-size: 35px;
+        }
+      }
+      h4{
+        margin-bottom: 0;
+        @include rwd(768px, min){
+          margin-bottom: .85em;
+        }
+      }
+      img{
+        height: 65px;
+        object-fit: contain;
+        @include rwd(768px, min){
+          height: auto;
+        }
+      }
+      p{
+        margin-bottom: 0;
+      }
+    }
+    &.py-0{
+      padding: 0 1em;
+    }
+    &.relative{
+      position: relative;
+
+      &:before, &:after{
+        content: "";
+        display: block;
+        background: url(~@images/icon-linemeo.svg);
+        background-repeat: repeat-x;
+        width: 100%;
+        position: absolute;
+        height: 50px;
+        top: -10px;
+        left: 0;
+        right: 0;
+      }
+
+      &:after{
+        top: auto;
+        bottom: -10px;
+        transform: rotate(180deg);
+      }
+
+      .bg-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: $title-font-brushwell;
+        display: none;
+        line-height: 1;
+        text-align: center;
+        user-select: none;
+        z-index: 1;
+
+        @include rwd(768px, min){
+          display: block;
+          font-size: 34vw;
+          opacity: 0.12;
+        }
+
+        .wp-block-column{
+          z-index: 1;
+        }
+
+        &.small{
+          font-size: 5.8rem;
+        }
+        &.big{
+          @include rwd(1000px, min){
+            font-size: 28vw;
+          }
+          @include rwd(1300px, min){
+            font-size: 22rem;
+          }
+        }
+      }
+
+      &.m-0 {
+        .wp-block-group.alignwide{
+          margin: 0 auto;
+          margin-bottom: 0 !important;
+        }
+
+        &:before{
+          display: none;
+        }
+
+        .bg-text.small {
+          top: 90%;
+          font-size: 2.5rem;
+          @include rwd(768px, min){
+            font-size: 4.4rem;
+          }
+        }
+      }
+    }
+  }
+}

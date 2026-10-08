@@ -1,0 +1,42 @@
+body.woocommerce-checkout .shop_table.woocommerce-MyAccount-subscriptions {
+  background-color: rgba(213, 213, 213, 0.27);
+  margin-top: 40px;
+}
+
+body table.woocommerce-MyAccount-subscriptions th,
+body table.woocommerce-MyAccount-subscriptions td, {
+  border-bottom: 1px solid rgba(218, 218, 218, 0.45);
+  margin: 0 20px;
+}
+
+body table.woocommerce-MyAccount-subscriptions tr:last-child th,
+body table.woocommerce-MyAccount-subscriptions tr:last-child td {
+  border-bottom: none;
+}
+
+.woocommerce-order p {
+  text-align: center;
+}
+
+body table.woocommerce-MyAccount-subscriptions td span.td-value {
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+}
+
+body table.woocommerce-MyAccount-subscriptions td .woocommerce-button.button.view {
+  display: block;
+  float: right;
+  transform: translateX(-20px);
+}
+
+@media screen and (min-width: 992px) {
+  body table.woocommerce-MyAccount-subscriptions th,
+  body table.woocommerce-MyAccount-subscriptions td, {
+    font-size: 20px;
+  }
+
+  body table.woocommerce-MyAccount-subscriptions td .woocommerce-button.button.view {
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,84 @@
+.header-widget-region {
+	background: $primary-color !important;
+	font-size: 14px;
+
+	@include md() {
+		font-size: 11px;
+	}
+
+	.widget {
+		padding: 0.37em 0;
+
+		svg, img {
+			display: inline-block;
+			max-height: 1.0em;
+			width: auto;
+			vertical-align: middle;
+			margin-left: 0.5em;
+			margin-right: 0.5em;
+		}
+
+		br {
+			display: none;
+		}
+	}
+}
+
+.woocommerce-form-coupon-toggle {
+  display: none;
+}
+
+.woocommerce-info.wc_points_rewards_earn_points.pb-down{
+  padding-bottom: 0.5rem;
+}
+
+.woocommerce-info.wc_points_rewards_earn_points + .wc_points_redeem_earn_points {
+  margin-top: 1rem;
+  background: $primary-color !important;
+  color: #fff;
+  padding: 1em;
+
+  input.wc_points_rewards_apply_discount {
+    margin: -0.37em 0;
+    padding: 0.37em 10px;
+    background: var(--secondary-ctas-color);
+    border-left: 0;
+
+    &:hover {
+      background: white;
+      color: var(--secondary-ctas-color);
+      opacity: 1;
+    }
+  }
+}
+
+.woocommerce-info.wc_points_rewards_earn_points {
+	background: #d6d6d6 !important;
+    color: #2d2727;
+	font-size: 14px;
+	width: 100%;
+	left: 0;
+	top: 0;
+	border-radius: 0;
+	border: 0;
+	text-align: center;
+	margin-bottom: 0;
+	padding: 0.5rem 0.5rem 0 0.5rem;
+
+    & + .wc_points_rewards_earn_points {
+      padding-top: 0;
+      padding-bottom: 0.5rem;
+    }
+
+	@include md() {
+		font-size: 11px;
+	}
+
+	a {
+		text-decoration: underline;
+	}
+
+	&.cart-empty {
+		background: transparent !important;
+	}
+}

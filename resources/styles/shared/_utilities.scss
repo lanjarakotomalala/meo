@@ -1,0 +1,9 @@
+.hidden-visually,
+.sr,
+.screen-reader-text {
+	@include hidden-visually();
+}
+
+.hidden {
+	display: none !important;
+}

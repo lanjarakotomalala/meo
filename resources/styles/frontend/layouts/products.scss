@@ -1,0 +1,227 @@
+ul.products, .archive .wp-grid-builder.products {
+	.product {
+		&:hover {
+			img {
+			    transform: scale(1);
+			}
+		}
+
+		.woocommerce-loop-product__link {
+			display: block;
+			width: 100%;
+
+			span {
+				display: block;
+				width: 100%;
+
+				&:nth-child(1) {
+					font-size: 1rem;
+					line-height: 1.2;
+          font-family: $title-font-family !important;
+				}
+
+				&:nth-child(2) {
+					font-size: 16px;
+					line-height: 1.2;
+          font-family: $title-font-family !important;
+				}
+			}
+
+			@include md() {
+				font-size: 21px;
+			}
+		}
+
+		.sale-item, .star-rating {
+			display: none !important;
+		}
+
+		.price {
+			font-size: 16px;
+			font-weight: 600;
+			display: block;
+
+			ins {
+				font-weight: 600;
+			}
+
+			@include md() {
+				font-size: 21px;
+			}
+		}
+	}
+}
+
+li.product:hover .woocommerce-image__wrapper{transform:none !important;}
+
+body.archive {
+	.wp-grid-builder.products {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+
+		.product {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+			position: relative;
+			text-align: center;
+			padding: 9px 11px 13px 10px;
+			width: calc(100% / 3);
+			margin:0 0 0 0;
+			box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0);
+			transition: all 0.4s;
+
+			@include md() {
+				width: calc(100% / 2);
+			}
+
+      .woocommerce-image__wrapper {
+        padding-bottom: 65%;
+        > a:last-child {
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+        }
+      }
+
+      &:hover, &:focus {
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+
+        .button, .added_to_cart.wc-forward, .woocommerce-image__wrapper .gallery-image {
+          opacity: 1;
+        }
+
+        .woocommerce-image__wrapper .gallery-image{
+          z-index: 0;
+        }
+
+        .price, .price ins, .woocommerce-loop-product__title {
+          background-color: transparent;
+        }
+      }
+
+			.attachment-woocommerce_thumbnail,
+			.gallery-image {
+				margin: auto auto 10px auto;
+				border: solid 1px #f0f0f0;
+				border-radius: 2px;
+				width: 100%;
+				transform: none !important;
+				height: 100%;
+				object-fit: contain;
+			}
+
+			.price, .price ins {
+				background-color: #fafafa;
+				margin-bottom: 10px;
+				transition: all 0.4s;
+
+				@include md() {
+					font-size: 13px;
+				}
+			}
+
+      .price {
+        color: black;
+        font-weight: bold;
+      }
+      .price ins, .price del{
+        color: #b61e25;
+      }
+      .price ins{
+        font-weight: bold;
+      }
+
+			.woocommerce-card__header {
+				display: flex;
+				flex-wrap: wrap;
+				flex-direction: column;
+				flex: 1;
+				width: 100%;
+
+        .price-kilo-container {
+          font-size: 13px;
+          font-style: italic;
+
+          .price-per-kilo {
+            font-weight: bold;
+          }
+        }
+			}
+
+			.woocommerce-loop-product__title {
+				background-color: #fafafa;
+				transition: all 0.4s;
+
+        h3 {
+          font-weight: normal;
+        }
+
+				span {
+					&:nth-child(1) {
+						@include md() {
+							font-size: 15px;
+						}
+					}
+
+					&:nth-child(2) {
+						@include md() {
+							font-size: 13px;
+						}
+					}
+				}
+			}
+
+			.woocommerce-loop-product__link {
+				&:before {
+					content:'';
+					position: absolute;
+					z-index: 0;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+				}
+			}
+
+			.button {
+				margin-top: auto;
+				background-color: var(--ctas-color);
+				border: 2px solid var(--ctas-color);
+				border-radius: 2px;
+				color: $primary-bg-color;
+				transition: all 0.4s;
+				opacity: 0;
+
+				@include md() {
+					display: none;
+					padding-left: 0;
+					padding-right: 0;
+					text-align: center;
+				}
+
+				&:hover, &:focus {
+					background-color: $primary-bg-color;
+					color: var(--ctas-color);
+				}
+			}
+
+			.added_to_cart.wc-forward {
+				margin: 10px 0;
+				transition: all 0.4s;
+				opacity: 0;
+				z-index: 2;
+			}
+		}
+	}
+}
+
+/* Carrousel product review */
+.jdgm-carousel-item__product-image {
+  width: 56px !important;
+  height: 56px !important;
+}

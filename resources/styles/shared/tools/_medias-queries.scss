@@ -1,0 +1,42 @@
+// Helper for responsive content
+@mixin xs {
+	@media screen and (max-width: map-get( $breakpoints, 'xs' )) {
+		@content;
+	}
+}
+
+@mixin sm {
+	@media screen and (max-width: map-get( $breakpoints, 'sm' )) {
+		@content;
+	}
+}
+
+@mixin md {
+	@media screen and (max-width: map-get( $breakpoints, 'md' )) {
+		@content;
+	}
+}
+
+@mixin lg {
+	@media screen and (max-width: map-get( $breakpoints, 'lg' )) {
+		@content;
+	}
+}
+
+@mixin xl {
+	@media screen and (max-width: map-get( $breakpoints, 'xl' )) {
+		@content;
+	}
+}
+
+@mixin rwd($screen_width, $type: max) {
+	@media screen and ( #{$type}-width: $screen_width ) {
+		@content;
+	}
+}
+
+@mixin reduce-motion() {
+	@media screen and (prefers-reduced-motion: reduce) {
+		@content;
+	}
+}

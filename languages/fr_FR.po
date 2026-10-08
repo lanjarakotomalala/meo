@@ -1,0 +1,2678 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Méo\n"
+"POT-Creation-Date: 2024-09-30 14:59+0200\n"
+"PO-Revision-Date: 2024-09-30 15:00+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.5\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+"X-Poedit-SearchPathExcluded-1: vendor\n"
+"X-Poedit-SearchPathExcluded-2: node_modules\n"
+
+#: 404.php:20 404.php:22
+msgid "Produits populaires"
+msgstr ""
+
+#. translators: post link title attribute
+#: app/helpers/content.php:20
+#, php-format
+msgid "Permanent Link to %s"
+msgstr "Lien permanent vers %s"
+
+#. translators: no posts found for category
+#: app/helpers/content.php:31
+#, php-format
+msgid "There are no posts in the %s category yet."
+msgstr "Il n’y a pas encore de postes dans %s catégorie."
+
+#. translators: no posts found with tag
+#: app/helpers/content.php:35
+#, php-format
+msgid "There are no posts with the %s tag yet."
+msgstr "Il n’y a pas encore de messages %s l’étiquette."
+
+#: app/helpers/content.php:39
+msgid "There are no posts published on this date."
+msgstr "Il n’y a pas de messages publiés à cette date."
+
+#. translators: no posts found by author
+#: app/helpers/content.php:45
+#, php-format
+msgid "There are no posts published by %s yet."
+msgstr "Il n’y a pas encore de messages %s publiés par le gouvernement."
+
+#: app/helpers/content.php:49
+msgid "No posts found. Try a different search?"
+msgstr "Aucun résultats trouvé. Essayez une recherche différente?"
+
+#: app/helpers/content.php:52
+msgid "No posts found."
+msgstr "Aucun article trouvé."
+
+#. translators: search results page title
+#: app/helpers/title.php:25 woocommerce/archive-product.php:37
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Résultat de recherche pour: %s"
+
+#. translators: category post listing page title
+#: app/helpers/title.php:28
+#, php-format
+msgid "Category Archives: %s"
+msgstr "Archives de la catégorie: %s"
+
+#. translators: tag post listing page title
+#: app/helpers/title.php:31
+#, fuzzy, php-format
+#| msgid "Blog Archives"
+msgid "Tag Archives: %s"
+msgstr "Archives du blog"
+
+#. translators: day archive post listing page title
+#: app/helpers/title.php:34
+#, fuzzy, php-format
+#| msgid "Blog Archives"
+msgid "Daily Archives: %s"
+msgstr "Archives du blog"
+
+#. translators: month archive post listing page title
+#: app/helpers/title.php:37
+#, fuzzy, php-format
+#| msgid "Blog Archives"
+msgid "Monthly Archives: %s"
+msgstr "Archives du blog"
+
+#. translators: year archive post listing page title
+#: app/helpers/title.php:40
+#, fuzzy, php-format
+#| msgid "Blog Archives"
+msgid "Yearly Archives: %s"
+msgstr "Archives du blog"
+
+#. translators: author archive post listing page title
+#: app/helpers/title.php:43
+#, php-format
+msgid "Posts by %s"
+msgstr "Articles par %s"
+
+#: app/helpers/title.php:45
+#, fuzzy
+#| msgid "Blog Archives"
+msgid "Archives"
+msgstr "Archives du blog"
+
+#: app/helpers/title.php:47
+msgid "Error 404 - Not Found"
+msgstr "Erreur 404 - page non trouvé"
+
+#: app/helpers/woocommerce.php:162
+msgid "Price per kilo"
+msgstr ""
+
+#: app/hooks.php:146
+#, php-format
+msgid "à partir de %1$s"
+msgstr ""
+
+#: app/hooks.php:150
+#, php-format
+msgid "%1$s"
+msgstr ""
+
+#: app/hooks.php:198
+#: template-parts/woocommerce/single-product/short-description.php:32
+#: template-parts/woocommerce/single-product/tab-preparation.php:1
+msgid "Aide à la préparation"
+msgstr ""
+
+#: app/hooks.php:907
+msgid "TVA de livraison pour facture"
+msgstr ""
+
+#: app/hooks.php:939
+msgid "Réglages TVA de livraison"
+msgstr ""
+
+#: app/hooks.php:941
+msgid ""
+"Les options suivantes sont utilisées afin de configurer la TVA de la "
+"livraison"
+msgstr ""
+
+#: app/hooks.php:946
+msgid "TVA a appliquer (%)"
+msgstr ""
+
+#: app/hooks.php:947
+msgid "Merci de ne remplir ce champ qu'avec des chiffres, exemple : 20, 19.6"
+msgstr ""
+
+#: app/hooks.php:950
+msgid ""
+"Ce champ correspond à la TVA qui sera prise en compte pour le calcul sur les "
+"factures"
+msgstr ""
+
+#: app/hooks.php:964
+msgid ""
+"Cet e-mail est déjà utilisé. Veuillez-vous connecter ou renseignez une autre "
+"adresse e-mail"
+msgstr ""
+
+#: app/hooks.php:972
+msgid "Blog"
+msgstr "Blog"
+
+#: app/hooks.php:987
+msgid "> Vous avez un code promo ?"
+msgstr ""
+
+#: app/hooks.php:1026 template-parts/store-map-marker-content.php:8
+msgid "Voir les produits"
+msgstr ""
+
+#: app/hooks.php:1157
+msgid "* Ce montant sera prélevé chaque mois lors de l'envoi de votre colis."
+msgstr ""
+
+#: app/hooks.php:1158
+msgid "* Cet abonnement vous engage pour une durée de 1 an."
+msgstr ""
+
+#: app/hooks.php:1204
+#, php-format
+msgid "Prix: %s"
+msgstr ""
+
+#: app/src/WooCommerce/Rewards.php:39
+#, php-format
+msgid "You currently have <strong>%s points</strong> in your account"
+msgstr "Vous avez actuellement <strong>%s points</strong> sur votre compte"
+
+#: app/src/WooCommerce/Subscription.php:160
+#, php-format
+msgctxt "subscription price html"
+msgid ""
+"%1$s<span class=\"bundled_subscriptions_price_html\"> one time%2$s</span>"
+msgstr ""
+
+#: app/src/WordPress/FriendReferrerServiceProvider.php:34
+msgid "Points gagnés par le parrainage"
+msgstr ""
+
+#: app/src/WordPress/FriendReferrerServiceProvider.php:35
+msgid "Entrez le nombre de points gagnés quand un client parraine quelqu'un"
+msgstr ""
+
+#: app/src/WordPress/FriendReferrerServiceProvider.php:46
+msgid "E-mail du parrain (facultatif)"
+msgstr ""
+
+#: app/src/WordPress/FriendReferrerServiceProvider.php:48
+msgid "Parrainez vos proches et recevez chacun "
+msgstr ""
+
+#: app/src/WordPress/FriendReferrerServiceProvider.php:57
+msgid "Le parrain doit être un email valide"
+msgstr ""
+
+#: app/src/WordPress/FriendReferrerServiceProvider.php:61
+msgid "L'email de parrainage ne semble pas exister"
+msgstr ""
+
+#: app/src/WordPress/FriendReferrerServiceProvider.php:99
+#, php-format
+msgid "%s gagnés pour avoir parrainé un ami"
+msgstr ""
+
+#: app/src/WordPress/FriendReferrerServiceProvider.php:102
+#, php-format
+msgid "%s gagnés pour avoir été parrainé par un ami"
+msgstr ""
+
+#: app/src/WordPress/FriendReferrerServiceProvider.php:112
+msgid ""
+"L’e-mail de votre parrain a bien été enregistré, passez votre première "
+"commande pour profiter de vos grains de fidélité"
+msgstr ""
+
+#: app/src/WordPress/FriendReferrerServiceProvider.php:125
+msgid ""
+"C’est votre première commande et vous avez été parrainés ? Gagnez "
+"{points_value} grains de fidélité supplémentaires"
+msgstr ""
+
+#: app/src/WordPress/MenusServiceProvider.php:33
+#, fuzzy
+#| msgid "Header Height"
+msgid "Header left"
+msgstr "Hauteur de l’en tête"
+
+#: app/src/WordPress/MenusServiceProvider.php:34
+#, fuzzy
+#| msgid "Header Height"
+msgid "Header right"
+msgstr "Hauteur de l’en tête"
+
+#: app/src/WordPress/MenusServiceProvider.php:35
+msgid "Addons mobile"
+msgstr "Addons mobile"
+
+#: app/src/WordPress/MenusServiceProvider.php:36
+msgid "Social menu"
+msgstr ""
+
+#: app/src/WordPress/ThemeServiceProvider.php:128
+msgid "Red"
+msgstr "Rouge"
+
+#: app/src/WordPress/ThemeServiceProvider.php:133
+msgid "Pink"
+msgstr "Rose"
+
+#: app/src/WordPress/ThemeServiceProvider.php:138
+msgid "Purple"
+msgstr "Violet"
+
+#: app/src/WordPress/ThemeServiceProvider.php:143
+msgid "Deep Purple"
+msgstr "Pourpre"
+
+#: app/src/WordPress/ThemeServiceProvider.php:148
+msgid "Indigo"
+msgstr "Indigo"
+
+#: app/src/WordPress/ThemeServiceProvider.php:153
+msgid "Blue"
+msgstr "Bleu"
+
+#: app/src/WordPress/ThemeServiceProvider.php:158
+msgid "Light Blue"
+msgstr "Bleu clair"
+
+#: app/src/WordPress/ThemeServiceProvider.php:163
+msgid "Cyan"
+msgstr "Cyan"
+
+#: app/src/WordPress/ThemeServiceProvider.php:168
+msgid "Teal"
+msgstr "Turquoise"
+
+#: app/src/WordPress/ThemeServiceProvider.php:173
+msgid "Green"
+msgstr "Vert"
+
+#: app/src/WordPress/ThemeServiceProvider.php:178
+msgid "Light Green"
+msgstr "Vert clair"
+
+#: app/src/WordPress/ThemeServiceProvider.php:183
+msgid "Lime"
+msgstr "Citron vert"
+
+#: app/src/WordPress/ThemeServiceProvider.php:188
+msgid "Yellow"
+msgstr "Jaune"
+
+#: app/src/WordPress/ThemeServiceProvider.php:193
+msgid "Amber"
+msgstr "Ambre"
+
+#: app/src/WordPress/ThemeServiceProvider.php:198
+msgid "Orange"
+msgstr "Orange"
+
+#: app/src/WordPress/ThemeServiceProvider.php:203
+msgid "Deep Orange"
+msgstr "Orange foncé"
+
+#: app/src/WordPress/ThemeServiceProvider.php:208
+msgid "Brown"
+msgstr "Marron"
+
+#: app/src/WordPress/ThemeServiceProvider.php:213
+msgid "Grey"
+msgstr "Gris"
+
+#: app/src/WordPress/ThemeServiceProvider.php:218
+msgid "Blue Grey"
+msgstr "Bleu gris"
+
+#: app/src/WordPress/ThemeServiceProvider.php:243
+msgid "extra small"
+msgstr "extra petit"
+
+#: app/src/WordPress/ThemeServiceProvider.php:244
+msgid "XS"
+msgstr "XS"
+
+#: app/src/WordPress/ThemeServiceProvider.php:249
+msgid "small"
+msgstr "petit"
+
+#: app/src/WordPress/ThemeServiceProvider.php:250
+msgid "S"
+msgstr "S"
+
+#: app/src/WordPress/ThemeServiceProvider.php:255
+msgid "regular"
+msgstr "régulier"
+
+#: app/src/WordPress/ThemeServiceProvider.php:256
+msgid "M"
+msgstr "M"
+
+#: app/src/WordPress/ThemeServiceProvider.php:261
+msgid "large"
+msgstr "grand"
+
+#: app/src/WordPress/ThemeServiceProvider.php:262
+msgid "L"
+msgstr "L"
+
+#: app/src/WordPress/ThemeServiceProvider.php:267
+msgid "extra large"
+msgstr "extra large"
+
+#: app/src/WordPress/ThemeServiceProvider.php:268
+msgid "XL"
+msgstr "XL"
+
+#: app/src/WordPress/ThemeServiceProvider.php:273
+msgid "very extra large"
+msgstr "très extra grand"
+
+#: app/src/WordPress/ThemeServiceProvider.php:274
+msgid "XXL"
+msgstr "XXL"
+
+#: app/src/WordPress/WidgetsServiceProvider.php:62
+#, fuzzy
+#| msgid "Footer"
+msgid "Footer Left"
+msgstr "En bas"
+
+#: app/src/WordPress/WidgetsServiceProvider.php:72
+#, fuzzy
+#| msgid "Top Bar Center"
+msgid "Footer Center"
+msgstr "Barre du haut centre"
+
+#: app/src/WordPress/WidgetsServiceProvider.php:82
+#, fuzzy
+#| msgid "Footer links"
+msgid "Footer Right"
+msgstr "Liens du pied de page"
+
+#: app/src/WordPress/WidgetsServiceProvider.php:92
+msgid "Social"
+msgstr ""
+
+#: app/version.php:54
+#, php-format
+msgid ""
+"%1$s requires WP Emerge version >= %2$s and < %3$s but %4$s has already "
+"loaded version %5$s."
+msgstr ""
+"%1$s nécessite la version WP Emerge >= %2$s et < %3$s mais %4$s a déjà "
+"chargé la version %5$s."
+
+#: archive-revendeur.php:22
+msgid "Où nous trouver ?"
+msgstr ""
+
+#. translators: generic error page content; placeholders represents homepage opening and closing anchor tags
+#: error-admin.php:14 error-ajax.php:14 error.php:16
+#, php-format
+msgid ""
+"Please check the URL for proper spelling and capitalization. If you're "
+"having trouble locating a destination, try visiting the %1$shome page%2$s."
+msgstr ""
+"Please check the URL for proper spelling and capitalization. If you're "
+"having trouble locating a destination, try visiting the %1$shome page%2$s."
+
+#: footer.php:76
+msgid "Suivez-nous"
+msgstr ""
+
+#: header-light.php:44 header.php:76
+msgid "Menu"
+msgstr "Menu"
+
+#: header.php:43
+msgid "Show"
+msgstr "Afficher"
+
+#: header.php:44
+msgid "Search"
+msgstr "Recherche"
+
+#: header.php:48
+msgid "Fermer"
+msgstr "Close"
+
+#: sidebar.php:25 template-parts/woocommerce/mobile-filter.php:2
+#, fuzzy
+#| msgid "Show Filters"
+msgid "Filtres"
+msgstr "Afficher les filtres"
+
+#: template-parts/abonnement-banner.php:14
+#: template-parts/woocommerce/single-product/short-description.php:30
+msgid "Détails du produit"
+msgstr ""
+
+#: template-parts/abonnement-cart-summary.php:2
+msgid "Votre abonnement"
+msgstr ""
+
+#: template-parts/abonnement-steps.php:66
+msgid "Etape précédente"
+msgstr ""
+
+#: template-parts/abonnement-steps.php:69
+msgid "Etape suivante"
+msgstr ""
+
+#: template-parts/abonnement-steps.php:72
+msgid "Ajouter et finaliser"
+msgstr ""
+
+#: template-parts/language-switcher-mobile.php:2
+msgid "Change language"
+msgstr "Changer la langue"
+
+#: template-parts/woocommerce/single-product/short-description.php:26
+#: woocommerce/archive-product.php:47
+msgid "Voir +"
+msgstr ""
+
+#: template-parts/woocommerce/single-product/star-rating.php:7
+msgid "Note"
+msgstr ""
+
+#: template-parts/woocommerce/single-product/star-rating.php:8
+msgid "sur"
+msgstr ""
+
+#: template-parts/woocommerce/single-product/tab-description.php:10
+#: woocommerce/pdf/Meo/invoice.php:109 woocommerce/pdf/Meo/packing-slip.php:93
+#: woocommerce/single-product/tabs/description.php:22
+msgid "Description"
+msgstr ""
+
+#: template-parts/woocommerce/single-product/tab-description.php:18
+#, fuzzy
+#| msgid "More information"
+msgid "Plus d'informations"
+msgstr "Plus d'info"
+
+#: template-parts/woocommerce/single-product/tab-description.php:34
+#, php-format
+msgid "<strong>Prix au kilo :</strong> %s €"
+msgstr ""
+
+#: template-parts/woocommerce/single-product/tab-description.php:40
+#, php-format
+msgid "Prix au kilo : %s €"
+msgstr ""
+
+#: woocommerce/archive-product.php:40 woocommerce/archive-product.php:51
+msgid "Shop"
+msgstr "Boutique"
+
+#: woocommerce/cart/cart-shipping.php:62
+#, fuzzy, php-format
+#| msgid "Shopping Cart"
+msgid "Shipping to %s."
+msgstr "Panier"
+
+#: woocommerce/cart/cart-shipping.php:63
+#, fuzzy
+#| msgid "Change language"
+msgid "Change address"
+msgstr "Changer la langue"
+
+#: woocommerce/cart/cart-shipping.php:65
+msgid "Shipping options will be updated during checkout."
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:74
+msgid "Shipping costs are calculated during checkout."
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:76
+msgid "Enter your address to view shipping options."
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:79
+msgid ""
+"There are no shipping options available. Please ensure that your address has "
+"been entered correctly, or contact us if you need any help."
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:82
+#, php-format
+msgid "No shipping options were found for %s."
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:83
+msgid "Enter a different address"
+msgstr ""
+
+#: woocommerce/cart/cart.php:33
+msgid "Votre panier"
+msgstr ""
+
+#: woocommerce/cart/cart.php:40 woocommerce/cart/cart.php:87
+#: woocommerce/checkout/review-order.php:23 woocommerce/pdf/Meo/invoice.php:95
+#: woocommerce/pdf/Meo/packing-slip.php:83
+#, fuzzy
+#| msgid "Single Product"
+msgid "Product"
+msgstr "Produit unique"
+
+#: woocommerce/cart/cart.php:41 woocommerce/cart/cart.php:116
+msgid "Price"
+msgstr ""
+
+#: woocommerce/cart/cart.php:42 woocommerce/cart/cart.php:122
+#: woocommerce/pdf/Meo/invoice.php:96 woocommerce/pdf/Meo/packing-slip.php:84
+msgid "Quantity"
+msgstr ""
+
+#: woocommerce/cart/cart.php:43 woocommerce/cart/cart.php:144
+#: woocommerce/checkout/review-order.php:24
+#: woocommerce/checkout/review-order.php:56
+msgid "Subtotal"
+msgstr ""
+
+#: woocommerce/cart/cart.php:66 woocommerce/cart/cart.php:98
+#, fuzzy
+#| msgid "Remove buttons"
+msgid "Remove this item"
+msgstr "Supprimer les boutons"
+
+#: woocommerce/cart/cart.php:101
+#, fuzzy
+#| msgid "Support"
+msgid "Supprimer"
+msgstr "Support"
+
+#: woocommerce/cart/cart.php:111
+#, fuzzy
+#| msgid "Available version:"
+msgid "Available on backorder"
+msgstr "Version disponible :"
+
+#: woocommerce/cart/cart.php:162
+msgid "Coupon:"
+msgstr ""
+
+#: woocommerce/cart/cart.php:162
+#: woocommerce/checkout/partials/content-cart.php:26
+msgid "Coupon code"
+msgstr ""
+
+#: woocommerce/cart/cart.php:162
+msgid "Apply coupon"
+msgstr ""
+
+#: woocommerce/cart/cart.php:167
+#, fuzzy
+#| msgid "Update"
+msgid "Update cart"
+msgstr "Mettre à jour"
+
+#: woocommerce/cart/cart.php:170
+msgid "Je poursuis mes achats"
+msgstr ""
+
+#. translators: %s is the product name
+#: woocommerce/cart/mini-cart-item.php:42
+#, php-format
+msgid "Remove test %s from cart"
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:70
+msgid "No products in the cart."
+msgstr ""
+
+#: woocommerce/checkout/partials/content-cart.php:27
+msgid "Apply"
+msgstr ""
+
+#: woocommerce/checkout/payment.php:35
+msgid ""
+"Sorry, it seems that there are no available payment methods for your state. "
+"Please contact us if you require assistance or wish to make alternate "
+"arrangements."
+msgstr ""
+
+#: woocommerce/checkout/payment.php:35
+msgid "Please fill in your details above to see available payment methods."
+msgstr ""
+
+#. translators: $1 and $2 opening and closing emphasis tags respectively
+#: woocommerce/checkout/payment.php:45
+#, php-format
+msgid ""
+"Since your browser does not support JavaScript, or it is disabled, please "
+"ensure you click the %1$sUpdate Totals%2$s button before placing your order. "
+"You may be charged more than the amount stated above if you fail to do so."
+msgstr ""
+
+#: woocommerce/checkout/payment.php:47
+#, fuzzy
+#| msgid "Update %2$s"
+msgid "Update totals"
+msgstr "Mise à jour de %2$s"
+
+#: woocommerce/checkout/review-order.php:70
+#, fuzzy
+#| msgid "Shopping Cart"
+msgid "Shipping"
+msgstr "Panier"
+
+#: woocommerce/checkout/review-order.php:122
+msgid "Total"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:34
+msgid ""
+"Unfortunately your order cannot be processed as the originating bank/"
+"merchant has declined your transaction. Please attempt your purchase again."
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:37
+msgid "Pay"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:40 woocommerce/checkout/thankyou.php:55
+#, fuzzy
+#| msgid "count"
+msgid "My account"
+msgstr "compte"
+
+#: woocommerce/checkout/thankyou.php:58
+msgid "Page d'accueil"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:66
+msgid "Order number:"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:71
+msgid "Date:"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:76
+msgid "Total:"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:82
+msgid "Payment method:"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:99
+msgid "Thank you. Your order has been received."
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:32
+msgid "Je suis déjà client"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:39
+msgid "Username or email address"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:43
+#: woocommerce/myaccount/form-login.php:93
+msgid "Password"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:51
+msgid "Remember me"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:54
+msgid "Log in"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:57
+msgid "Mot de passe oublié ?"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:70
+msgid "Je crée mon compte"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:79
+msgid "Username"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:86
+#, fuzzy
+#| msgid "Change language"
+msgid "Email address"
+msgstr "Changer la langue"
+
+#: woocommerce/myaccount/form-login.php:99
+msgid "A password will be sent to your email address."
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:107
+msgid "Register"
+msgstr ""
+
+#: woocommerce/order/order-details-customer.php:31
+msgid "Billing address"
+msgstr ""
+
+#: woocommerce/order/order-details-customer.php:34
+#: woocommerce/order/order-details-customer.php:52
+msgid "N/A"
+msgstr ""
+
+#: woocommerce/order/order-details-customer.php:50
+#, fuzzy
+#| msgid "Shopping Cart"
+msgid "Shipping address"
+msgstr "Panier"
+
+#: woocommerce/order/order-details-item.php:49
+#, php-format
+msgid "Quantité : %s"
+msgstr ""
+
+#: woocommerce/order/order-details.php:45
+msgid "Récapitulatif de la commande"
+msgstr ""
+
+#: woocommerce/order/order-details.php:86
+msgid "Note:"
+msgstr ""
+
+#: woocommerce/pdf/Meo/invoice.php:38 woocommerce/pdf/Meo/packing-slip.php:51
+msgid "Billing Address:"
+msgstr ""
+
+#: woocommerce/pdf/Meo/invoice.php:51
+msgid "Ship To:"
+msgstr ""
+
+#: woocommerce/pdf/Meo/invoice.php:62
+msgid "Invoice Number:"
+msgstr ""
+
+#: woocommerce/pdf/Meo/invoice.php:68
+msgid "Invoice Date:"
+msgstr ""
+
+#: woocommerce/pdf/Meo/invoice.php:73 woocommerce/pdf/Meo/packing-slip.php:61
+msgid "Order Number:"
+msgstr ""
+
+#: woocommerce/pdf/Meo/invoice.php:77 woocommerce/pdf/Meo/packing-slip.php:65
+msgid "Order Date:"
+msgstr ""
+
+#: woocommerce/pdf/Meo/invoice.php:81
+msgid "Payment Method:"
+msgstr ""
+
+#: woocommerce/pdf/Meo/invoice.php:97
+msgid "Unit Price HT"
+msgstr "Prix Unitaire HT"
+
+#: woocommerce/pdf/Meo/invoice.php:98
+msgid "Price HT"
+msgstr "Prix HT"
+
+#: woocommerce/pdf/Meo/invoice.php:99
+msgid "Tax Amount"
+msgstr "Taux TVA"
+
+#: woocommerce/pdf/Meo/invoice.php:100
+msgid "Tax Total"
+msgstr "Montant TVA"
+
+#: woocommerce/pdf/Meo/invoice.php:101 woocommerce/pdf/Meo/packing-slip.php:85
+msgid "Price TTC"
+msgstr "Prix TTC"
+
+#: woocommerce/pdf/Meo/invoice.php:115 woocommerce/pdf/Meo/packing-slip.php:99
+msgid "SKU"
+msgstr ""
+
+#: woocommerce/pdf/Meo/invoice.php:117 woocommerce/pdf/Meo/packing-slip.php:101
+msgid "SKU:"
+msgstr ""
+
+#: woocommerce/pdf/Meo/invoice.php:119 woocommerce/pdf/Meo/packing-slip.php:103
+#, fuzzy
+#| msgid "Right"
+msgid "Weight:"
+msgstr "Droite"
+
+#: woocommerce/pdf/Meo/invoice.php:140 woocommerce/pdf/Meo/packing-slip.php:120
+msgid "Notes"
+msgstr ""
+
+#: woocommerce/pdf/Meo/invoice.php:148 woocommerce/pdf/Meo/packing-slip.php:128
+#: woocommerce/pdf/Meo/packing-slip.php:181
+msgid "Customer Notes"
+msgstr ""
+
+#: woocommerce/pdf/Meo/invoice.php:158
+msgid "Total HT"
+msgstr ""
+
+#: woocommerce/pdf/Meo/invoice.php:162
+msgid "Total TVA 5,5%"
+msgstr ""
+
+#: woocommerce/pdf/Meo/invoice.php:176
+msgid "Shipping method"
+msgstr "Méthode de livraison"
+
+#: woocommerce/pdf/Meo/invoice.php:180
+msgid "Shipping amount HT"
+msgstr "Livraison HT"
+
+#: woocommerce/pdf/Meo/invoice.php:195
+msgid "Total TVA 20%"
+msgstr ""
+
+#: woocommerce/pdf/Meo/invoice.php:213 woocommerce/pdf/Meo/packing-slip.php:155
+msgid "Promo code TTC"
+msgstr "Code(s) Promo TTC"
+
+#: woocommerce/pdf/Meo/invoice.php:222 woocommerce/pdf/Meo/packing-slip.php:164
+msgid "Total TTC"
+msgstr ""
+
+#: woocommerce/pdf/Meo/packing-slip.php:38
+#, fuzzy
+#| msgid "Shopping Cart"
+msgid "Shipping Address:"
+msgstr "Panier"
+
+#: woocommerce/pdf/Meo/packing-slip.php:69
+#, fuzzy
+#| msgid "Shopping Cart"
+msgid "Shipping Method:"
+msgstr "Panier"
+
+#: woocommerce/pdf/Meo/packing-slip.php:138
+msgid "Shipping amount TTC"
+msgstr "Livraison TTC"
+
+#. translators: 1: reviews count 2: product name
+#: woocommerce/single-product-reviews.php:34
+#, php-format
+msgid "%1$s review for %2$s"
+msgid_plural "%1$s reviews for %2$s"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce/single-product-reviews.php:37
+msgid "Reviews"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:44
+msgid "Note moyenne"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:74
+#, fuzzy
+#| msgid "There are no posts published by %s yet."
+msgid "There are no reviews yet."
+msgstr "Il n’y a pas encore de messages %s publiés par le gouvernement."
+
+#. translators: %s is product title
+#: woocommerce/single-product-reviews.php:85
+msgid "Add a review"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:85
+#, php-format
+msgid "Be the first to review &ldquo;%s&rdquo;"
+msgstr ""
+
+#. translators: %s is product title
+#: woocommerce/single-product-reviews.php:87
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:91
+msgid "Submit"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:99
+msgid "Name"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:105
+msgid "Email"
+msgstr ""
+
+#. translators: %s opening and closing link tags respectively
+#: woocommerce/single-product-reviews.php:130
+#, php-format
+msgid "You must be %1$slogged in%2$s to post a review."
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:134
+#, fuzzy
+#| msgid " Ratings"
+msgid "Your rating"
+msgstr " Evaluations"
+
+#: woocommerce/single-product-reviews.php:135
+msgid "Rate&hellip;"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:136
+msgid "Perfect"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:137
+msgid "Good"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:138
+msgid "Average"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:139
+msgid "Not that bad"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:140
+msgid "Very poor"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:144
+#, fuzzy
+#| msgid "Top bar border"
+msgid "Your review"
+msgstr "Bordure de la barre supérieure"
+
+#: woocommerce/single-product-reviews.php:151
+msgid ""
+"Only logged in customers who have purchased this product may leave a review."
+msgstr ""
+
+#: woocommerce/single-product/bundled-item-optional.php:21
+#, fuzzy, php-format
+#| msgctxt "Install/Update Status"
+#| msgid "%1$s, %2$s"
+msgid "Add%1$s%2$s%3$s"
+msgstr "%1$s, %2$s"
+
+#: woocommerce/single-product/bundled-item-title.php:27
+#, fuzzy
+#| msgid " Single Product"
+msgid "View product"
+msgstr " Produit unique"
+
+#: woocommerce/single-product/review-meta.php:27
+#, fuzzy
+#| msgid "Your comment is awaiting moderation."
+msgid "Your review is awaiting approval"
+msgstr "Votre commentaire est en attente de modération."
+
+#: woocommerce/single-product/review-meta.php:37
+msgid "verified owner"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Méo"
+msgstr "Méo"
+
+#. Theme URI of the plugin/theme
+#, fuzzy
+#| msgid "https://www.commercegurus.com/"
+msgid "https://www.meo.fr"
+msgstr "https://www.commercegurus.com/"
+
+#. Description of the plugin/theme
+msgid "Meo website Theme"
+msgstr "Thème du site Meo"
+
+#. Author of the plugin/theme
+msgid "AmphiBee"
+msgstr "AmphiBee"
+
+#. Author URI of the plugin/theme
+msgid "https://amphibee.fr/"
+msgstr "https://amphibee.fr/"
+
+#. Template Name of the plugin/theme
+msgid "Content only"
+msgstr ""
+
+#~ msgid "Confirmation"
+#~ msgstr "Confirmation"
+
+#, fuzzy
+#~| msgid "Theme Options"
+#~ msgid "Choix des options"
+#~ msgstr "Options du thème"
+
+#, fuzzy
+#~| msgid "Post Sidebar"
+#~ msgid "Default Sidebar"
+#~ msgstr "Sidebar Article"
+
+#~ msgid "New window"
+#~ msgstr "Nouvelle fenêtre"
+
+#~ msgid "Meo facebook page"
+#~ msgstr "Page Facebook Meo"
+
+#~ msgid "Meo instagram account"
+#~ msgstr "Compte Instagram Meo"
+
+#~ msgid "That page can&rsquo;t be found."
+#~ msgstr "Cette page est introuvable."
+
+#~ msgid ""
+#~ "Nothing was found at this location. Try searching, or check out the "
+#~ "popular items below."
+#~ msgstr ""
+#~ "Rien n'a été trouvé à cet endroit. Essayez de chercher, ou consultez les "
+#~ "articles populaires ci-dessous."
+
+#~ msgid "Popular Products"
+#~ msgstr "Produits populaires"
+
+#~ msgid "Post Comments"
+#~ msgstr "Commentaires de l'article"
+
+#~ msgid "Comment Navigation Above"
+#~ msgstr "Navigation des commentaires ci-dessus"
+
+#~ msgid "Comment navigation"
+#~ msgstr "﻿Commentaire de navigation"
+
+#~ msgid "&larr; Older Comments"
+#~ msgstr "&larr; Commentaires plus anciens"
+
+#~ msgid "Newer Comments &rarr;"
+#~ msgstr "Commentaires plus récents &rarr;"
+
+#~ msgid "Comment Navigation Below"
+#~ msgstr "Navigation des commentaires ci-dessous"
+
+#~ msgid "Comments are closed."
+#~ msgstr "Les commentaires sont fermés."
+
+#~ msgid "Nothing Found"
+#~ msgstr "Rien trouvé"
+
+#~ msgid ""
+#~ "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+#~ msgstr ""
+#~ "Prêt à publier votre premier article&nbsp;? <a href=\"%1$s\">Lancez-vous</"
+#~ "a>&nbsp;."
+
+#~ msgid ""
+#~ "Sorry, but nothing matched your search terms. Please try again with some "
+#~ "different keywords."
+#~ msgstr ""
+#~ "Aucun résultat ne correspond à vos critères de recherche. Essayez de "
+#~ "nouveau avec des mots clés différents."
+
+#~ msgid ""
+#~ "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+#~ "searching can help."
+#~ msgstr ""
+#~ "Il semblerait que nous ne soyons pas en mesure de trouver votre contenu. "
+#~ "Essayez en lançant une recherche."
+
+#~ msgid "Elementor"
+#~ msgstr "Elementor"
+
+#~ msgid "Kirki"
+#~ msgstr "Kirki"
+
+#~ msgid "One Click Demo Import"
+#~ msgstr "Importation de contenu de démo en 1 clic"
+
+#~ msgid "Smart WooCommerce Search"
+#~ msgstr "Recherche Smart WooCommerce"
+
+#~ msgid "WooCommerce"
+#~ msgstr "WooCommerce"
+
+#~ msgid "Install Required Plugins"
+#~ msgstr "Installer les extensions requises"
+
+#~ msgid "Install Plugins"
+#~ msgstr "Installer les extensions"
+
+#~ msgid "Installing Plugin: %s"
+#~ msgstr "Installation de l’extension : %s"
+
+#~ msgid "Something went wrong with the plugin API."
+#~ msgstr "Une erreur a eu lieu avec l’API de l'extension."
+
+#~ msgid "Return to Required Plugins Installer"
+#~ msgstr "Retourner à l’installateur d'extensions requises"
+
+#~ msgid "Plugin activated successfully."
+#~ msgstr "﻿Extension activée avec succès."
+
+#~ msgid "All plugins installed and activated successfully. %s"
+#~ msgstr ""
+#~ "Toutes les extensions ont été installées et activées avec succès. %s"
+
+#~ msgid "Shoptimizer Demo Data"
+#~ msgstr "Données de démonstration Éthique Privée"
+
+#~ msgid "Shoptimizer demo content imported!"
+#~ msgstr "Contenu de démonstration Éthique Privée importé !"
+
+#~ msgid "Primary Menu"
+#~ msgstr "Menu principal"
+
+#~ msgid "Secondary Menu"
+#~ msgstr "Menu secondaire"
+
+#~ msgid "Sidebar"
+#~ msgstr "Barre latérale"
+
+#~ msgid "Sidebar Posts"
+#~ msgstr "Barre d’articles"
+
+#~ msgid "The posts sidebar."
+#~ msgstr "La barre latérale des articles."
+
+#~ msgid "Sidebar Pages"
+#~ msgstr "Sidebar Pages"
+
+#~ msgid "The pages sidebar."
+#~ msgstr "La barre latérale des pages."
+
+#~ msgid "Below Header"
+#~ msgstr "En-dessous de l'en-tête"
+
+#~ msgid ""
+#~ "Widgets added to this region will appear beneath the header and above the "
+#~ "main content."
+#~ msgstr ""
+#~ "Les widgets ajoutées à cette zone apparaitront sous le titre et au dessus "
+#~ "du contenu principal."
+
+#~ msgid "Top Bar Left"
+#~ msgstr "Barre du haut gauche"
+
+#~ msgid ""
+#~ "A widget added to this region will appear at the very top of the site to "
+#~ "the left."
+#~ msgstr ""
+#~ "Un widget ajouté à cette région apparaîtra en haut du site à gauche."
+
+#~ msgid ""
+#~ "A widget added to this region will appear at the very top of the site in "
+#~ "the center."
+#~ msgstr ""
+#~ "Un widget ajouté à cette région apparaîtra en haut du site dans le centre."
+
+#~ msgid "Top Bar Right"
+#~ msgstr "Barre du haut Droit"
+
+#~ msgid ""
+#~ "A widget added to this region will appear at the very top of the site to "
+#~ "the right."
+#~ msgstr ""
+#~ "Un widget ajouté à cette région apparaîtra en haut du site à droite."
+
+#~ msgid "Single Product Custom Area"
+#~ msgstr "Zone personnalisée du produit"
+
+#~ msgid ""
+#~ "A widget added to this region will appear below the \"Add to cart\" "
+#~ "button on a product page."
+#~ msgstr ""
+#~ "Un widget ajouté à cette région apparaîtra en dessous du bouton « Ajouter "
+#~ "au panier » sur une page de produit."
+
+#~ msgid "Floating Button Modal Content"
+#~ msgstr "Contenu de la modal du bouton flottant"
+
+#~ msgid ""
+#~ "A widget added to this region will appear within a modal window on a "
+#~ "single product page. It is intended for a form shortcode, e.g. Contact "
+#~ "Form 7 - but you can add any content you wish."
+#~ msgstr ""
+#~ "Un widget ajouté à cette région apparaîtra dans une fenêtre modale sur "
+#~ "une seule page de produit. Il est destiné à un code court de formulaire, "
+#~ "par exemple, contact formulaire 7 - mais vous pouvez ajouter n’importe "
+#~ "quel contenu que vous souhaitez."
+
+#~ msgid "Below Cart Summary"
+#~ msgstr "Résumé sous le panier"
+
+#~ msgid "A widget added to this region will appear below the cart summary."
+#~ msgstr ""
+#~ "Un widget ajouté à cette région apparaîtra en dessous du résumé du "
+#~ "chariot."
+
+#~ msgid "Cart Custom Area"
+#~ msgstr "Zone personnalisée du panier"
+
+#~ msgid ""
+#~ "A widget added to this region will appear below the \"Proceed to checkout"
+#~ "\" button on the Cart page."
+#~ msgstr ""
+#~ "Un widget ajouté à cette région apparaîtra en dessous du bouton « Proceed "
+#~ "to checkout » sur la page Cart."
+
+#~ msgid "Checkout Custom Area"
+#~ msgstr "Zone personnalisée de Checkout"
+
+#~ msgid ""
+#~ "A widget added to this region will appear below the \"Place order\" "
+#~ "button on the Checkout page."
+#~ msgstr ""
+#~ "Un widget ajouté à cette région apparaîtra en dessous du bouton « "
+#~ "Commande de place » sur la page Checkout."
+
+#~ msgid "Below Content"
+#~ msgstr "Au-dessous du contenu"
+
+#~ msgid ""
+#~ "A widget added to this region will appear below the main content area."
+#~ msgstr ""
+#~ "Un widget ajouté à cette région apparaîtra en dessous de la zone de "
+#~ "contenu principale."
+
+#~ msgid "A widget added to this region will appear within the footer area."
+#~ msgstr "Un widget ajouté à cette région apparaîtra dans la zone de pied."
+
+#~ msgid "Copyright"
+#~ msgstr "Copyright"
+
+#~ msgid "A widget added to this region will appear within the copyright area."
+#~ msgstr ""
+#~ "Un widget ajouté à cette région apparaîtra dans la zone du droit d’auteur."
+
+#~ msgid "Mobile Extra"
+#~ msgstr "Mobile Extra"
+
+#~ msgid ""
+#~ "A widget added to this region will appear below the mobile navigation "
+#~ "area."
+#~ msgstr ""
+#~ "Un widget ajouté à cette région apparaîtra sous la zone de navigation "
+#~ "mobile."
+
+#~ msgid "Post Navigation"
+#~ msgstr "Navigation de l'article"
+
+#~ msgid "Updating Plugin: %s"
+#~ msgstr "Mise à jour de l'extension : %s"
+
+#~ msgid "Return to the Dashboard"
+#~ msgstr "Retourner au tableau de bord"
+
+#~ msgid "The following plugin was activated successfully:"
+#~ msgstr "Extension activée avec succès :"
+
+#~ msgid "No action taken. Plugin %1$s was already active."
+#~ msgstr "Aucune action nécessaire. L'extension %1$s est déjà active."
+
+#~ msgid ""
+#~ "Plugin not activated. A higher version of %s is needed for this theme. "
+#~ "Please update the plugin."
+#~ msgstr ""
+#~ "Extension non activée. Une version plus récente de %s est nécessaire pour "
+#~ "ce thème. Veuillez mettre à jour l’extension."
+
+#~ msgid "All plugins installed and activated successfully. %1$s"
+#~ msgstr ""
+#~ "Toutes les extensions ont été installées et activées avec succès. %1$s"
+
+#~ msgid "Dismiss this notice"
+#~ msgstr "Ignorer cet avertissement"
+
+#~ msgid ""
+#~ "There are one or more required or recommended plugins to install, update "
+#~ "or activate."
+#~ msgstr ""
+#~ "Il y a une ou plusieurs  extensions nécessaires ou recommandées à "
+#~ "installer, mettre à jour ou activer."
+
+#~ msgid "Please contact the administrator of this site for help."
+#~ msgstr "Veuillez contacter l'administrateur de ce site pour de l'aide."
+
+#~ msgid "This plugin needs to be updated to be compatible with your theme."
+#~ msgstr ""
+#~ "Cette extension nécessite une mise à jour pour être compatible avec votre "
+#~ "thème."
+
+#~ msgid "Update Required"
+#~ msgstr "Mise à jour nécessaire"
+
+#~ msgid ""
+#~ "The remote plugin package does not contain a folder with the desired slug "
+#~ "and renaming did not work."
+#~ msgstr ""
+#~ "Le package distant de l’extension ne contient pas de répertoire avec "
+#~ "l’identifiant désiré et le renommage ne va pas fonctionner."
+
+#~ msgid ""
+#~ "Please contact the plugin provider and ask them to package their plugin "
+#~ "according to the WordPress guidelines."
+#~ msgstr ""
+#~ "Veuillez contacter le fournisseur de l’extension et demandez lui de "
+#~ "compiler son extension en accord avec les bonnes pratiques de WordPress."
+
+#~ msgid ""
+#~ "The remote plugin package consists of more than one file, but the files "
+#~ "are not packaged in a folder."
+#~ msgstr ""
+#~ "Le package distant de l’extension consiste en plus d’un fichier, mais les "
+#~ "fichiers ne sont pas compilés dans un répertoire."
+
+#~ msgid "and"
+#~ msgstr "et"
+
+#~ msgid "TGMPA v%s"
+#~ msgstr "TGMPA v%s"
+
+#~ msgid "Required"
+#~ msgstr "Obligatoire"
+
+#~ msgid "Recommended"
+#~ msgstr "Recommandé"
+
+#~ msgid "WordPress Repository"
+#~ msgstr "WordPress Repository"
+
+#~ msgid "External Source"
+#~ msgstr "Source externe"
+
+#~ msgid "Pre-Packaged"
+#~ msgstr "Pré-emballés"
+
+#~ msgid "Not Installed"
+#~ msgstr "Non installé"
+
+#~ msgid "Installed But Not Activated"
+#~ msgstr "Installé mais pas activé"
+
+#~ msgid "Active"
+#~ msgstr "Actif"
+
+#~ msgid "Required Update not Available"
+#~ msgstr "Mise à jour nécessaire non disponible"
+
+#~ msgid "Requires Update"
+#~ msgstr "Mise à jour nécessaire"
+
+#~ msgid "Update recommended"
+#~ msgstr "Mise à jour recommandée"
+
+#~ msgid "Installed version:"
+#~ msgstr "Version installée :"
+
+#~ msgid "Minimum required version:"
+#~ msgstr "Version minimum nécessaire :"
+
+#~ msgid "No plugins to install, update or activate."
+#~ msgstr "Aucune extension à installer, mettre à jour ou activer."
+
+#~ msgid "Plugin"
+#~ msgstr "Extension"
+
+#~ msgid "Source"
+#~ msgstr "Source"
+
+#~ msgid "Type"
+#~ msgstr "Type"
+
+#~ msgid "Version"
+#~ msgstr "Version"
+
+#~ msgid "Status"
+#~ msgstr "Statut"
+
+#~ msgid "Install %2$s"
+#~ msgstr "Installer %2$s"
+
+#~ msgid "Activate %2$s"
+#~ msgstr "Activation de %2$s"
+
+#~ msgid "Upgrade message from the plugin author:"
+#~ msgstr "Message de mise à niveau de l’auteur de l'extension :"
+
+#~ msgid "Install"
+#~ msgstr "Installer"
+
+#~ msgid "Activate"
+#~ msgstr "Activer"
+
+#~ msgid "No plugins were selected to be installed. No action taken."
+#~ msgstr ""
+#~ "Aucune extension disponible à l'installation actuellement. Pas d'action "
+#~ "en cours."
+
+#~ msgid "No plugins were selected to be updated. No action taken."
+#~ msgstr ""
+#~ "Aucune extension sélectionnée pour la mise à jour. Pas d'action en cours."
+
+#~ msgid "No plugins are available to be installed at this time."
+#~ msgstr "Aucune extension disponible à l'installation actuellement."
+
+#~ msgid "No plugins are available to be updated at this time."
+#~ msgstr "Aucune extension disponible à la mise à jour pour l'instant."
+
+#~ msgid "No plugins were selected to be activated. No action taken."
+#~ msgstr ""
+#~ "Aucune extension disponible à l’activation actuellement. Pas d'action en "
+#~ "cours."
+
+#~ msgid "No plugins are available to be activated at this time."
+#~ msgstr "Aucune extension disponible pour une mise à jour actuellement."
+
+#~ msgid "Plugin activation failed."
+#~ msgstr "L’activation de l’extension a échoué."
+
+#~ msgid "Updating Plugin %1$s (%2$d/%3$d)"
+#~ msgstr "Mise à jour d'extension %1$s (%2$d/%3$d)"
+
+#~ msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+#~ msgstr ""
+#~ "Une erreur s'est produite lors de l'installation %1$s : <strong>%2$s</"
+#~ "strong>."
+
+#~ msgid "The installation of %1$s failed."
+#~ msgstr "L’installation de %1$s a échouée."
+
+#~ msgid ""
+#~ "The installation and activation process is starting. This process may "
+#~ "take a while on some hosts, so please be patient."
+#~ msgstr ""
+#~ "Installation et activation en cours. Cela peut prendre un peu de temps "
+#~ "selon l’hébergeur, merci de patienter."
+
+#~ msgid "%1$s installed and activated successfully."
+#~ msgstr "%1$s installés et activés avec succès."
+
+#~ msgid "All installations and activations have been completed."
+#~ msgstr "Toutes les installations et activations ont été réalisées."
+
+#~ msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+#~ msgstr "Installation et activation de l'extension %1$s (%2$d/%3$d)"
+
+#~ msgid ""
+#~ "The installation process is starting. This process may take a while on "
+#~ "some hosts, so please be patient."
+#~ msgstr ""
+#~ "Le processus d'installation démarre. Cela peut prendre un peu de temps "
+#~ "selon l’hébergeur, merci de patienter."
+
+#~ msgid "%1$s installed."
+#~ msgstr "%1$s installé."
+
+#~ msgid "All installations have been completed."
+#~ msgstr "Tous les installations ont été réalisées."
+
+#~ msgid "Installing Plugin %1$s (%2$d/%3$d)"
+#~ msgstr "Installation de l’extension %1$s (%2$d/%3$d)"
+
+#~ msgid "Primary swatch color"
+#~ msgstr "Couleur primaire"
+
+#~ msgid "Select the primary color of your brand."
+#~ msgstr "Sélectionnez la couleur principale de votre marque."
+
+#~ msgid "General links"
+#~ msgstr "Liens généraux"
+
+#~ msgid "General links hover"
+#~ msgstr "Liens généraux au survol"
+
+#~ msgid "Body background color"
+#~ msgstr "Couleur d’arrière plan du corps de page"
+
+#~ msgid "Visible if the grid is contained."
+#~ msgstr "Visible si la grille est contenue."
+
+#~ msgid "Top bar background"
+#~ msgstr "Arrière plan de la barre du haut"
+
+#~ msgid "Top Bar text color"
+#~ msgstr "Couleur du texte de la Top Bar"
+
+#~ msgid "Header background"
+#~ msgstr "Arrière-plan du Header"
+
+#~ msgid "Header border color"
+#~ msgstr "Couleur de la bordure de l'entête"
+
+#~ msgid "Mobile"
+#~ msgstr "Portable"
+
+#~ msgid "Navigation icon"
+#~ msgstr "Icône de navigation"
+
+#~ msgid "Cart icon"
+#~ msgstr "Icône panier"
+
+#~ msgid "Navigation background"
+#~ msgstr "Navigation - Couleur d'arrière plan"
+
+#~ msgid "Below header background"
+#~ msgstr "Arriere plan Sous l’en-tête"
+
+#~ msgid "Primary Button"
+#~ msgstr "Bouton principal"
+
+#~ msgid "Primary button text color"
+#~ msgstr "Couleur de texte du bouton principal"
+
+#~ msgid "Primary button background"
+#~ msgstr "Background du bouton primaire"
+
+#~ msgid "Sale Flash"
+#~ msgstr "Vente éclair"
+
+#~ msgid "Sale flash background"
+#~ msgstr "Vente éclair background"
+
+#~ msgid "Sale flash text color"
+#~ msgstr "Couleur de texte vente éclair"
+
+#~ msgid " Product Archives"
+#~ msgstr " Archives Produit"
+
+#~ msgid "Archive description background"
+#~ msgstr "Background description archive"
+
+#~ msgid "Archive description text"
+#~ msgstr "Couleur de texte description archive"
+
+#~ msgid "Product container background"
+#~ msgstr "Fond de containeur de produit"
+
+#~ msgid " Cart and Checkout"
+#~ msgstr "Panier et Tunnel de commande"
+
+#~ msgid "Progress bar color"
+#~ msgstr "Couleur de la barre de chargement"
+
+#~ msgid "Footer background"
+#~ msgstr "Arrière-plan du pied de page"
+
+#~ msgid "Footer headings color"
+#~ msgstr "Couleur des titres de pied de page"
+
+#~ msgid "Footer text color"
+#~ msgstr "Couleur du texte du pied de page"
+
+#~ msgid "Footer links hover"
+#~ msgstr "Liens Footer planer"
+
+#~ msgid "Logo Height"
+#~ msgstr "Hauteur du logo"
+
+#~ msgid "Display tagline under logo"
+#~ msgstr "Afficher le slogan sous le logo"
+
+#~ msgid "Sticky Logo"
+#~ msgstr "Logo fixe"
+
+#~ msgid "Sticky Logo Width"
+#~ msgstr "Largeur du logo épinglé"
+
+#~ msgid "Mobile Header Height"
+#~ msgstr "Hauteur de l’en-tête mobile"
+
+#~ msgid "Mobile Logo Height"
+#~ msgstr "Hauteur du logo mobile"
+
+#~ msgid "Adjust height of your mobile logo (px)"
+#~ msgstr "Ajuster la hauteur de votre logo mobile (px)"
+
+#~ msgid "Mobile Sticky Header"
+#~ msgstr "Logo de l'en-tête collante sur mobile"
+
+#~ msgid "Enable"
+#~ msgstr "Activé"
+
+#~ msgid "Disable"
+#~ msgstr "Désactiver"
+
+#~ msgid "Show Search on Mobile"
+#~ msgstr "Afficher la recherche sur Mobile"
+
+#~ msgid "Display mobile menu label"
+#~ msgstr "Afficher l’étiquette du menu mobile"
+
+#~ msgid "Yes"
+#~ msgstr "Oui"
+
+#~ msgid "No"
+#~ msgstr "Non"
+
+#~ msgid "Mobile menu label text"
+#~ msgstr "Texte d’étiquette de menu mobile"
+
+#~ msgid "Critical CSS"
+#~ msgstr "CSS critiques"
+
+#~ msgid "Enable Critical CSS?"
+#~ msgstr "Activer CSS critique?"
+
+#~ msgid "Minification Settings"
+#~ msgstr "Paramètres de minification"
+
+#~ msgid "Load the minified CSS files?"
+#~ msgstr "Charger les fichiers CSS minifiés?"
+
+#~ msgid "Wrapper"
+#~ msgstr "Wrapper"
+
+#~ msgid "Wraper container width"
+#~ msgstr "Largeur du container de wrapper"
+
+#~ msgid "Adjust wrapper width in px."
+#~ msgstr "Ajuster la largeur du wrapper en px."
+
+#~ msgid "Breadcrumbs"
+#~ msgstr "Fil d'Ariane"
+
+#~ msgid "Display breadcrumbs"
+#~ msgstr "Afficher breadcrumbs"
+
+#~ msgid "Breadcrumbs type"
+#~ msgstr "Type de breadcrumbs"
+
+#~ msgid "Default"
+#~ msgstr "Défaut"
+
+#~ msgid "Use Yoast Breadcrumbs"
+#~ msgstr "Utiliser Yoast Breadcrumbs"
+
+#~ msgid "Use Rank Math Breadcrumbs"
+#~ msgstr "Utilisez Rank Math Breadcrumbs"
+
+#~ msgid "General"
+#~ msgstr "Général"
+
+#~ msgid "Display product results count"
+#~ msgstr "Afficher le nombre de résultats du produit"
+
+#~ msgid "Display product sorting"
+#~ msgstr "Afficher le tri des produits"
+
+#~ msgid "Display sale % discount"
+#~ msgstr "Afficher le % de promotion"
+
+#~ msgid "Display rating"
+#~ msgstr "Afficher évaluation"
+
+#~ msgid "Display category"
+#~ msgstr "Afficher la Catégorie"
+
+#~ msgid "Product card display"
+#~ msgstr "Affichage de carte de produit"
+
+#~ msgid "Slide up"
+#~ msgstr "Glissement vers le haut"
+
+#~ msgid "Button display"
+#~ msgstr "Affichage du bouton"
+
+#~ msgid "On hover (desktop only)"
+#~ msgstr "Au survol (desktop seulement)"
+
+#~ msgid "Static"
+#~ msgstr "Statique"
+
+#~ msgid "Product text alignment"
+#~ msgstr "Alignement du texte du produit"
+
+#~ msgid "Left"
+#~ msgstr "Gauche"
+
+#~ msgid "Center"
+#~ msgstr "Centre"
+
+#~ msgid "Use masonry layout"
+#~ msgstr "Utiliser la disposition de masonry"
+
+#~ msgid "Only enable if you have irregular image sizes."
+#~ msgstr "Activez seulement si vous avez des tailles d’image irrégulières."
+
+#~ msgid "Product Categories"
+#~ msgstr "Catégories de produit"
+
+#~ msgid "Category description layout."
+#~ msgstr "Mise en page de la description des catégories."
+
+#~ msgid "Below header"
+#~ msgstr "En-dessous de l'en-tête"
+
+#~ msgid "Within content"
+#~ msgstr "Contenu dans le contenu"
+
+#~ msgid "Display sticky add to cart bar"
+#~ msgstr "Afficher barre Ajout au Panier Sticky"
+
+#~ msgid "Top"
+#~ msgstr "Haut"
+
+#~ msgid "Bottom"
+#~ msgstr "Bas"
+
+#~ msgid "Display related"
+#~ msgstr "Affichage produits liés"
+
+#~ msgid "Display product meta data"
+#~ msgstr "Afficher les métadonnées du produit"
+
+#~ msgid "Display prev/next"
+#~ msgstr "Afficher prev/prochain"
+
+#~ msgid "Display inventory FOMO"
+#~ msgstr "Affichage Inventaire FOMO"
+
+#~ msgid "Display floating button"
+#~ msgstr "Afficher le bouton flottant"
+
+#~ msgid "Number of related items to show"
+#~ msgstr "Nombre d’éléments connexes à afficher"
+
+#~ msgid "Number of upsells to show"
+#~ msgstr "Nombre d'upsells à afficher"
+
+#~ msgid "Product Gallery position"
+#~ msgstr "Position de la galerie d'images du produit"
+
+#~ msgid "Horizontal"
+#~ msgstr "Horizontal"
+
+#~ msgid "Vertical"
+#~ msgstr "Vertical"
+
+#~ msgid "Cart and Checkout"
+#~ msgstr "Panier et Checkout"
+
+#~ msgid "Display progress bar"
+#~ msgstr "Afficher la barre de progression"
+
+#~ msgid "Number of cross sells to show"
+#~ msgstr "Nombre de ventes croisées à afficher"
+
+#~ msgid "Distraction-free checkout"
+#~ msgstr "Checkout sans distraction"
+
+#~ msgid "Simplifies the checkout experience for better conversions."
+#~ msgstr "Simplifie l’expérience du checkout pour de meilleures conversions."
+
+#~ msgid "Checkout coupon code position"
+#~ msgstr "Position du code de promotionnel du checkout"
+
+#~ msgid "WooCommerce Sidebar"
+#~ msgstr "Barre latérale WooCommerce"
+
+#~ msgid "None"
+#~ msgstr "Aucun"
+
+#~ msgid "Pages"
+#~ msgstr "Pages"
+
+#~ msgid "Page Sidebar"
+#~ msgstr "Barre latérale des pages"
+
+#~ msgid "Blog Archives Sidebar"
+#~ msgstr "Blog Archives Barre latérale"
+
+#~ msgid "Single Post"
+#~ msgstr "Article seul"
+
+#~ msgid "Sidebar Width (%)."
+#~ msgstr "Largeur de la barre latérale (%)."
+
+#~ msgid "Adjust the width of the sidebar."
+#~ msgstr "Ajuster la largeur de la barre latérale."
+
+#~ msgid "Blog Layout"
+#~ msgstr "Mise en page du blog"
+
+#~ msgid "List"
+#~ msgstr "Liste"
+
+#~ msgid "Flow"
+#~ msgstr "Flux"
+
+#~ msgid "Grid of 2"
+#~ msgstr "Grille de 2"
+
+#~ msgid "Grid of 3"
+#~ msgstr "Grille de 3"
+
+#~ msgid "Single Posts"
+#~ msgstr "Articles uniques"
+
+#~ msgid "Display featured image"
+#~ msgstr "Afficher l'image mise en avant"
+
+#~ msgid "Layout One"
+#~ msgstr "Première Mise en page"
+
+#~ msgid "Layout Two"
+#~ msgstr "Deuxième Mise en page"
+
+#~ msgid "Hide"
+#~ msgstr "Masquer"
+
+#~ msgid "Show Footer?"
+#~ msgstr "Afficher le footer ?"
+
+#~ msgid "Display top bar?"
+#~ msgstr "Afficher la barre supérieure ?"
+
+#~ msgid "Header Layout"
+#~ msgstr "Mise en page de l'en-tête"
+
+#~ msgid "Change the header layout"
+#~ msgstr "Changer la mise en page du header"
+
+#~ msgid "Header Container"
+#~ msgstr "Conteneur de l’entête"
+
+#~ msgid "Contained"
+#~ msgstr "Largeur fixe"
+
+#~ msgid "Full width"
+#~ msgstr "Pleine largeur"
+
+#~ msgid "Header Top Padding"
+#~ msgstr "Marge intérieure de l'en-tête"
+
+#~ msgid "Header Bottom Padding"
+#~ msgstr "Marge du bas de l’entête"
+
+#~ msgid "Sticky Header Height"
+#~ msgstr "Sticky Header Height"
+
+#~ msgid "Navigation Height"
+#~ msgstr "Hauteur de navigation"
+
+#~ msgid "Sticky Navigation"
+#~ msgstr "Navigation épinglée"
+
+#~ msgid "Opacity (%)."
+#~ msgstr "Opacité (%)."
+
+#~ msgid "Dropdowns"
+#~ msgstr "Menus déroulants"
+
+#~ msgid "Secondary Navigation"
+#~ msgstr "Navigation secondaire"
+
+#~ msgid "Cart"
+#~ msgstr "Panier"
+
+#~ msgid "Cart text"
+#~ msgstr "Texte de panier"
+
+#~ msgid "Cart text hover color"
+#~ msgstr "Couleur du texte du panier au survol"
+
+#~ msgid "Display cart"
+#~ msgstr "Voir le panier"
+
+#~ msgid ""
+#~ "After switching, test in an incognito window. The previous selection will "
+#~ "be likely cached as a fragment."
+#~ msgstr ""
+#~ "Après la commutation, testez dans une fenêtre incognito. La sélection "
+#~ "précédente sera probablement mise en cache comme un fragment."
+
+#~ msgid "Basket (Default)"
+#~ msgstr "Panier (par défaut)"
+
+#~ msgid "Select a Typography Preset"
+#~ msgstr "Sélectionnez un paramètre de typographie"
+
+#~ msgid "Change your font style with one click."
+#~ msgstr "Changez votre style de police en un seul clic."
+
+#~ msgid "Font settings"
+#~ msgstr "Polices de caractères"
+
+#~ msgid "Primary Navigation Font"
+#~ msgstr "Police de navigation primaire"
+
+#~ msgid "Navigation Dropdown Font"
+#~ msgstr "Police des sous menus de la navigation"
+
+#~ msgid "Mega Menu Heading Font"
+#~ msgstr "Police des titres Mega Menu"
+
+#~ msgid "Font Settings"
+#~ msgstr "Polices"
+
+#~ msgid "Blog Post Title"
+#~ msgstr "Titre d’article du blog"
+
+#~ msgid "Archives Category Description"
+#~ msgstr "Description de la catégorie Archives"
+
+#~ msgid "Archives Product Title"
+#~ msgstr "Titre des archives de produits"
+
+#~ msgid "Single Product Title"
+#~ msgstr "Titre page produit"
+
+#~ msgid "Primary Buttons"
+#~ msgstr "Boutons primaires"
+
+#~ msgid "Manage general theme settings"
+#~ msgstr "Gérer les paramètres généraux du thème"
+
+#~ msgid "Colors"
+#~ msgstr "Couleurs"
+
+#~ msgid "Manage theme colors"
+#~ msgstr "Gérer les couleurs du thème"
+
+#~ msgid "Header and Navigation"
+#~ msgstr "En-tête et navigation"
+
+#~ msgid "Manage the header and navigation"
+#~ msgstr "Gérer l’en-tête et la navigation"
+
+#~ msgid "Page Heading"
+#~ msgstr "En-tête de la page"
+
+#~ msgid "Manage the page heading"
+#~ msgstr "Gérer l'en-tête de la page"
+
+#~ msgid "Typography"
+#~ msgstr "Typographie"
+
+#~ msgid "Manage theme typography"
+#~ msgstr "Gérer la typographie du thème"
+
+#~ msgid "Layout"
+#~ msgstr "Sections"
+
+#~ msgid "Manage theme header, footer and more"
+#~ msgstr "Gérer l’en-tête du thème, le footer et plus"
+
+#~ msgid "Manage blog settings"
+#~ msgstr "Gérer les paramètres du blog"
+
+#~ msgid "Top Bar"
+#~ msgstr "Barre du haut"
+
+#~ msgid "Header"
+#~ msgstr "En haut"
+
+#~ msgid "Navigation"
+#~ msgstr "Navigation"
+
+#~ msgid "Site Logo"
+#~ msgstr "Logo du site"
+
+#~ msgid "Speed Settings"
+#~ msgstr "Paramètres de vitesse"
+
+#~ msgid "Sidebars"
+#~ msgstr "Barres latérales"
+
+#~ msgid "Publish and refresh to see the changes."
+#~ msgstr "Publiez et actualisez pour voir les changements."
+
+#~ msgid "Mobile Header"
+#~ msgstr "En-tête mobile"
+
+#~ msgid "Responsive Breakpoint"
+#~ msgstr "Breakpoint Responsive"
+
+#~ msgid "Presets"
+#~ msgstr "Préréglages"
+
+#~ msgid "Main Body"
+#~ msgstr "Corps principal"
+
+#~ msgid "Paragraphs"
+#~ msgstr "Paragraphes"
+
+#~ msgid "Heading One"
+#~ msgstr "Titre 1"
+
+#~ msgid "Heading Two"
+#~ msgstr "Titre 2"
+
+#~ msgid "Heading Three"
+#~ msgstr "Titre 3"
+
+#~ msgid "Heading Four"
+#~ msgstr "Titre 4"
+
+#~ msgid "Heading Five"
+#~ msgstr "Titre 5"
+
+#~ msgid "Blockquotes"
+#~ msgstr "Citations"
+
+#~ msgid "Widget Titles"
+#~ msgstr "Titres des widgets"
+
+#~ msgid ""
+#~ "Thanks for choosing Shoptimizer! You can read hints and tips on how get "
+#~ "the most out of your new theme in the %1$sHelp Centre%2$s."
+#~ msgstr ""
+#~ "Merci d’avoir choisi Éthique Privée! Vous pouvez lire des conseils et des "
+#~ "conseils sur la façon de tirer le meilleur parti de votre nouveau thème "
+#~ "dans le %1$sHelp Centre%2$s."
+
+#~ msgid "Get started with Shoptimizer"
+#~ msgstr "Bien débuter avec Éthique Privée"
+
+#~ msgid "Shoptimizer Help"
+#~ msgstr "Aide Éthique Privée"
+
+#~ msgid "Shoptimizer Help Centre"
+#~ msgstr "Centre d’aide Éthique Privée"
+
+#~ msgid "Everything you need to know to get the most out of Shoptimizer."
+#~ msgstr ""
+#~ "Tout ce que vous devez savoir pour tirer le meilleur parti de Éthique "
+#~ "Privée."
+
+#~ msgid "Getting Started"
+#~ msgstr "Mise en route"
+
+#~ msgid "Useful Plugins"
+#~ msgstr "Extensions utiles"
+
+#~ msgid "Welcome to Shoptimizer!"
+#~ msgstr "Bienvenue sur Éthique Privée !"
+
+#~ msgid "Shoptimizer Theme Documentation"
+#~ msgstr "Documentation du thème"
+
+#~ msgid ""
+#~ "We provide lots of theme documentation articles including a detailed "
+#~ "installation and setup guide on our website. We have over 30 detailed "
+#~ "articles which explain the most common queries with screenshots."
+#~ msgstr ""
+#~ "Nous fournissons beaucoup d’articles de documentation thématique, y "
+#~ "compris un guide détaillé d’installation et d’installation sur notre site "
+#~ "Web. Nous avons plus de 30 articles détaillés qui expliquent les requêtes "
+#~ "les plus courantes avec des captures d’écran."
+
+#~ msgid "View Shoptimizer Documentation"
+#~ msgstr "Voir la documentation de thème"
+
+#~ msgid ""
+#~ "The Shoptimizer Theme Customizer enables you to customize many elements "
+#~ "of the theme directly without any coding skills. This includes options "
+#~ "such as uploading your logo, changing the primary color, and much more."
+#~ msgstr ""
+#~ "Le Customizer de thème Éthique Privée vous permet de personnaliser de "
+#~ "nombreux éléments du thème directement sans aucune compétence de codage. "
+#~ "Cela comprend des options telles que le téléchargement de votre logo, "
+#~ "changer la couleur principale, et bien plus encore."
+
+#~ msgid "To access the Customizer, go to"
+#~ msgstr "Pour accéder au Customizer, allez sur"
+
+#~ msgid "Appearance → Customize"
+#~ msgstr "Apparence → Personnaliser"
+
+#~ msgid "in the WordPress admin menu."
+#~ msgstr "dans le menu admin de WordPress."
+
+#~ msgid "When you are finished making changes, click"
+#~ msgstr "Lorsque vous avez fini d’apporter des modifications, cliquez sur"
+
+#~ msgid "Save & Publish"
+#~ msgstr "Sauvegarder & Publier"
+
+#~ msgid "to save the settings. Check out your site to confirm your changes."
+#~ msgstr ""
+#~ "pour enregistrer les paramètres. Consultez votre site pour confirmer vos "
+#~ "modifications."
+
+#~ msgid "You will need to have the"
+#~ msgstr "Vous aurez besoin d’avoir le"
+
+#~ msgid ""
+#~ "plugin active to see the full list of theme options. You can see if it is "
+#~ "enabled via Appearance → Install Plugins."
+#~ msgstr ""
+#~ "plugin actif pour voir la liste complète des options thématiques. Vous "
+#~ "pouvez voir si elle est activée via l’apparence et installer des plugins."
+
+#~ msgid "Launch the Customizer"
+#~ msgstr "Lancer le Customizer"
+
+#~ msgid "Shoptimizer WooCommerce Theme"
+#~ msgstr "Thème WooCommerce Éthique Privée"
+
+#~ msgid ""
+#~ "More information about Shoptimizer including FAQs, guides and tutorials "
+#~ "on optimizing your WooCommerce store."
+#~ msgstr ""
+#~ "Plus d’informations sur Éthique Privée, y compris FAQs, guides et "
+#~ "tutoriels sur l’optimisation de votre magasin WooCommerce."
+
+#~ msgid "Shoptimizer Information"
+#~ msgstr "Informations Éthique Privée"
+
+#, fuzzy
+#~| msgid ""
+#~| "Have any questions or need help? Get in touch with our support desk for "
+#~| "assistance. You will need to include your order number, a link to your "
+#~| "site and a screenshot of the issue."
+#~ msgid ""
+#~ "Have any questions or need help? Get in touch with our support desk for "
+#~ "assistance. You will need to include your purchase code, a link to your "
+#~ "site and a screenshot of the issue."
+#~ msgstr ""
+#~ "Vous avez des questions ou avez besoin d’aide? Contactez notre bureau de "
+#~ "soutien pour obtenir de l’aide. Vous devrez inclure votre numéro de "
+#~ "commande, un lien vers votre site et une capture d’écran du problème."
+
+#~ msgid "Submit a Ticket"
+#~ msgstr "Ressources pour les nouveaux résidents"
+
+#~ msgid ""
+#~ "Enhance your store with these useful optional plugin suggestions for "
+#~ "Shoptimizer. Just search the \"Plugins\" section of WordPress for the "
+#~ "name, then install and activate. You will need to consult the plugin "
+#~ "documentation of each for setup instructions."
+#~ msgstr ""
+#~ "Améliorez votre magasin avec ces suggestions de plugin optionnels utiles "
+#~ "pour Éthique Privée. Il suffit de rechercher la section \"Plugins\" de "
+#~ "WordPress pour le nom, puis installer et activer. Vous devrez consulter "
+#~ "la documentation plugin de chacun pour les instructions de configuration."
+
+#~ msgid "Autoptimize"
+#~ msgstr "Autoptimize"
+
+#~ msgid ""
+#~ "Optimizes your website, concatenating the CSS and JavaScript code, and "
+#~ "compressing it."
+#~ msgstr ""
+#~ "Optimise votre site web en rassemblant les CSS et JavaScript et en les "
+#~ "compressant."
+
+#~ msgid "Jetpack"
+#~ msgstr "Jetpack"
+
+#~ msgid ""
+#~ "The popular plugin from Automattic has some useful features worth "
+#~ "enabling, including lazy load and  photon for quicker page loading times. "
+#~ "We are also using the related posts module on our demo site."
+#~ msgstr ""
+#~ "Le plugin populaire d’Automattic a quelques fonctionnalités utiles à "
+#~ "permettre, y compris la charge paresseuse et le photon pour des temps de "
+#~ "chargement plus rapides de page. Nous utilisons également le module de "
+#~ "messages connexes sur notre site de démonstration."
+
+#~ msgid "MailChimp for WordPress"
+#~ msgstr "MailChimp pour Wordpress"
+
+#~ msgid ""
+#~ "Allows visitors to subscribe to your newsletters easily. Requires a free "
+#~ "MailChimp account."
+#~ msgstr ""
+#~ "Permet aux visiteurs de s’abonner facilement à vos newsletters. Nécessite "
+#~ "un compte MailChimp gratuit."
+
+#~ msgid "Optin Forms"
+#~ msgstr "Formulaires Opt-In"
+
+#~ msgid ""
+#~ "Create optin forms without the need to know any HTML or CSS. Works with a "
+#~ "number of different email solutions including MailChimp and ConvertKit."
+#~ msgstr ""
+#~ "Créez des formulaires optin sans avoir besoin de connaître un HTML ou un "
+#~ "CSS. Fonctionne avec un certain nombre de solutions de messagerie "
+#~ "différentes, y compris MailChimp et ConvertKit."
+
+#~ msgid ""
+#~ "Provides instant search results for your WooCommerce website when a user "
+#~ "types some characters."
+#~ msgstr ""
+#~ "Fournit des résultats de recherche instantanés pour votre site "
+#~ "WooCommerce lorsqu’un utilisateur tape certains caractères."
+
+#~ msgid "Woo Advanced Product Size Chart"
+#~ msgstr "Woo Advanced Product Size Chart"
+
+#~ msgid ""
+#~ "Add product size charts with default template or custom size chart to any "
+#~ "of your WooCommerce products."
+#~ msgstr ""
+#~ "Ajoutez des graphiques de taille de produit avec un modèle par défaut ou "
+#~ "un tableau de taille personnalisé à l’un de vos produits WooCommerce."
+
+#~ msgid "WooCommerce Product Tabs"
+#~ msgstr "Onglets de produits WooCommerce"
+
+#~ msgid ""
+#~ "Helps you add your own custom tabs to the product page in WooCommerce."
+#~ msgstr ""
+#~ "Vous aide à ajouter vos propres onglets personnalisés à la page du "
+#~ "produit dans WooCommerce."
+
+#~ msgid "Variation Swatches for WooCommerce"
+#~ msgstr "Nuances de variation pour WooCommerce"
+
+#~ msgid ""
+#~ "A much nicer way to display variations of variable products. This plugin "
+#~ "will help you select a style for each attribute as a color, image or "
+#~ "label."
+#~ msgstr ""
+#~ "Une façon beaucoup plus agréable d’afficher des variations de produits "
+#~ "variables. Ce plugin vous aidera à sélectionner un style pour chaque "
+#~ "attribut comme couleur, image ou étiquette."
+
+#~ msgid "Weglot"
+#~ msgstr "Weglot"
+
+#~ msgid ""
+#~ "The best and easiest translation solution to translate your Shoptimizer "
+#~ "store and go multilingual. You can be setup in minutes. Need more "
+#~ "languages?"
+#~ msgstr ""
+#~ "La meilleure et la plus simple solution de traduction pour traduire votre "
+#~ "magasin Éthique Privée et aller multilingue. Vous pouvez être configuré "
+#~ "en quelques minutes. Besoin de plus de langues?"
+
+#~ msgid "See the premium version"
+#~ msgstr "Voir la version premium"
+
+#~ msgid "WPForms"
+#~ msgstr "WPForms"
+
+#~ msgid ""
+#~ "WPForms allows you to create contact forms, and any other kind of form on "
+#~ "your site in minutes."
+#~ msgstr ""
+#~ "WPForms vous permet de créer des formulaires de contact, et tout autre "
+#~ "type de formulaire sur votre site en quelques minutes."
+
+#~ msgid "YITH WooCommerce Waiting List"
+#~ msgstr "Liste d’attente YITH WooCommerce"
+
+#~ msgid ""
+#~ "Allow users to request an email notification when an out-of-stock product "
+#~ "comes back into stock."
+#~ msgstr ""
+#~ "Permettre aux utilisateurs de demander une notification par e-mail "
+#~ "lorsqu’un produit en rupture de stock est remis en stock."
+
+#~ msgid "YITH Wishlist"
+#~ msgstr "YITH Liste de Souhaits"
+
+#~ msgid "Allow users to add items to a wishlist page."
+#~ msgstr ""
+#~ "Permettre aux utilisateurs d’ajouter des éléments à une page de liste de "
+#~ "souhaits."
+
+#~ msgid "Edit"
+#~ msgstr "Modifier"
+
+#~ msgid "Primary Navigation"
+#~ msgstr "Navigation principale"
+
+#~ msgid "Skip to navigation"
+#~ msgstr "Aller à la navigation"
+
+#~ msgid "Skip to content"
+#~ msgstr "Aller au contenu"
+
+#~ msgid "Pages:"
+#~ msgstr "Pages :"
+
+#~ msgid "Continue reading %s"
+#~ msgstr "Continuer la lecture de %s"
+
+#~ msgid ", "
+#~ msgstr ", "
+
+#~ msgid "Posted in:"
+#~ msgstr "Publié dans :"
+
+#~ msgid "Tagged:"
+#~ msgstr "Tagué:"
+
+#~ msgid "Below Category Content"
+#~ msgstr "Texte dessous catégorie de produits"
+
+#~ msgid "Category information which appears below the product list"
+#~ msgstr ""
+#~ "Informations qui apparaissent en dessous d'une liste des produits sur une "
+#~ "page de catégorie"
+
+#~ msgid "View your shopping cart"
+#~ msgstr "Voir votre panier"
+
+#~ msgid "Out of stock"
+#~ msgstr "Epuisé"
+
+#~ msgid "<span class=\"sale-item product-label\">-%s</span>"
+#~ msgstr "<span class=\"sale-item product-label\">-%s</span>"
+
+#~ msgid ""
+#~ "<div class=\"shoptimizer-inventory\"><span class=\"title\">Only %s items "
+#~ "left in stock!</span><div class=\"progress-bar\"><span></span></div></div>"
+#~ msgstr ""
+#~ "<div class=\"shoptimizer-inventory\"><span class=\"title\">Seulement %s "
+#~ "produits en stock !</span><div class=\"progress-bar\"><span></span></"
+#~ "div></div>"
+
+#~ msgid "Checkout"
+#~ msgstr "Check-out"
+
+#~ msgid "View Cart"
+#~ msgstr "Voir Panier"
+
+#~ msgid "Select options"
+#~ msgstr "Choix des options"
+
+#~ msgid "Not enough arguments following: %s"
+#~ msgstr "Pas assez d'arguments suivants: %s"
+
+#~ msgid "Invalid JSON config file: %s"
+#~ msgstr "Fichier de config JSON invalide : %s"
+
+#~ msgid "Commands:"
+#~ msgstr "Commandes :"
+
+#~ msgid "boolean"
+#~ msgstr "boolean"
+
+#~ msgid "string"
+#~ msgstr "chaîne"
+
+#~ msgid "array"
+#~ msgstr "tableau"
+
+#~ msgid "required"
+#~ msgstr "obligatoire"
+
+#~ msgid "choices:"
+#~ msgstr "choix :"
+
+#~ msgid "Examples:"
+#~ msgstr "Exemples :"
+
+#~ msgid "generated-value"
+#~ msgstr "valeur générée"
+
+#~ msgid "default:"
+#~ msgstr "par défaut:"
+
+#~ msgid "Not enough non-option arguments: got %s, need at least %s"
+#~ msgstr ""
+#~ "Pas assez des arguments sans option: obtenu %s, besoin d'au moins %s"
+
+#~ msgid "Too many non-option arguments: got %s, maximum of %s"
+#~ msgstr "Trop d'arguments sans option: obtenu %s, maximum de %s"
+
+#~ msgid "Invalid values:"
+#~ msgstr "Valeurs invalides :"
+
+#~ msgid "Argument: %s, Given: %s, Choices: %s"
+#~ msgstr "Argument: %s, Donné: %s, Choix: %s"
+
+#~ msgid "Argument check failed: %s"
+#~ msgstr "Vérification d'argument a échoué: %s"
+
+#~ msgid "Implications failed:"
+#~ msgstr "Les implications ont échoué :"
+
+#~ msgid "."
+#~ msgstr "."
+
+#~ msgid "aliases:"
+#~ msgstr "alias :"
+
+#~ msgid "Arguments %s and %s are mutually exclusive"
+#~ msgstr "Les arguments %s et %s sont mutuellement exclusifs"
+
+#~ msgid "Did you mean %s?"
+#~ msgstr "Vous vouliez dire %s ?"
+
+#~ msgctxt "comments title"
+#~ msgid "One comment"
+#~ msgid_plural "%1$s comments"
+#~ msgstr[0] "Un commentaire"
+#~ msgstr[1] "%1$s commentaires"
+
+#~ msgid "This theme requires the following plugin: %1$s."
+#~ msgid_plural "This theme requires the following plugins: %1$s."
+#~ msgstr[0] "Ce thème nécessite l’extension suivante : %1$s."
+#~ msgstr[1] "Ce thème nécessite les extensions suivantes : %1$s."
+
+#~ msgid "This theme recommends the following plugin: %1$s."
+#~ msgid_plural "This theme recommends the following plugins: %1$s."
+#~ msgstr[0] "Ce thème recommande l’extension suivante : %1$s."
+#~ msgstr[1] "Ce thème recommande les extensions suivantes : %1$s."
+
+#~ msgid ""
+#~ "Sorry, but you do not have the correct permissions to install the %s "
+#~ "plugin. Contact the administrator of this site for help on getting the "
+#~ "plugin installed."
+#~ msgid_plural ""
+#~ "Sorry, but you do not have the correct permissions to install the %s "
+#~ "plugins. Contact the administrator of this site for help on getting the "
+#~ "plugins installed."
+#~ msgstr[0] ""
+#~ "Désolé, mais vous n’avez pas les autorisations adéquates pour installer "
+#~ "l'extension %s. Contactez l’administrateur de ce site pour obtenir de "
+#~ "l’aide."
+#~ msgstr[1] ""
+#~ "Désolé, mais vous n’avez pas les autorisations adéquates pour installer "
+#~ "les extensions %s. Contactez l’administrateur de ce site pour obtenir de "
+#~ "l’aide."
+
+#~ msgid "The following required plugin is currently inactive: %1$s."
+#~ msgid_plural "The following required plugins are currently inactive: %1$s."
+#~ msgstr[0] "L’extension requise suivante est actuellement inactive : %1$s."
+#~ msgstr[1] ""
+#~ "Les extensions requises suivantes sont actuellement inactives : %1$s."
+
+#~ msgid "The following recommended plugin is currently inactive: %1$s."
+#~ msgid_plural ""
+#~ "The following recommended plugins are currently inactive: %1$s."
+#~ msgstr[0] ""
+#~ "L’extension recommandée suivante est actuellement inactive :%1$s."
+#~ msgstr[1] ""
+#~ "Les extensions recommandées suivantes sont actuellement inactives :%1$s."
+
+#~ msgid ""
+#~ "Sorry, but you do not have the correct permissions to activate the %s "
+#~ "plugin. Contact the administrator of this site for help on getting the "
+#~ "plugin activated."
+#~ msgid_plural ""
+#~ "Sorry, but you do not have the correct permissions to activate the %s "
+#~ "plugins. Contact the administrator of this site for help on getting the "
+#~ "plugins activated."
+#~ msgstr[0] ""
+#~ "Désolé, mais vous n’avez pas les autorisations adéquates pour installer "
+#~ "l'extension %s. Contactez l’administrateur de ce site pour obtenir de "
+#~ "l’aide."
+#~ msgstr[1] ""
+#~ "Désolé, mais vous n’avez pas les autorisations adéquates pour installer "
+#~ "les extensions %s. Contactez l’administrateur de ce site pour obtenir de "
+#~ "l’aide."
+
+#~ msgid ""
+#~ "The following plugin needs to be updated to its latest version to ensure "
+#~ "maximum compatibility with this theme: %1$s."
+#~ msgid_plural ""
+#~ "The following plugins need to be updated to their latest version to "
+#~ "ensure maximum compatibility with this theme: %1$s."
+#~ msgstr[0] ""
+#~ "L’extensions suivante doit être mise à jour vers sa dernière version afin "
+#~ "d’assurer une compatibilité maximale avec ce thème : %1$s."
+#~ msgstr[1] ""
+#~ "Les extensions suivantes doivent être mises à jour vers leur dernière "
+#~ "version afin d’assurer une compatibilité maximale avec ce thème : %1$s."
+
+#~ msgid ""
+#~ "Sorry, but you do not have the correct permissions to update the %s "
+#~ "plugin. Contact the administrator of this site for help on getting the "
+#~ "plugin updated."
+#~ msgid_plural ""
+#~ "Sorry, but you do not have the correct permissions to update the %s "
+#~ "plugins. Contact the administrator of this site for help on getting the "
+#~ "plugins updated."
+#~ msgstr[0] ""
+#~ "Désolé, mais vous n’avez pas les autorisations adéquates pour installer "
+#~ "l'extension %s. Contactez l’administrateur de ce site pour obtenir de "
+#~ "l’aide."
+#~ msgstr[1] ""
+#~ "Désolé, mais vous n’avez pas les autorisations adéquates pour installer "
+#~ "les extensions %s. Contactez l’administrateur de ce site pour obtenir de "
+#~ "l’aide."
+
+#~ msgid "Begin installing plugin"
+#~ msgid_plural "Begin installing plugins"
+#~ msgstr[0] "Début d'installation d'extension"
+#~ msgstr[1] "Début d'installation des extensions"
+
+#~ msgid "Activate installed plugin"
+#~ msgid_plural "Activate installed plugins"
+#~ msgstr[0] "Activer le plugin installé"
+#~ msgstr[1] "Activer les plugins installés"
+
+#~ msgid "There is an update available for: %1$s."
+#~ msgid_plural "There are updates available for the following plugins: %1$s."
+#~ msgstr[0] "Une mise à jour est disponible pour: %1$s."
+#~ msgstr[1] "Des mises à jour sont disponibles pour : %1$s."
+
+#~ msgid "Begin updating plugin"
+#~ msgid_plural "Begin updating plugins"
+#~ msgstr[0] "Début de mise à jour d'extension"
+#~ msgstr[1] "Début de mise à jour des extensions"
+
+#~ msgid "Begin activating plugin"
+#~ msgid_plural "Begin activating plugins"
+#~ msgstr[0] "Début d'activation d'extension"
+#~ msgstr[1] "Début d'activation des extensions"
+
+#~ msgctxt "plugins"
+#~ msgid "All <span class=\"count\">(%s)</span>"
+#~ msgid_plural "All <span class=\"count\">(%s)</span>"
+#~ msgstr[0] "﻿Tout <span>%s</span>"
+#~ msgstr[1] "﻿Tout <span>%s</span>"
+
+#~ msgid "To Install <span class=\"count\">(%s)</span>"
+#~ msgid_plural "To Install <span class=\"count\">(%s)</span>"
+#~ msgstr[0] "À installer <span class=\"count\">(%s)</span>"
+#~ msgstr[1] "À installer <span class=\"count\">(%s)</span>"
+
+#~ msgid "Update Available <span class=\"count\">(%s)</span>"
+#~ msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+#~ msgstr[0] "Mise à jour disponible <span class=\"count\">(%s)</span>"
+#~ msgstr[1] "Mise à jour disponible <span class=\"count\">(%s)</span>"
+
+#~ msgid "To Activate <span class=\"count\">(%s)</span>"
+#~ msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+#~ msgstr[0] "À activer <span class=\"count\">(%s)</span>"
+#~ msgstr[1] "À activer <span class=\"count\">(%s)</span>"
+
+#~ msgctxt "as in: \"version nr unknown\""
+#~ msgid "unknown"
+#~ msgstr "inconnu"
+
+#~ msgid "Loco Translate"
+#~ msgstr "Loco Translate"
+
+#~ msgid ""
+#~ "Loco Translate provides in-browser editing of WordPress translation "
+#~ "files. It is the easiest way to change your store language to something "
+#~ "else."
+#~ msgstr ""
+#~ "Loco Translate fournit l’édition dans le navigateur des fichiers de "
+#~ "traduction WordPress. C’est le moyen le plus simple de changer votre "
+#~ "langue de magasin pour autre chose."
+
+#~ msgid "Real-Time Find and Replace"
+#~ msgstr "Trouver et remplacer en temps réel"
+
+#~ msgid ""
+#~ "This plugin allows you to dynamically replace text with alternative copy "
+#~ "of your choosing before a page is delivered to a user’s browser."
+#~ msgstr ""
+#~ "Ce plugin vous permet de remplacer dynamiquement le texte par une autre "
+#~ "copie de votre choix avant qu’une page ne soit livrée au navigateur d’un "
+#~ "utilisateur."
+
+#~ msgctxt "Next post"
+#~ msgid "Next"
+#~ msgstr "Suiv."
+
+#~ msgctxt "Previous post"
+#~ msgid "Previous"
+#~ msgstr "Précédent"
+
+#~ msgctxt "post date"
+#~ msgid "%s"
+#~ msgstr "%s"
+
+#~ msgid "%d"
+#~ msgid_plural "%d"
+#~ msgstr[0] "%d"
+#~ msgstr[1] "%d"
+
+#~ msgid "Shoptimizer"
+#~ msgstr "Éthique Privée"
+
+#~ msgid "https://www.commercegurus.com/wordpress-themes/shoptimizer"
+#~ msgstr "https://www.commercegurus.com/wordpress-themes/shoptimizer"
+
+#~ msgid ""
+#~ "Shoptimizer is the perfect theme for your next WooCommerce project "
+#~ "designed around speed and conversions."
+#~ msgstr ""
+#~ "Éthique Privée est le thème idéal pour votre prochain projet WooCommerce "
+#~ "conçu autour de la vitesse et des conversions."
+
+#~ msgid "CommerceGurus"
+#~ msgstr "CommerceGurus"
+
+#~ msgid "Full width contained"
+#~ msgstr "Pleine largeur avec conteneur"
+
+#~ msgid "Canvas"
+#~ msgstr "Canvas"
+
+#~ msgid "WooCommerce Archives"
+#~ msgstr "Archives de la boutique"
+
+#~ msgid "Full width (no heading)"
+#~ msgstr "Pleine largeur (pas d’entête)"

@@ -1,0 +1,45 @@
+.product-details-wrapper, 
+.single-product .woocommerce-Tabs-panel, 
+.single-product .archive-header .woocommerce-breadcrumb, 
+.single-cartflows_step .archive-header .woocommerce-breadcrumb, 
+.related.products, 
+.upsells.products {
+	max-width: 100% !important;
+}
+
+.archive .woocommerce-breadcrumb {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.product-details-wrapper, 
+.related.products, 
+.single-product .woocommerce-Tabs-panel, 
+.upsells.products {
+	padding-right: 60px;
+	padding-left: 60px;
+
+	@include md() {
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+}
+
+.site-content .woocommerce-breadcrumb {
+	font-size: 15px;
+	color: $primary-text-color;
+	min-height: 55px;
+	position: relative;
+	z-index: 1;
+
+	@include md() {
+		font-size: 12px;
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	.breadcrumb-separator, a {
+		color: #c0c0c0;
+		opacity: 1;
+	}
+}

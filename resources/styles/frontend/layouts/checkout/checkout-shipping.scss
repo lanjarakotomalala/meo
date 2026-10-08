@@ -1,0 +1,31 @@
+form.checkout.woocommerce-checkout {
+  .shipping_method_wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  #checkout-op-steps .step[data-step="shipping"]{
+    .shipping-methods-wrapper {
+      display: inline-block;
+      > *{
+        margin-top: 1rem;
+
+        li {
+          margin-bottom: .3rem;
+        }
+      }
+    }
+  }
+}
+
+.cart_totals .shop_table tr.shipping td span.woocommerce-Price-amount, ul#shipping_method .shipping_method_wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+
+.cart_totals .shop_table tr.shipping td span.woocommerce-Price-amount, ul#shipping_method li span.amount {
+  float: none;
+}

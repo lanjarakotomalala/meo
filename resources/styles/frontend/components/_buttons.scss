@@ -1,0 +1,140 @@
+.wp-block-button,  {
+	&__link {
+		border-radius: 4px;
+		font-size: 18px;
+		font-weight: 600;
+		padding: 8px 22px;
+		background-color: var(--ctas-color);
+		transition: all 0.4s;
+		line-height: 1.0;
+
+		&:hover, &:focus {
+      transform: scale(1.1);
+      background-color: var(--ctas-color);
+      color: white;
+		}
+	}
+
+	&.is-style-outline > .wp-block-button__link:not(.has-text-color),
+	.wp-block-button__link.is-style-outline:not(.has-text-color) {
+		border: 2px solid $primary-bg-color;
+		background-color: transparent;
+		color: $primary-bg-color;
+		transition: all 0.4s;
+    padding: 4px 6px;
+    font-size: 14px;
+
+    @include rwd(768px, min){
+      padding: 0.667em 1.333em;
+      font-size: 18px;
+    }
+
+		&:hover, &:focus {
+      border-color: var(--ctas-color);
+			background-color: var(--ctas-color);
+			color: white;
+		}
+	}
+}
+
+.button {
+	border-radius: 4px !important;
+	font-size: 18px;
+	font-weight: 600;
+	padding: 8px 22px;
+	background-color: var(--secondary-ctas-color);
+	color: $primary-bg-color;
+	transition: all 0.4s;
+	line-height: 1.0;
+	text-decoration: none;
+
+	&:hover, &:focus {
+		background-color: $primary-bg-color;
+		color: var(--secondary-ctas-color);
+	}
+
+	&--primary {
+		border: 2px solid var(--secondary-ctas-color);
+		padding: 6px 22px;
+
+		&:hover, &:focus {
+			background-color: var(--ctas-color) !important;
+			border: 2px solid var(--ctas-color);
+			color: $primary-bg-color;
+		}
+	}
+
+	&--secondary {
+		background-color: $primary-bg-color !important;
+		border: 2px solid var(--secondary-ctas-color);
+		color: var(--secondary-ctas-color) !important;
+		padding: 6px 22px;
+
+		&:hover, &:focus {
+			background-color: var(--ctas-color) !important;
+			border: 2px solid var(--ctas-color);
+			color: $primary-bg-color !important;
+		}
+	}
+}
+
+.woocommerce-account .my_account_orders .button,
+#main .addresses header.title a,
+.woocommerce-account .edit-account .button,
+body.woocommerce-account .entry-content .woocommerce-Message .button {
+	@extend .button;
+	@extend .button--primary;
+}
+
+.ajax_add_to_cart.add_to_cart_button.loading,
+.single-product div.product form.cart .button.loading {
+	background-color: var(--secondary-ctas-color) !important;
+}
+
+.wpcf__next-step-button-link {
+	margin-top: 1.0em !important;
+	border: 0 !important;
+	border-radius: 4px !important;
+	font-size: 18px !important;
+	font-weight: 600 !important;
+	padding: 8px 22px !important;
+	background-color: var(--ctas-color) !important;
+	color: $primary-bg-color !important;
+	transition: all 0.4s !important;
+	line-height: 1.0 !important;
+
+	.wpcf__next-step-button-icon {
+		display: none;
+	}
+
+	.wpcf__next-step-button-title-wrap {
+		font-size: inherit !important;
+		font-weight: inherit !important;
+		color: inherit !important;
+	}
+
+	&:hover, &:focus {
+		background-color: var(--secondary-ctas-color) !important;
+	}
+}
+
+
+.cf-block-c537c881 .wcf-embed-checkout-form .woocommerce #payment input[type="radio"]:checked::before,
+.wcf-embed-checkout-form .woocommerce #order_review button,
+.wcf-embed-checkout-form .woocommerce form.woocommerce-form-login .form-row button,
+.wcf-embed-checkout-form .woocommerce #order_review button.wcf-btn-small,
+.wcf-embed-checkout-form .woocommerce-checkout form.woocommerce-form-login .button,
+.wcf-embed-checkout-form .woocommerce-checkout form.checkout_coupon .button,
+.wcf-embed-checkout-form .woocommerce-checkout form.login .button:hover,
+.wcf-embed-checkout-form .woocommerce-checkout form.checkout_coupon .button:hover,
+.wcf-embed-checkout-form .woocommerce #payment #place_order:hover,
+.wcf-embed-checkout-form .woocommerce #order_review button.wcf-btn-small:hover,
+.wcf-embed-checkout-form-two-step .wcf-embed-checkout-form-steps .step-one.wcf-current::before,
+.wcf-embed-checkout-form-two-step .wcf-embed-checkout-form-steps .step-two.wcf-current::before,
+.wcf-embed-checkout-form-two-step .wcf-embed-checkout-form-steps .steps.wcf-current::before,
+.wcf-embed-checkout-form-two-step .wcf-embed-checkout-form-note,
+body .wcf-pre-checkout-offer-wrapper .wcf-nav-bar-step.active .wcf-progress-nav-step,
+body .wcf-pre-checkout-offer-wrapper .wcf-nav-bar-step.active .wcf-nav-bar-step-line::before,
+body .wcf-pre-checkout-offer-wrapper .wcf-nav-bar-step.active .wcf-nav-bar-step-line::after {
+    background-color: var(--secondary-ctas-color) !important;
+}

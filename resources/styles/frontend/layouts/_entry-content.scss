@@ -1,0 +1,79 @@
+body {
+	.entry-content {
+		  h2:not(.woocommerce-loop-product__title), .acf_block_titre_seo, .preview_acf_title_seo {
+			font-size: 16px;
+			font-weight: normal;
+			margin-bottom: 5px;
+
+			@include md() {
+				font-size: 15px;
+			}
+		}
+
+    .acf_block_titre_seo{
+      display: block;
+      &.text-center{
+        text-align: center;
+      }
+      &.text-left{
+        text-align: left;
+      }
+      &.text-right{
+        text-align: right;
+      }
+    }
+
+
+		h1, .acf_block_titre_seo.h1 {
+			font-family: $title-font-family;
+			font-size: 20px;
+			font-weight: bold;
+			color: $primary-bg-color;
+
+			@include md() {
+				font-size: 15px;
+			}
+
+			& + .wp-block-columns,
+			& + .wp-block-image {
+				margin-top: 2rem !important;
+			}
+		}
+
+		@include md() {
+			font-size: 14px;
+		}
+
+		.wp-block-cover {
+			border-radius: 3px;
+			overflow: hidden;
+      .acf_block_titre_seo{
+        text-align: center;
+      }
+		}
+	}
+
+	.wp-block-group.has-background {
+		margin-bottom: 70px !important;
+
+		@include md() {
+			margin-bottom: 40px !important;
+		}
+
+		.wp-block-group__inner-container {
+			.wp-block-columns {
+				@include md() {
+					margin-top: 0;
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+
+	.wp-block-columns {
+		.wp-block-cover {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+	}
+}

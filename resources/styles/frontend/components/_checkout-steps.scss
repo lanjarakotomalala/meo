@@ -1,0 +1,132 @@
+.checkout-steps {
+	color: #7c7c7c;
+	font-size: 18px;
+	margin: auto auto 35px auto;
+	width: 80%;
+
+	@include md() {
+		font-size: 13px;
+		line-height: 1.2;
+		margin: auto auto 0 auto;
+		width: 100%;
+	}
+
+	&__list {
+		counter-reset: step;
+		display: flex;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		z-index: 0;
+
+		&:after {
+			background: #d6d6d6;
+			border-radius: 3px;
+			content: '';
+			display: block;
+			height: 6px;
+			width: 100%;
+			position: absolute;
+			top: calc( 13px + 39px / 2);
+			left: 0;
+			transform: translate3d(0, -50%, 0);
+			transition: all 0.4s;
+			z-index: -1;
+		}
+	}
+
+	&__item {
+		counter-increment: step;
+		flex: 1;
+		text-align: center;
+		padding-top: calc(13px + 39px);
+		position: relative;
+		z-index: 0;
+
+		&:before {
+			background: #7c7c7c;
+			border-radius: 50%;
+			border: 13px solid $primary-bg-color;
+			color: $primary-bg-color;
+			content: counter(step);
+			display: block;
+			font-size: 23px;
+			font-weight: bold;
+			line-height: 39px;
+			height: 39px;
+			width: 39px;
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translate3d(-50%, 0, 0);
+			transition: all 0.4s;
+			z-index: -1;
+		}
+
+		&:after {
+			background: transparent;
+			content: '';
+			display: block;
+			height: 6px;
+			width: 50%;
+			position: absolute;
+			top: calc( 13px + 39px / 2);
+			left: 0;
+			transform: translate3d(0, -50%, 0);
+			transition: all 0.4s;
+			z-index: -2;
+		}
+
+		&:first-child {
+			&:after {
+				background: $primary-color;
+				border-radius: 3px 0 0 3px;
+				left: 0;
+				width: 50%;
+			}
+
+			&.is-previous {
+				&:after {
+					width: 100%;
+				}
+			}
+		}
+
+		&.is-current, &.is-previous {
+			color: $primary-text-color;
+
+			&:before {
+				background: $primary-text-color;
+			}
+
+			&:after {
+				background: $primary-color;
+			}
+		}
+
+		&-content {
+			color: currentColor !important;
+			z-index: 3;
+		}
+
+		&-link {
+			&:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+			}
+		}
+
+		&-label {
+
+		}
+	}
+}
+
+.select2-container.select2-container--default.select2-container--open {
+  z-index: 9999;
+}

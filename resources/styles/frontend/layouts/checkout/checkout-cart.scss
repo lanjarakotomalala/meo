@@ -1,0 +1,156 @@
+.woocommerce-checkout:not(.woocommerce-order-received) #content-cart{
+  max-width: 500px;
+  background-color: #F0F0F0;
+  display: none;
+  padding: 18px 10px;
+
+  @media screen and (min-width: 1024px){
+    display: block;
+    flex-basis: 60%;
+  }
+
+  .order-item-summary{
+    max-height: 22rem;
+    overflow-y: auto;
+    padding: 0 20px;
+
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #FFFFFF;
+      border: 1px solid #D9D9D9;
+      border-radius: 10px;
+    }
+    &::-webkit-scrollbar-track {
+      background-color: #D9D9D9;
+      border-radius: 10px;
+
+    }
+    .cart-item{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      column-gap: 20px;
+      margin-bottom: 40px;
+
+      .thumbnail {
+        flex-shrink: 0;
+
+        img{
+          display: block;
+          width: 88px;
+          height: 88px;
+          object-fit: contain;
+        }
+      }
+
+      .details{
+        flex-grow: 1;
+        padding: .5rem 0;
+
+        div{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 1.5rem;
+
+          .title, .price{
+            font-size: 14px;
+          }
+
+        }
+
+        p{
+          margin-bottom: 0;
+          &.quantity{
+            color: #808080;
+            font-weight: bold;
+          }
+        }
+      }
+
+      &.checkout-bundle-item {
+        margin-bottom: 10px;
+      }
+
+      &.checkout-bundled-item {
+        width: 75%;
+        margin-bottom: 0;
+        margin-left: auto;
+        font-size: 12px;
+
+        .details {
+          padding: 0;
+
+          .title, .price {
+            font-size: 12px;
+          }
+        }
+      }
+
+      &.last-bundled-item {
+        margin-bottom: 40px;
+      }
+    }
+
+    .bundle-include-tag {
+      width: 75%;
+      margin-bottom: 0;
+      margin-left: auto;
+      font-size: 12px;
+      font-weight: bold;
+    }
+  }
+
+  #order_review{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 0 20px;
+
+    .woocommerce-checkout-payment{
+      display: none;
+    }
+
+    .coupon_checkout{
+      margin-top: 36px;
+      padding-bottom: 0;
+
+      input[type="text"]{
+        height: 40px;
+      }
+
+      .button#save_coupon_code{
+        font-weight: bold;
+        background-color: $primary-text-color;
+        padding: 7px;
+        flex-basis: 40%;
+        align-self: center;
+      }
+    }
+
+    .shop_table{
+      margin-bottom: 0;
+      padding-left: 0;
+      padding-right: 0;
+
+      .cart-subtotal{
+        display: inline-flex;
+        justify-content: space-between;
+        border-bottom: thin solid #fff;
+        width: 200%;
+      }
+
+      .cart-shipping {
+        th{
+          padding-top: 20px !important;
+        }
+        p.shipping-total{
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

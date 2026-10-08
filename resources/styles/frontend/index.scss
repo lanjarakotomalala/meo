@@ -1,0 +1,37 @@
+ /* ------------------------------------------------------------ *\
+    Vendor
+\* ------------------------------------------------------------ */
+
+@import './vendor/*.scss';
+
+/* ------------------------------------------------------------ *\
+    Settings
+\* ------------------------------------------------------------ */
+
+@import '~@styles/frontend.config.scss';
+@import '~@styles/shared/tools/_font-face.scss';
+@import '~@styles/shared/tools/_hidden.scss';
+@import '~@styles/shared/tools/_medias-queries.scss';
+@import '~@styles/shared/tools/_resets.scss';
+@import '~@styles/shared/_variables.scss';
+@import '~@styles/shared/_utilities.scss';
+@import '~@styles/shared/_editor.scss';
+@import './_variables.scss';
+@import './_sprite.scss';
+
+/* ------------------------------------------------------------ *\
+    Theme
+\* ------------------------------------------------------------ */
+
+@import '~@styles/editor';
+@import './_generic*.scss';
+@import './components/_*.scss';
+
+/* ------------------------------------------------------------ *\
+    Layouts
+\* ------------------------------------------------------------ */
+
+@import './components/_*.scss';
+@import './layouts/*.scss';
+@import './layouts/checkout/*.scss';
+@import './blocks/*.scss';

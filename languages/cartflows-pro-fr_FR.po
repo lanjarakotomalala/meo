@@ -1,0 +1,3919 @@
+# Copyright (C) 2021 CartFlows Inc
+# This file is distributed under the same license as the CartFlows Pro plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: CartFlows Pro 1.6.6\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/cartflows-pro\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2021-03-02T04:35:23+00:00\n"
+"PO-Revision-Date: 2021-03-12 14:53+0100\n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Domain: cartflows-pro\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: fr_FR\n"
+
+#. Plugin Name of the plugin
+msgid "CartFlows Pro"
+msgstr "CartFlows Pro"
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://cartflows.com/"
+msgstr "https://cartflows.com/"
+
+#. Description of the plugin
+msgid "eCommerce on steroid with Order Bump, One Click Upsells and much more!"
+msgstr ""
+"eCommerce sur les stéroïdes avec Order Bump, One Click Upsells et bien plus "
+"encore!"
+
+#. Author of the plugin
+msgid "CartFlows Inc"
+msgstr "CartFlows Inc"
+
+#: admin-core/ajax/ajax-errors.php:58
+msgid "Sorry, you are not allowed to do this operation."
+msgstr "Désolé, vous n'êtes pas autorisé à effectuer cette opération."
+
+#: admin-core/ajax/ajax-errors.php:59
+msgid "Nonce validation failed"
+msgstr "Échec de la validation du nonce"
+
+#: admin-core/ajax/ajax-errors.php:60
+msgid "Sorry, something went wrong."
+msgstr ""
+"Désolé, un problème est survenu. Contactez-nous pour décrire votre problème."
+
+#: admin-core/ajax/form-fields.php:80 admin-core/ajax/form-fields.php:174
+#: admin-core/ajax/offer-settings.php:79
+msgid "No post data found!"
+msgstr "Aucune donnée de poste trouvée !"
+
+#: admin-core/ajax/form-fields.php:138
+msgid "Custom field prepared."
+msgstr "Préparation du terrain sur mesure."
+
+#: admin-core/ajax/form-fields.php:146
+msgid "Name field is empty!"
+msgstr "Le champ Nom est vide!"
+
+#: admin-core/ajax/offer-settings.php:94
+msgid "Successfully saved data!"
+msgstr "Des données sauvegardées avec succès !"
+
+#: admin-core/inc/global-settings-pro.php:92
+msgid "Enable PayPal Reference Transactions."
+msgstr "Activer les transactions de référence PayPal."
+
+#: admin-core/inc/global-settings-pro.php:96
+msgid "Offer Settings "
+msgstr "Paramètres de l'offre "
+
+#: admin-core/inc/global-settings-pro.php:104
+#: includes/admin/offer-settings.php:33
+msgid "Create a new child order (Recommended)"
+msgstr "Créer une nouvelle ordonnance pour enfant (recommandé)"
+
+#: admin-core/inc/global-settings-pro.php:105
+#: includes/admin/offer-settings.php:34
+msgid ""
+"This option create a new order for all accepted upsell/downsell offers. Main "
+"order will be parent order for them."
+msgstr ""
+"Cette option permet de créer un nouvel ordre pour toutes les offres de vente "
+"à la hausse ou à la baisse acceptées. La commande principale sera une "
+"commande parentale pour ces offres."
+
+#: admin-core/inc/global-settings-pro.php:109
+#: includes/admin/offer-settings.php:37
+msgid "Add to main order"
+msgstr "Ajouter à la commande principale"
+
+#: admin-core/inc/global-settings-pro.php:110
+#: includes/admin/offer-settings.php:38
+msgid ""
+"This option will merge all accepted upsell/downsell offers into main order."
+msgstr ""
+"Cette option permet de fusionner toutes les offres de vente à la hausse ou à "
+"la baisse acceptées dans l'ordre principal."
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:91
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:877
+msgid "Enable Browser Tab Animation"
+msgstr "Activer l'animation des onglets du navigateur"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:97
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:232
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:777
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:883
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Title Text"
+msgstr "Texte du titre"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:100
+msgid ""
+"This title text will appear on the browser tab instead of the default title "
+"while animating."
+msgstr ""
+"Ce texte de titre apparaîtra sur l'onglet du navigateur au lieu du titre par "
+"défaut lors de l'animation."
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:118
+msgid "Apply Coupon"
+msgstr "Appliquer le Code Promo"
+
+#. translators: %s: link
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:140
+msgid ""
+"Activate %1$sCartFlows Pro%2$s license to access Checkout Offer feature."
+msgstr ""
+"Activez la licence %1$sCartFlows Pro%2$s pour accéder à la fonction Offre de "
+"paiement."
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:151
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:641
+msgid "Enable Checkout Offer"
+msgstr "Activer L'Offre Checkout"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:160
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:361
+#: admin-legacy/modules/offer/class-cartflows-pro-base-offer-meta.php:147
+#: admin-legacy/modules/offer/class-cartflows-pro-base-offer-meta.php:304
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:319
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:661
+#: modules/offer/classes/class-cartflows-pro-base-offer-meta-data.php:153
+msgid "Select Product"
+msgstr "Sélectionnez le produit"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:161
+msgid "Select Pre-Checkout Product."
+msgstr "Sélectionnez Le produit pré-checkout."
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:173
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:383
+#: admin-legacy/modules/offer/class-cartflows-pro-base-offer-meta.php:325
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:353
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:679
+#: modules/offer/classes/class-cartflows-pro-base-offer-meta-data.php:168
+msgid "Discount Type"
+msgstr "Type de remise"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:177
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:387
+#: admin-legacy/modules/offer/class-cartflows-pro-base-offer-meta.php:327
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:358
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:684
+#: modules/offer/classes/class-cartflows-pro-base-offer-meta-data.php:173
+msgid "Original"
+msgstr "Original"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:178
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:388
+#: admin-legacy/modules/offer/class-cartflows-pro-base-offer-meta.php:328
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:362
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:688
+#: modules/offer/classes/class-cartflows-pro-base-offer-meta-data.php:177
+msgid "Discount Percentage"
+msgstr "Pourcentage de rémise"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:179
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:389
+#: admin-legacy/modules/offer/class-cartflows-pro-base-offer-meta.php:329
+#: admin-legacy/modules/offer/class-cartflows-pro-base-offer-meta.php:375
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:366
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:692
+#: modules/offer/classes/class-cartflows-pro-base-offer-meta-data.php:181
+#: modules/offer/classes/class-cartflows-pro-base-offer-meta-data.php:226
+msgid "Discount Price"
+msgstr "Prix Promo"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:189
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:399
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:386
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:708
+#: modules/offer/classes/class-cartflows-pro-base-offer-meta-data.php:187
+msgid "Discount Value"
+msgstr "Valeur de la remise"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:198
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:418
+#: admin-legacy/modules/offer/class-cartflows-pro-base-offer-meta.php:361
+#: modules/offer/classes/class-cartflows-pro-base-offer-meta-data.php:213
+msgid "Select product and save once to see prices"
+msgstr "Sélectionnez le produit et sauvegarder une fois pour voir les prix"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:204
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:424
+#: admin-legacy/modules/offer/class-cartflows-pro-base-offer-meta.php:367
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:428
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:728
+#: modules/offer/classes/class-cartflows-pro-base-offer-meta-data.php:218
+msgid "Original Price"
+msgstr "Prix d’origine"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:212
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:432
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:446
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:745
+msgid "Sell Price"
+msgstr "Prix de vente"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:237
+#: modules/checkout/classes/class-cartflows-pre-checkout-offer-product.php:607
+#: modules/checkout/classes/class-cartflows-pro-checkout-default-meta.php:130
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:780
+msgid "{first_name}, Wait! Your Order Is Almost Complete..."
+msgstr "{first_name}, Attendez! Votre commande est presque terminée..."
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:246
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:794
+msgid "Sub-title Text"
+msgstr "Sous-tire"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:257
+#: admin-legacy/modules/offer/class-cartflows-pro-base-offer-meta.php:262
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:809
+#: modules/offer/classes/class-cartflows-pro-base-offer-meta-data.php:345
+msgid "Product Title"
+msgstr "﻿Titre du produit"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:259
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:811
+msgid "Enter to override default product title."
+msgstr "Entrez pour remplacer le titre du produit par défaut."
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:268
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:542
+#: admin-legacy/modules/offer/class-cartflows-pro-base-offer-meta.php:269
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:556
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:825
+#: modules/offer/classes/class-cartflows-pro-base-offer-meta-data.php:351
+msgid "Product Description"
+msgstr "Description du produit"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:272
+#: modules/checkout/classes/class-cartflows-pre-checkout-offer-product.php:645
+#: modules/checkout/classes/class-cartflows-pro-checkout-default-meta.php:126
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:828
+msgid ""
+"Write a few words about this awesome product and tell shoppers why they must "
+"get it. You may highlight this as \"one time offer\" and make it "
+"irresistible."
+msgstr ""
+"Écrivez quelques mots sur ce produit génial et dites aux acheteurs pourquoi "
+"ils doivent l'obtenir. Vous pouvez mettre en évidence cela comme \"offre "
+"unique\" et le rendre irrésistible."
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:280
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:842
+msgid "Order Button Text"
+msgstr "Texte du Bouton de commande"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:285
+#: modules/checkout/classes/class-cartflows-pre-checkout-offer-product.php:612
+#: modules/checkout/classes/class-cartflows-pro-checkout-default-meta.php:142
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:845
+msgid "Yes, Add to My Order!"
+msgstr "Oui, Ajoutez à ma commande !"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:293
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:858
+msgid "Skip Button Text"
+msgstr "Passer le texte de bouton"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:298
+#: modules/checkout/classes/class-cartflows-pre-checkout-offer-product.php:617
+#: modules/checkout/classes/class-cartflows-pro-checkout-default-meta.php:147
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:861
+msgid "No, thanks!"
+msgstr "Non, merci !"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:307
+msgid "Checkout Offer Style"
+msgstr "Style d'offre checkout"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:313
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:589
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:756
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:1014
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:469
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1215
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1319
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:491
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:570
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:885
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-button.php:377
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-quantity.php:220
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Background Color"
+msgstr "Couleur d’arrière-plan"
+
+#. translators: %s: link
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:340
+msgid "Activate %1$sCartFlows Pro%2$s license to access Order Bump feature."
+msgstr ""
+"Activez la licence %1$sCartFlows Pro%2$s pour accéder à la fonction de "
+"déclenchement des commandes."
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:352
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:298
+msgid "Enable Order Bump"
+msgstr "Activer Commande Bump"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:362
+msgid "Select Order Bump Product."
+msgstr "Sélectionnez Bump Commande Product."
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:373
+#: admin-legacy/modules/offer/class-cartflows-pro-base-offer-meta.php:254
+#: admin-legacy/modules/offer/class-cartflows-pro-base-offer-meta.php:313
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:338
+#: modules/offer/classes/class-cartflows-pro-base-offer-meta-data.php:160
+#: modules/offer/classes/class-cartflows-pro-base-offer-meta-data.php:338
+msgid "Product Quantity"
+msgstr "Quantité de produit"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:390
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:370
+msgid "Coupon"
+msgstr "Coupon"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:408
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:175
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:407
+msgid "Select Coupon"
+msgstr "Sélectionnez un code promo"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:443
+#: admin-legacy/modules/offer/class-cartflows-pro-base-offer-meta.php:291
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:464
+#: modules/offer/classes/class-cartflows-pro-base-offer-meta-data.php:370
+msgid "Product Image"
+msgstr "Image du produit"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:448
+msgid "Order Bump Conditional Settings"
+msgstr "Ordonnance de sursis"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:455
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:585
+msgid "Replace First Product"
+msgstr "Remplacer le premier produit"
+
+#. translators: %1$s, %2$s Link to meta
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:460
+msgid ""
+"It will replace the first selected product (from checkout products) with the "
+"order bump product. %1$sLearn More »%2$s"
+msgstr ""
+"Il remplacera le premier produit sélectionné (des produits de la caisse) par "
+"le produit de la commande groupée. En savoir plus\"%2$s"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:469
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:601
+msgid "On Order Bump Purchase - Next Step"
+msgstr "Achat groupé sur commande - Étape suivante"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:471
+#: admin-legacy/modules/offer/class-cartflows-pro-base-offer-meta.php:445
+#: admin-legacy/modules/offer/class-cartflows-pro-base-offer-meta.php:460
+#: modules/offer/classes/class-cartflows-pro-base-offer-meta-data.php:404
+#: modules/offer/classes/class-cartflows-pro-base-offer-meta-data.php:419
+msgid "Upsell &lpar;Woo&rpar;"
+msgstr "Upsell &lpar;Woo&rpar;"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:472
+#: admin-legacy/modules/offer/class-cartflows-pro-base-offer-meta.php:446
+#: admin-legacy/modules/offer/class-cartflows-pro-base-offer-meta.php:461
+#: modules/offer/classes/class-cartflows-pro-base-offer-meta-data.php:405
+#: modules/offer/classes/class-cartflows-pro-base-offer-meta-data.php:420
+msgid "Downsell &lpar;Woo&rpar;"
+msgstr "Downsell &lpar;Woo&rpar;"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:473
+#: admin-legacy/modules/offer/class-cartflows-pro-base-offer-meta.php:447
+#: admin-legacy/modules/offer/class-cartflows-pro-base-offer-meta.php:462
+#: modules/offer/classes/class-cartflows-pro-base-offer-meta-data.php:406
+#: modules/offer/classes/class-cartflows-pro-base-offer-meta-data.php:421
+msgid "Thankyou &lpar;Woo&rpar;"
+msgstr "Thankyou &lpar;Woo&rpar;"
+
+#. translators: %1$s, %2$s Link to meta
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:487
+msgid ""
+"Note: Select the step if you want to redirect to a different step on the "
+"order bump purchase. %1$sLearn More »%2$s"
+msgstr ""
+"Remarque : sélectionnez l'étape si vous souhaitez passer à une autre étape "
+"de la commande d'achat groupé. En savoir plus\"%2$s"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:509
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:493
+msgid "Order Bump Position"
+msgstr "Position de l'order Bump"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:513
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:515
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:499
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:393
+msgid "Before Checkout"
+msgstr "Avant le checkout"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:514
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1845
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:516
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:503
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1030
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:394
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "After Customer Details"
+msgstr "Après Détails Client"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:515
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:507
+msgid "After Order"
+msgstr "Après la Commande"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:516
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:511
+msgid "After Payment"
+msgstr "Après le Paiement"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:524
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:526
+msgid "Checkbox Label"
+msgstr "Étiquette de la case à cocher"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:533
+#: includes/meta-fields/generate-your-product-option-html.php:85
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:541
+msgid "Highlight Text"
+msgstr "Texte en surbrillance"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:549
+msgid "Order Bump Style"
+msgstr "Style de l'Order Bump"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:555
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1164
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Order Bump Skin"
+msgstr "Peau de l'Order bump"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:559
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:990
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1170
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:832
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Style 1"
+msgstr "Style 1"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:560
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:991
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1174
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:833
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Style 2"
+msgstr "Style 2"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:567
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:771
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:1083
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-image/cartflows-pro-bb-offer-product-image.php:109
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1180
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:503
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:592
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:950
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Border Style"
+msgstr "Style de bordure"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:571
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1292
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1304
+#: admin-legacy/modules/optin/class-cartflows-pro-optin-meta.php:356
+#: admin-legacy/modules/optin/class-cartflows-pro-optin-meta.php:368
+#: classes/class-cartflows-pro-meta-fields.php:465
+#: classes/class-cartflows-pro-meta-fields.php:478
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:1087
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:245
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1186
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1492
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1671
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1688
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1837
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1854
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:508
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:597
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:955
+#: modules/elementor/widgets/class-cartflows-pro-el-optin-form-extend.php:99
+#: modules/optin/classes/class-cartflows-pro-optin-meta-data.php:158
+#: modules/optin/classes/class-cartflows-pro-optin-meta-data.php:311
+#: modules/optin/classes/class-cartflows-pro-optin-meta-data.php:328
+#: modules/optin/classes/class-cartflows-pro-optin-meta-data.php:445
+#: modules/optin/classes/class-cartflows-pro-optin-meta-data.php:462
+msgid "Default"
+msgstr "Par défaut"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:572
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:777
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:884
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:1089
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-image/cartflows-pro-bb-offer-product-image.php:115
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-image/cartflows-pro-bb-offer-product-image.php:203
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1190
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:512
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:601
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:959
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Dashed"
+msgstr "Tirets"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:573
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:778
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:885
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:1090
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-image/cartflows-pro-bb-offer-product-image.php:116
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-image/cartflows-pro-bb-offer-product-image.php:204
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1194
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:511
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:600
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:958
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Dotted"
+msgstr "Pointillés"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:574
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1059
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:776
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:883
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:1088
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-image/cartflows-pro-bb-offer-product-image.php:114
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-image/cartflows-pro-bb-offer-product-image.php:202
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:984
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1198
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:509
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:598
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:956
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Solid"
+msgstr "Solide"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:575
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1058
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:775
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:882
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:277
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-image/cartflows-pro-bb-offer-product-image.php:113
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-image/cartflows-pro-bb-offer-product-image.php:201
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:980
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1202
+#: modules/gutenberg/dist/blocks.build.js:1
+#, fuzzy
+msgid "None"
+msgstr "Aucun"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:582
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:820
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:925
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:1126
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-image/cartflows-pro-bb-offer-product-image.php:156
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-image/cartflows-pro-bb-offer-product-image.php:244
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1209
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:535
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:624
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:984
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Border Color"
+msgstr "Couleur de la bordure"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:597
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:1028
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-quantity/cartflows-pro-bb-offer-product-quantity.php:106
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-variation/cartflows-pro-bb-offer-product-variation.php:108
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1221
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:896
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-quantity.php:196
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-variation.php:185
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Label Color"
+msgstr "Couleur de l'étiquette"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:605
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:1042
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1227
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:907
+msgid "Label Background Color"
+msgstr "Couleur d’arrière-plan du libellé"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:612
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:1069
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1234
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:929
+msgid "Description Text Color"
+msgstr "Couleur du texte de description"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:619
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:1055
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1240
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:918
+msgid "Highlight Text Color"
+msgstr "Couleur de surveillance du texte"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:627
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1247
+msgid "Hide Image on Tab and Mobile"
+msgstr "Cacher l'image sur l'onglet et le mobile"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:635
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1254
+msgid "Order Bump Pointing Arrow"
+msgstr "Flèche montrant l'Order Bump"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:641
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1259
+msgid "Enable Arrow "
+msgstr "Activez la flèche "
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:649
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1265
+msgid "Enable Animation "
+msgstr "Activer l’animation "
+
+#. translators: %s: link
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:673
+#: admin-legacy/modules/optin/class-cartflows-pro-optin-meta.php:64
+msgid "Activate %1$sCartFlows Pro%2$s license to access Custom Fields feature."
+msgstr ""
+"Activez la licence %1$sCartFlows Pro%2$s pour accéder à la fonction Champs "
+"personnalisés."
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:687
+msgid "Enable Coupon Field "
+msgstr "Activer le champ de coupons "
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:696
+msgid "Collapsible Coupon Field "
+msgstr "Champ de coupon rabattable "
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:705
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1369
+msgid "Enable Additional Field"
+msgstr "Activer un champ supplémentaire"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:714
+msgid "Collapsible Additional Field "
+msgstr "Champ supplémentaire rabattable "
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:723
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1392
+msgid "Enable Ship To Different Address"
+msgstr "Activer la livraison à une adresse différente"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:731
+#: admin-legacy/modules/optin/class-cartflows-pro-optin-meta.php:75
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1399
+#: modules/optin/classes/class-cartflows-pro-optin-meta-data.php:84
+msgid "Enable Custom Field Editor"
+msgstr "Activer l'éditeur de terrain personnalisé"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:792
+msgid "Billing Checkout Fields"
+msgstr "Champs de caisse de facturation"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:831
+msgid "Shipping Checkout Fields"
+msgstr "Champs de caisse d'expédition"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:940
+#: admin-legacy/modules/optin/class-cartflows-pro-optin-meta.php:211
+#: classes/class-cartflows-pro-meta-fields.php:289
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-helper.php:156
+#: modules/optin/classes/class-cartflows-pro-optin-meta-helper.php:116
+msgid "Remove"
+msgstr "Supprimer"
+
+#. translators: %s: link
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:964
+msgid "Activate %1$sCartFlows Pro%2$s license to access Two Step feature."
+msgstr ""
+"Activez la licence %1$sCartFlows Pro%2$s pour accéder à la fonction Two Step."
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:979
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:450
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:915
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:191
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Enable Checkout Note"
+msgstr "Activer Checkout Note"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:985
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:464
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:919
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:203
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Note Text"
+msgstr "Note Texte"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:993
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:742
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:438
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-link/cartflows-pro-bb-offer-action-link.php:155
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-description/cartflows-pro-bb-offer-product-description.php:88
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-price/cartflows-pro-bb-offer-product-price.php:95
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-title/cartflows-pro-bb-offer-product-title.php:78
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:925
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:480
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:581
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-button.php:364
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-description.php:183
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-price.php:190
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-title.php:190
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Text Color"
+msgstr "Couleur du texte"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1001
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:931
+msgid "Note Box Background Color"
+msgstr "Couleur d'arrière-plan de boîte de note"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1009
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:938
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:216
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Steps"
+msgstr "Étapes"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1015
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:470
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:943
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:225
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Step One Title"
+msgstr "Titre de l'étape 1"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1023
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:476
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:949
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:234
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Step One Sub Title"
+msgstr "Sous-titre de l'étape 1"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1031
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:482
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:955
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:243
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Step Two Title"
+msgstr "Titre de la deuxième étape"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1038
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:488
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:961
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:252
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Step Two Sub Title"
+msgstr "Deuxième étape sous-titre"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1046
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:967
+msgid "Section Width"
+msgstr "Largeur de section"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1054
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:364
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:491
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:973
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:941
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-button.php:395
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-quantity.php:232
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Border"
+msgstr "Bordure"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1094
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:991
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:261
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Offer Button"
+msgstr "Bouton d'offre"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1100
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:494
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:996
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:270
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Offer Button Title"
+msgstr "Titre du bouton Offre"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1108
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:500
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1002
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:280
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Offer Button Sub Title"
+msgstr "Sous-titre du bouton Offre"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1127
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:695
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:181
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:304
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Two Step"
+msgstr "Deux étapes"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1133
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:738
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:380
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:470
+msgid "Product Options"
+msgstr "Options de Produit"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1140
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:983
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:809
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Order Bump"
+msgstr "Order Bump"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1146
+msgid "Checkout Offer"
+msgstr "Offre de la checkout"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1233
+#: admin-legacy/modules/optin/class-cartflows-pro-optin-meta.php:297
+#: classes/class-cartflows-pro-meta-fields.php:531
+msgid "Enable this field"
+msgstr "Activer ce champ"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1244
+#: admin-legacy/modules/optin/class-cartflows-pro-optin-meta.php:308
+#: classes/class-cartflows-pro-meta-fields.php:416
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1642
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1808
+#: modules/optin/classes/class-cartflows-pro-optin-meta-data.php:282
+#: modules/optin/classes/class-cartflows-pro-optin-meta-data.php:416
+msgid "Field Width"
+msgstr "Longueur du champ"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1248
+#: admin-legacy/modules/optin/class-cartflows-pro-optin-meta.php:312
+#: classes/class-cartflows-pro-meta-fields.php:420
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1546
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1648
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1814
+#: modules/elementor/widgets/class-cartflows-pro-el-optin-form-extend.php:100
+#: modules/optin/classes/class-cartflows-pro-optin-meta-data.php:185
+#: modules/optin/classes/class-cartflows-pro-optin-meta-data.php:288
+#: modules/optin/classes/class-cartflows-pro-optin-meta-data.php:422
+msgid "33%"
+msgstr "33%"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1249
+#: admin-legacy/modules/optin/class-cartflows-pro-optin-meta.php:313
+#: classes/class-cartflows-pro-meta-fields.php:421
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1550
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1652
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1818
+#: modules/elementor/widgets/class-cartflows-pro-el-optin-form-extend.php:101
+#: modules/optin/classes/class-cartflows-pro-optin-meta-data.php:189
+#: modules/optin/classes/class-cartflows-pro-optin-meta-data.php:292
+#: modules/optin/classes/class-cartflows-pro-optin-meta-data.php:426
+msgid "50%"
+msgstr "50%"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1250
+#: admin-legacy/modules/optin/class-cartflows-pro-optin-meta.php:314
+#: classes/class-cartflows-pro-meta-fields.php:422
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1554
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1656
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1822
+#: modules/elementor/widgets/class-cartflows-pro-el-optin-form-extend.php:102
+#: modules/optin/classes/class-cartflows-pro-optin-meta-data.php:193
+#: modules/optin/classes/class-cartflows-pro-optin-meta-data.php:296
+#: modules/optin/classes/class-cartflows-pro-optin-meta-data.php:430
+msgid "100%"
+msgstr "100%"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1260
+#: admin-legacy/modules/optin/class-cartflows-pro-optin-meta.php:324
+#: classes/class-cartflows-pro-meta-fields.php:433
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1663
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1829
+#: modules/optin/classes/class-cartflows-pro-optin-meta-data.php:303
+#: modules/optin/classes/class-cartflows-pro-optin-meta-data.php:437
+msgid "Field Label"
+msgstr "Libellé du champ"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1279
+#: admin-legacy/modules/optin/class-cartflows-pro-optin-meta.php:343
+#: classes/class-cartflows-pro-meta-fields.php:451
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1524
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1698
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1864
+#: modules/optin/classes/class-cartflows-pro-optin-meta-data.php:172
+#: modules/optin/classes/class-cartflows-pro-optin-meta-data.php:338
+#: modules/optin/classes/class-cartflows-pro-optin-meta-data.php:472
+msgid "Options"
+msgstr "Options"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1296
+#: admin-legacy/modules/optin/class-cartflows-pro-optin-meta.php:360
+#: classes/class-cartflows-pro-meta-fields.php:469
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1677
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1843
+#: modules/optin/classes/class-cartflows-pro-optin-meta-data.php:317
+#: modules/optin/classes/class-cartflows-pro-optin-meta-data.php:451
+msgid "Checked"
+msgstr "Coché"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1297
+#: admin-legacy/modules/optin/class-cartflows-pro-optin-meta.php:361
+#: classes/class-cartflows-pro-meta-fields.php:470
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1681
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1847
+#: modules/optin/classes/class-cartflows-pro-optin-meta-data.php:321
+#: modules/optin/classes/class-cartflows-pro-optin-meta-data.php:455
+msgid "Un-Checked"
+msgstr "Non vérifié"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1320
+#: admin-legacy/modules/optin/class-cartflows-pro-optin-meta.php:384
+#: classes/class-cartflows-pro-meta-fields.php:495
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1508
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1707
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1873
+#: modules/checkout/templates/quick-view/quick-view-product-image.php:54
+#: modules/optin/classes/class-cartflows-pro-optin-meta-data.php:165
+#: modules/optin/classes/class-cartflows-pro-optin-meta-data.php:347
+#: modules/optin/classes/class-cartflows-pro-optin-meta-data.php:481
+msgid "Placeholder"
+msgstr "Etiquette"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1331
+#: admin-legacy/modules/optin/class-cartflows-pro-optin-meta.php:395
+#: classes/class-cartflows-pro-meta-fields.php:507
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1561
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1715
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1881
+#: modules/optin/classes/class-cartflows-pro-optin-meta-data.php:200
+#: modules/optin/classes/class-cartflows-pro-optin-meta-data.php:355
+#: modules/optin/classes/class-cartflows-pro-optin-meta-data.php:489
+msgid "Required"
+msgstr "Requis"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1342
+#: admin-legacy/modules/optin/class-cartflows-pro-optin-meta.php:406
+#: classes/class-cartflows-pro-meta-fields.php:519
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1568
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1722
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1888
+msgid "Collapsible"
+msgstr "Repliable"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1377
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1446
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1544
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1610
+#: admin-legacy/modules/offer/class-cartflows-pro-base-offer-meta.php:505
+#: admin-legacy/modules/offer/class-cartflows-pro-base-offer-meta.php:540
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1958
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:2027
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:2125
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:2191
+msgid "Product is not selected"
+msgstr "Aucun produit selectionné"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1380
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1449
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1547
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1613
+#: admin-legacy/modules/offer/class-cartflows-pro-base-offer-meta.php:509
+#: admin-legacy/modules/offer/class-cartflows-pro-base-offer-meta.php:544
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1961
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:2030
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:2128
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:2194
+msgid "Product does not exist"
+msgstr "Le produit n'existe pas"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1690
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:2271
+msgid "Coupon will be applied on checkout"
+msgstr "Le coupon sera appliqué à la caisse"
+
+#. translators: %s: link
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1715
+msgid ""
+"Activate %1$sCartFlows Pro%2$s license to access Product Options feature."
+msgstr ""
+"Activez la licence %1$sCartFlows Pro%2$s pour accéder à la fonction Options "
+"du produit."
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1731
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:185
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:191
+msgid "Enable Product Options"
+msgstr "Activer les options produits"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1742
+msgid "Selected Products"
+msgstr "Produits sélectionnés"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1757
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:207
+msgid "Product Options Conditions"
+msgstr "Conditions relatives aux options des produits"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1768
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:212
+msgid "Restrict user to purchase all products"
+msgstr "Limiter l'achat de tous les produits par l'utilisateur"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1769
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:216
+msgid "Let user select one product from all options"
+msgstr "Laissez l'utilisateur sélectionner un produit parmi toutes les options"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1770
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:220
+msgid "Let user select multiple products from all options"
+msgstr ""
+"Laissez l'utilisateur sélectionner plusieurs produits à partir de toutes les "
+"options"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1779
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:236
+msgid "Enable Variations"
+msgstr "Activer les variations"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1789
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:256
+msgid "Show variations inline"
+msgstr "Afficher les variations en ligne"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1790
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:260
+msgid "Show variations in popup"
+msgstr "Afficher les variations dans une popup"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1799
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:280
+msgid "Enable Quantity"
+msgstr "Activer la quantité"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1822
+msgid "Layout options"
+msgstr "Options de mise en page"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1829
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1012
+msgid "Section Title"
+msgstr "Titre de la section"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1833
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:548
+#: modules/checkout/classes/class-cartflows-pro-checkout-default-meta.php:67
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1015
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:431
+msgid "Your Products"
+msgstr "Vos produits"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1840
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1020
+msgid "Section Position"
+msgstr "Position de la section"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1844
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1026
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Before Checkout Section"
+msgstr "Section Avant la caisse"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1846
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:517
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1034
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:395
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Before Order Review"
+msgstr "Avant Avis de Commande"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1853
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1040
+msgid "Skins"
+msgstr "Habillage graphique"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1857
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:532
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1046
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:407
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Classic"
+msgstr "Classique"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1858
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:533
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1050
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:408
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Cards"
+msgstr "Cartes"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1865
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:538
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1056
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:416
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Show Product Images"
+msgstr "Afficher les images des produits"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1873
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:819
+#: modules/offer/classes/class-cartflows-pro-base-offer-meta-data.php:103
+msgid "Design"
+msgstr "Design"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1879
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1064
+msgid "Product Text Color"
+msgstr "Couleur du texte du produit"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1887
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1070
+msgid "Product Background Color"
+msgstr "Couleur de fond de produit"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1895
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:864
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1082
+msgid "Highlight Product Text Color"
+msgstr "Mettre en évidence la couleur du texte du produit"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1903
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:850
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1088
+msgid "Highlight Product Background Color"
+msgstr "Mettre en évidence la couleur de fond du produit"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1911
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1094
+msgid "Highlight Box Border Color"
+msgstr "Couleur de la bordure de la boîte à surligner"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1919
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:953
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1100
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:648
+msgid "Highlight Flag Text Color"
+msgstr "Couleur du texte du drapeau"
+
+#: admin-legacy/modules/checkout/class-cartflows-pro-checkout-meta.php:1927
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:967
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1106
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:659
+msgid "Highlight Flag Background Color"
+msgstr "Couleur de fond du drapeau"
+
+#: admin-legacy/modules/offer/class-cartflows-pro-base-offer-meta.php:81
+msgid "Offer Page Settings"
+msgstr "Paramètres de page d'offre"
+
+#: admin-legacy/modules/offer/class-cartflows-pro-base-offer-meta.php:141
+#: modules/offer/classes/class-cartflows-pro-base-offer-meta-data.php:314
+msgid "Shortcodes"
+msgstr "Shortcodes"
+
+#: admin-legacy/modules/offer/class-cartflows-pro-base-offer-meta.php:153
+msgid "Conditional Redirect "
+msgstr "Redirection conditionnelle "
+
+#: admin-legacy/modules/offer/class-cartflows-pro-base-offer-meta.php:159
+#: admin-legacy/modules/offer/class-cartflows-pro-base-offer-meta.php:476
+#: modules/offer/classes/class-cartflows-pro-base-offer-meta-data.php:433
+#: modules/offer/classes/class-cartflows-pro-base-offer-meta-data.php:438
+msgid "Custom Script"
+msgstr "Script Personnalisé"
+
+#. translators: %s: link
+#: admin-legacy/modules/offer/class-cartflows-pro-base-offer-meta.php:193
+msgid ""
+"Activate %1$sCartFlows Pro%2$s license to access Upsell/Downsell options."
+msgstr ""
+"Activez la licence %1$sCartFlows Pro%2$s pour accéder aux options de vente à "
+"la hausse ou à la baisse."
+
+#: admin-legacy/modules/offer/class-cartflows-pro-base-offer-meta.php:231
+#: modules/offer/classes/class-cartflows-pro-base-offer-meta-data.php:319
+msgid "Accept Offer Link"
+msgstr "Accepter le lien d'offre"
+
+#: admin-legacy/modules/offer/class-cartflows-pro-base-offer-meta.php:239
+#: modules/offer/classes/class-cartflows-pro-base-offer-meta-data.php:325
+msgid "Decline Offer Link"
+msgstr "Lien vers l'offre de déclinaison"
+
+#: admin-legacy/modules/offer/class-cartflows-pro-base-offer-meta.php:246
+msgid "Product Variation"
+msgstr "Variation du produit"
+
+#: admin-legacy/modules/offer/class-cartflows-pro-base-offer-meta.php:249
+#: modules/offer/classes/class-cartflows-pro-base-offer-meta-data.php:333
+msgid ""
+"Add this shortcode to your offer page for variation selection. If product is "
+"variable, it will show variations."
+msgstr ""
+"Ajoutez ce raccourci à votre page d'offre pour la sélection des variantes. "
+"Si le produit est variable, il affichera les variations."
+
+#: admin-legacy/modules/offer/class-cartflows-pro-base-offer-meta.php:257
+#: modules/offer/classes/class-cartflows-pro-base-offer-meta-data.php:340
+msgid "Add this shortcode to your offer page for quantity selection."
+msgstr ""
+"Ajoutez ce raccourci à votre page d'offre pour la sélection de la quantité."
+
+#: admin-legacy/modules/offer/class-cartflows-pro-base-offer-meta.php:276
+#: modules/offer/classes/class-cartflows-pro-base-offer-meta-data.php:357
+msgid "Product Short Description"
+msgstr "Description courte du produit"
+
+#: admin-legacy/modules/offer/class-cartflows-pro-base-offer-meta.php:283
+#: modules/offer/classes/class-cartflows-pro-base-offer-meta-data.php:363
+msgid "Product Price"
+msgstr "Prix du produit"
+
+#: admin-legacy/modules/offer/class-cartflows-pro-base-offer-meta.php:286
+msgid "This shortcode will show the product's single quantity price."
+msgstr "Ce shortcode indiquera le prix de la quantité unique du produit."
+
+#: admin-legacy/modules/offer/class-cartflows-pro-base-offer-meta.php:338
+msgid "Discount value"
+msgstr "Valeur de la remise"
+
+#: admin-legacy/modules/offer/class-cartflows-pro-base-offer-meta.php:349
+#: modules/offer/classes/class-cartflows-pro-base-offer-meta-data.php:204
+msgid "Flat Shipping Rate"
+msgstr "Taux d'expédition forfaitaire"
+
+#: admin-legacy/modules/offer/class-cartflows-pro-base-offer-meta.php:384
+#: modules/offer/classes/class-cartflows-pro-base-offer-meta-data.php:234
+msgid ""
+"Note: If you have selected variable product, lowest price variation will be "
+"shown here."
+msgstr ""
+"Remarque : si vous avez sélectionné un produit variable, la variation de "
+"prix la plus faible sera affichée ici."
+
+#: admin-legacy/modules/offer/class-cartflows-pro-base-offer-meta.php:392
+#: modules/offer/classes/class-cartflows-pro-base-offer-meta-data.php:239
+#, fuzzy
+msgid "Offer Order Settings"
+msgstr "Paramètres de commande d’offre"
+
+#. translators: %1$1s, %2$2s Link to meta
+#: admin-legacy/modules/offer/class-cartflows-pro-base-offer-meta.php:404
+msgid ""
+"Do you want to cancel the main order on the purchae of upsell/downsell offer?"
+"<br><br>Please set the \"Create a new child order\" option in the %1$1sOffer "
+"Global Settings%2$2s to use the cancel primary order option."
+msgstr ""
+"Souhaitez-vous annuler l'ordre principal sur l'achat de l'offre de vente à "
+"la hausse ou à la baisse ?<br><br>Veuillez paramétrer l'option \"Créer une "
+"nouvelle commande enfant\" dans le %1$1sOffrir des paramètres globaux%2$2s "
+"pour utiliser l'option d'annulation de la commande principale."
+
+#: admin-legacy/modules/offer/class-cartflows-pro-base-offer-meta.php:414
+msgid "Cancel Main Order?"
+msgstr "Annuler l'ordre principal ?"
+
+#: admin-legacy/modules/offer/class-cartflows-pro-base-offer-meta.php:417
+#: modules/offer/classes/class-cartflows-pro-base-offer-meta-data.php:263
+#, fuzzy
+msgid ""
+"If this option is enabled, it will cancel the main order on the purchase of "
+"upsell/downsell offer."
+msgstr ""
+"Si cette option est activée, elle annulera la commande principale sur "
+"l’achat de l’offre upsell/downsell."
+
+#. translators: %1$1s, %2$2s Link to meta
+#: admin-legacy/modules/offer/class-cartflows-pro-base-offer-meta.php:426
+msgid ""
+"Note: If \"Cancel Main Order?\" option is enabled then on the purchase of "
+"upsell/downsell offer it will charge the difference of main order total and "
+"this product. %1$1sLearn More »%2$2s"
+msgstr ""
+"Remarque : si l'option \"Annuler la commande principale\" est activée, "
+"l'achat d'une offre de vente à la hausse ou à la baisse entraînera la "
+"facturation de la différence entre le total de la commande principale et ce "
+"produit. En savoir plus\"%2$2s"
+
+#: admin-legacy/modules/offer/class-cartflows-pro-base-offer-meta.php:443
+#: modules/offer/classes/class-cartflows-pro-base-offer-meta-data.php:402
+msgid "Offer - Yes Next Step"
+msgstr "Offre-Prochaine étape"
+
+#: admin-legacy/modules/offer/class-cartflows-pro-base-offer-meta.php:458
+#: modules/offer/classes/class-cartflows-pro-base-offer-meta-data.php:417
+msgid "Offer - No Next Step"
+msgstr "Offre - Non prochaine étape"
+
+#: admin-legacy/modules/offer/class-cartflows-pro-base-offer-meta.php:479
+msgid ""
+"Custom script lets you add your own custom script on front end of this flow "
+"page."
+msgstr ""
+"Le script personnalisé vous permet d'ajouter votre propre script "
+"personnalisé à l'avant de cette page de flux."
+
+#: admin-legacy/modules/optin/class-cartflows-pro-optin-meta.php:117
+msgid "Form Fields"
+msgstr "Champs du formulaire"
+
+#: admin/views/html-license-debug-log.php:46
+#, fuzzy
+msgid "License debug log"
+msgstr "Journal de débogage de licence"
+
+#: admin/views/html-license-debug-log.php:52
+msgid "License Arguments:"
+msgstr "Arguments de licence :"
+
+#: admin/views/html-license-debug-log.php:63
+msgid "License Call:"
+msgstr "Activer la licence:"
+
+#: admin/views/html-license-debug-log.php:70
+msgid "License API Response:"
+msgstr "Licence API Response :"
+
+#: admin/views/html-refund-offer.php:80
+#: includes/meta-fields/generate-your-product-option-html.php:32
+msgid "Product Name"
+msgstr "Nom du produit"
+
+#: admin/views/html-refund-offer.php:81
+msgid "Offer Type"
+msgstr "Type d’Offre"
+
+#: admin/views/html-refund-offer.php:82
+#: modules/checkout/templates/your-product/product-table-titles.php:23
+msgid "Quantity"
+msgstr "Quantité"
+
+#: admin/views/html-refund-offer.php:83
+#: modules/thankyou/template/child-order-details.php:59
+msgid "Total"
+msgstr "Total"
+
+#: admin/views/html-refund-offer.php:84
+msgid "Action"
+msgstr "Action"
+
+#. translators: %1$s: item total, %2$s: tax, %3$s: product total
+#: admin/views/html-refund-offer.php:129
+msgid ""
+"<div class=\"amount_distribution\"><span class=\"\">Item Prices: %1$s</"
+"span><br/><span class=\"\">Tax & Other: %2$s</span><br><span class="
+"\"\">Total: %3$s</span></div>"
+msgstr ""
+"<div class=\"amount_distribution\"><span class=\"\">Prix des articles %1$s</"
+"span><br/><span class=\"\">Taxes et autres %2$s</span><br><span class="
+"\"\">Total %3$s</span></div>"
+
+#: admin/views/html-refund-offer.php:147
+msgid "Refund"
+msgstr "Remboursement"
+
+#: admin/views/html-refund-offer.php:150
+msgid "Refunded"
+msgstr "Remboursé"
+
+#: admin/views/html-refund-offer.php:168
+#, fuzzy
+msgid ""
+"Use WooCommerce's refund feature to refund the main order. You can refund "
+"upsell/downsell offers from this section. Always refund upsell/downsell "
+"offers first & then refund the main order."
+msgstr ""
+"Utilisez la fonction de remboursement woocommerce pour rembourser la "
+"commande principale. Vous pouvez rembourser les offres upsell/downsell de "
+"cette section. Toujours rembourser upsell / downsell offre d’abord, puis "
+"rembourser la commande principale."
+
+#: admin/views/html-refund-offer.php:173
+msgid "Refunds are not available for any offer(s) against this order."
+msgstr ""
+"Aucun remboursement n'est possible pour une ou plusieurs offres de cette "
+"commande."
+
+#: classes/class-cartflows-pro-admin-helper.php:47
+msgid "Upsell ( Woo )"
+msgstr "Upsell (Woo)"
+
+#: classes/class-cartflows-pro-admin-helper.php:48
+#, fuzzy
+msgid "Downsell ( Woo )"
+msgstr "Downsell ( Woo )"
+
+#: classes/class-cartflows-pro-admin-helper.php:49
+msgid "Thankyou ( Woo )"
+msgstr "Merci ( Woo )"
+
+#: classes/class-cartflows-pro-admin.php:214
+msgid "Enable PayPal Reference Transactions"
+msgstr "Activer les transactions de PayPal"
+
+#: classes/class-cartflows-pro-admin.php:256
+msgid "Upsell Offer"
+msgstr "Offre Upsell"
+
+#: classes/class-cartflows-pro-admin.php:258
+msgid "Downsell Offer"
+msgstr "Offre Downsell"
+
+#: classes/class-cartflows-pro-admin.php:321
+#: classes/class-cartflows-pro-admin.php:350
+msgid "YES : "
+msgstr "OUI : "
+
+#: classes/class-cartflows-pro-admin.php:323
+msgid "YES : Step not Found"
+msgstr "OUI : Étape introuvable"
+
+#: classes/class-cartflows-pro-admin.php:330
+#: classes/class-cartflows-pro-admin.php:351
+msgid "No : "
+msgstr "Non : "
+
+#: classes/class-cartflows-pro-admin.php:332
+msgid "No : Step not Found"
+msgstr "Non : Étape non trouvée"
+
+#: classes/class-cartflows-pro-admin.php:352
+msgid "Step not Found"
+msgstr "Étape non trouvable"
+
+#: classes/class-cartflows-pro-flow-frontend.php:63
+msgid "Loading..."
+msgstr "Chargement..."
+
+#: classes/class-cartflows-pro-flow-frontend.php:65
+msgid "Processing Order..."
+msgstr "Traitement de la commande..."
+
+#: classes/class-cartflows-pro-flow-frontend.php:66
+msgid "Please wait while we process your payment..."
+msgstr "S'il vous plaît attendre pendant que nous traitons votre paiement ..."
+
+#: classes/class-cartflows-pro-flow-frontend.php:67
+msgid "Please wait while we redirect you..."
+msgstr "Veuillez patienter pendant que nous vous redirigeons..."
+
+#: classes/class-cartflows-pro-flow-frontend.php:437
+#: modules/offer/classes/class-cartflows-pro-base-offer-markup.php:254
+msgid "Product Added Successfully."
+msgstr "Produit ajouté avec succès."
+
+#: classes/class-cartflows-pro-flow-frontend.php:454
+#: modules/offer/classes/class-cartflows-pro-base-offer-markup.php:274
+msgid "Oooops! Your Payment Failed."
+msgstr "Oooops! Votre paiement a échoué."
+
+#: classes/class-cartflows-pro-frontend.php:387
+msgid "Your session is expired"
+msgstr "Votre session est expirée"
+
+#: classes/class-cartflows-pro-helper.php:33
+msgid "First name"
+msgstr "Prénom"
+
+#: classes/class-cartflows-pro-helper.php:42
+msgid "Last name"
+msgstr "Nom"
+
+#: classes/class-cartflows-pro-helper.php:51
+msgid "Email address"
+msgstr "Adresse email"
+
+#. translators: %1$s Software Title, %2$s Plugin, %3$s Anchor opening tag, %4$s Anchor closing tag, %5$s Software Title.
+#: classes/class-cartflows-pro-licence.php:143
+msgid ""
+"The <strong>%1$s</strong> License Key has not been activated, so the %2$s is "
+"inactive! %3$sClick here%4$s to activate <strong>%5$s</strong>."
+msgstr ""
+"La clé de licence <strong>%1$s</strong> n'a pas été activée, donc le %2$s "
+"est inactif ! %3$sCliquez ici%4$ pour activer <strong>%5$s</strong>."
+
+#: classes/class-cartflows-pro-licence.php:189
+#: classes/class-cartflows-pro-licence.php:242
+msgid "Activate License"
+msgstr "Activer la licence"
+
+#: classes/class-cartflows-pro-licence.php:199
+#: classes/class-cartflows-pro-licence.php:217
+msgid "License Key"
+msgstr "Clé de licence"
+
+#: classes/class-cartflows-pro-licence.php:201
+msgid "Enter your License Key"
+msgstr "Entrez votre clé de licence"
+
+#. translators: Cartflows site URL.
+#: classes/class-cartflows-pro-licence.php:204
+msgid ""
+"If you don't have License key, you can get it from <a target=\"_blank\" href="
+"\"%1$s\">here</a>."
+msgstr ""
+"Si vous n'avez pas de clé de licence, vous pouvez l'obtenir à partir d'une "
+"cible ''blank' href'\"%1$s\".\"</a> ici."
+
+#: classes/class-cartflows-pro-licence.php:209
+msgid "Activate"
+msgstr "Activer"
+
+#: classes/class-cartflows-pro-licence.php:219
+msgid "******************"
+msgstr "*****************"
+
+#: classes/class-cartflows-pro-licence.php:225
+msgid "Deactivate"
+msgstr "Désactiver"
+
+#: classes/class-cartflows-pro-licence.php:242
+#: classes/class-cartflows-pro-licence.php:244
+#: classes/class-cartflows-pro-loader.php:165
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:479
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:763
+#: modules/offer/classes/class-cartflows-pro-base-offer-meta-data.php:117
+msgid "Settings"
+msgstr "Paramètres"
+
+#: classes/class-cartflows-pro-licence.php:244
+msgid "Deactivate License"
+msgstr "Désactiver la licence"
+
+#: classes/class-cartflows-pro-licence.php:299
+#: classes/class-cartflows-pro-licence.php:368
+msgid "Oops! Security nonce is invalid."
+msgstr "Oups ! Le nonce de sécurité n'est pas valable."
+
+#. translators: %1$s, %2$s HTML tags
+#: classes/class-cartflows-pro-licence.php:430
+#, fuzzy
+msgid "For more information, please check this %1$sarticle%2$s."
+msgstr "Pour plus d’informations, veuillez consulter %1$sarticle%2$s."
+
+#: classes/class-cartflows-pro-licence.php:475
+msgid "Provide a license key to process license request!"
+msgstr "Fournir une clé de licence pour traiter la demande de licence!"
+
+#: classes/class-cartflows-pro-licence.php:479
+msgid "Provide a license request!"
+msgstr "Fournir une demande de licence!"
+
+#: classes/class-cartflows-pro-licence.php:485
+msgid "Invalid license request!"
+msgstr "Demande de licence invalide!"
+
+#: classes/class-cartflows-pro-loader.php:166
+msgid "Docs"
+msgstr "Docs"
+
+#. translators: %s: html tags
+#: classes/class-cartflows-pro-loader.php:455
+msgid ""
+"The %1$s CartFlows Pro %2$s plugin requires %1$s CartFlows %2$s plugin to be "
+"activated."
+msgstr ""
+"Le plugin %1$s CartFlows Pro %2$s nécessite %1$s CartFlows %2$s plugin pour "
+"être activé."
+
+#: classes/class-cartflows-pro-loader.php:456
+msgid "Activate CartFlows Now"
+msgstr "Activer CartFlows maintenant"
+
+#. translators: %s: html tags
+#: classes/class-cartflows-pro-loader.php:463
+msgid ""
+"The %1$s CartFlows Pro %2$s plugin requires %1$s CartFlows %2$s plugin to be "
+"installed."
+msgstr ""
+"Le plugin %1$s CartFlows Pro %2$s nécessite %1$s CartFlows %2$s plugin à "
+"installer."
+
+#: classes/class-cartflows-pro-loader.php:464
+msgid "Install CartFlows Now"
+msgstr "Installer CartFlows maintenant"
+
+#. translators: %s: required cartflows version
+#: classes/class-cartflows-pro-loader.php:487
+msgid ""
+"You are using an older version of CartFlows. This version of CartFlows Pro "
+"needs a CartFlows version %s or greater."
+msgstr ""
+"Vous utilisez une ancienne version de CartFlows. Cette version de CartFlows "
+"Pro nécessite une version de CartFlows %s ou supérieure."
+
+#: classes/class-cartflows-pro-loader.php:488
+msgid "Update CartFlows Now"
+msgstr "Mise à jour CartFlows maintenant"
+
+#: classes/class-cartflows-pro-meta-fields.php:207
+msgid "Add New Field"
+msgstr "Ajouter un nouveau champ"
+
+#: classes/class-cartflows-pro-refund.php:56
+#, fuzzy
+msgid "Unexpected error occoured"
+msgstr "Erreur inattendue occoured"
+
+#: classes/class-cartflows-pro-refund.php:81
+msgid "Refund unsuccessful"
+msgstr "Remboursement infructueux"
+
+#: classes/class-cartflows-pro-refund.php:136
+msgid "Refund Unsuccessful"
+msgstr "Remboursement infructueux"
+
+#: classes/class-cartflows-pro-refund.php:144
+#, fuzzy
+msgid "Refund Successful"
+msgstr "Remboursement réussi"
+
+#: classes/class-cartflows-pro-refund.php:185
+msgid "CartFlows Refund Offers"
+msgstr "Offres de remboursement de CartFlows"
+
+#: includes/admin/offer-settings.php:18
+msgid "Offers Global Settings"
+msgstr "Offre des paramètres globaux"
+
+#: includes/admin/offer-settings.php:27
+#, fuzzy
+msgid "Upsell/Downsell Orders"
+msgstr "Commandes Upsell/Downsell"
+
+#: includes/admin/offer-settings.php:45
+msgid "Save Changes"
+msgstr "Sauvegarder les changements"
+
+#: includes/meta-fields/generate-your-product-option-html.php:35
+msgid "It will change the product name on the checkout page."
+msgstr "Il changera le nom du produit sur la page de paiement."
+
+#. translators: %s: link
+#: includes/meta-fields/generate-your-product-option-html.php:42
+#, fuzzy
+msgid ""
+"Use {{product_name}} and {{quantity}} to dynamically fetch respective "
+"product details."
+msgstr ""
+"Utilisez {{product_name}} et {{quantity}} pour récupérer dynamiquement les "
+"détails respectifs du produit."
+
+#: includes/meta-fields/generate-your-product-option-html.php:52
+msgid "Subtext"
+msgstr "Sous-texte"
+
+#: includes/meta-fields/generate-your-product-option-html.php:55
+msgid "It will add the text below the product name on checkout."
+msgstr ""
+"Il ajoutera le texte sous le nom du produit lors du passage à la caisse."
+
+#. translators: %s: link
+#: includes/meta-fields/generate-your-product-option-html.php:62
+msgid ""
+"Use {{quantity}}, {{discount_value}}, {{discount_percent}} to dynamically "
+"fetch respective product details."
+msgstr ""
+"Utilisez {{quantity}}, {{discount_value}}, {{discount_percent}} pour obtenir "
+"dynamiquement les détails des produits respectifs."
+
+#: includes/meta-fields/generate-your-product-option-html.php:72
+msgid "Enable Highlight"
+msgstr "Activer la mise en évidence"
+
+#: includes/meta-fields/generate-your-product-option-html.php:75
+msgid "It will Highlight the product on checkout page with Highlight string."
+msgstr ""
+"Il mettra en évidence le produit sur la page de paiement avec la chaîne de "
+"surlignage."
+
+#: includes/meta-fields/get-your-product-option-field.php:40
+#, fuzzy
+msgid "No products are selected"
+msgstr "Aucun produit n’est sélectionné"
+
+#: modules/ab-test/classes/class-cartflows-pro-ab-test-flow-meta.php:61
+msgid "Stop Spilt Test"
+msgstr "Test \"Stop Spilt"
+
+#: modules/ab-test/classes/class-cartflows-pro-ab-test-flow-meta.php:61
+msgid "Start Spilt Test"
+msgstr "Démarrer le split test"
+
+#: modules/ab-test/classes/class-cartflows-pro-ab-test-flow-meta.php:93
+msgid "Archived Steps"
+msgstr "Étapes archivées"
+
+#: modules/ab-test/classes/class-cartflows-pro-ab-test-flow-meta.php:125
+#: modules/ab-test/classes/class-cartflows-pro-ab-test-flow-meta.php:130
+msgid "Restore"
+msgstr "Restaurer"
+
+#: modules/ab-test/classes/class-cartflows-pro-ab-test-flow-meta.php:139
+#: modules/ab-test/classes/class-cartflows-pro-ab-test-flow-meta.php:141
+msgid "Delete"
+msgstr "Supprimer"
+
+#: modules/ab-test/classes/class-cartflows-pro-ab-test-meta.php:94
+msgid "Step Note"
+msgstr "Note d'étape"
+
+#: modules/ab-test/classes/class-cartflows-pro-ab-test-meta.php:145
+#: modules/ab-test/classes/class-cartflows-pro-ab-test-meta.php:147
+msgid "A/B Test"
+msgstr "A/B Test"
+
+#: modules/ab-test/classes/class-cartflows-pro-ab-test-meta.php:157
+#: modules/ab-test/classes/class-cartflows-pro-ab-test-meta.php:159
+msgid "Archive"
+msgstr "Archive"
+
+#: modules/ab-test/classes/class-cartflows-pro-ab-test-meta.php:170
+#: modules/ab-test/classes/class-cartflows-pro-ab-test-meta.php:172
+msgid "Declare as Winner"
+msgstr "Déclarer vainqueur"
+
+#. translators: %s flow id
+#: modules/ab-test/classes/class-cartflows-pro-ab-test-meta.php:359
+msgid "Step not deleted for flow - %s"
+msgstr "Étape non supprimée pour le flux - %s"
+
+#. translators: %s flow id
+#: modules/ab-test/classes/class-cartflows-pro-ab-test-meta.php:372
+msgid "Step deleted for flow - %s"
+msgstr "Étape supprimée pour le flux - %s"
+
+#. translators: %s flow id
+#: modules/ab-test/classes/class-cartflows-pro-ab-test-meta.php:400
+#, fuzzy
+msgid "Can't archive this step - %1$s. Flow - %2$s"
+msgstr "Je ne peux pas archiver cette étape - %1$s. Flux - %2$s"
+
+#. translators: %s flow id
+#: modules/ab-test/classes/class-cartflows-pro-ab-test-meta.php:413
+#: modules/ab-test/classes/class-cartflows-pro-ab-test-meta.php:743
+msgid "Step - %1$s archived. Flow - %2$s"
+msgstr "Étape - %1$s archivé. Flux - %2$s"
+
+#. translators: %s step id
+#: modules/ab-test/classes/class-cartflows-pro-ab-test-meta.php:441
+msgid "Can't create a variation for this step - %s"
+msgstr "Impossible de créer une variation pour cette étape - %s"
+
+#. translators: %s flow id
+#: modules/ab-test/classes/class-cartflows-pro-ab-test-meta.php:496
+#, fuzzy
+msgid "Variation created for step - %s"
+msgstr "Variation créée pour l’étape - %s"
+
+#: modules/ab-test/classes/class-cartflows-pro-ab-test-meta.php:524
+msgid "Can't start a split test"
+msgstr "Impossible de lancer un test fractionné"
+
+#: modules/ab-test/classes/class-cartflows-pro-ab-test-meta.php:531
+msgid "Stop Split Test"
+msgstr "Stop Split Test"
+
+#: modules/ab-test/classes/class-cartflows-pro-ab-test-meta.php:544
+#, fuzzy
+msgid "Start Split Test"
+msgstr "Démarrer split test"
+
+#. translators: %s step id
+#: modules/ab-test/classes/class-cartflows-pro-ab-test-meta.php:590
+#, fuzzy
+msgid "Can't update the winner for this step - %s"
+msgstr "Ne peut pas mettre à jour le gagnant pour cette étape - %s"
+
+#. translators: %s step id
+#: modules/ab-test/classes/class-cartflows-pro-ab-test-meta.php:669
+msgid "Winner updated for this step - %s"
+msgstr "Mise à jour du lauréat pour cette étape - %s"
+
+#. translators: %s flow id
+#: modules/ab-test/classes/class-cartflows-pro-ab-test-meta.php:700
+#, fuzzy
+msgid "Can't clone this step - %1$s. Flow - %2$s"
+msgstr "Je ne peux pas cloner cette étape - %1$s. Flux - %2$s"
+
+#. translators: %s step id
+#: modules/ab-test/classes/class-cartflows-pro-ab-test-meta.php:773
+msgid "Can't update A/B test settings for this step - %s"
+msgstr ""
+"Impossible de mettre à jour les paramètres du test A/B pour cette étape - %s"
+
+#. translators: %s step id
+#: modules/ab-test/classes/class-cartflows-pro-ab-test-meta.php:824
+msgid "A/B test settings updated for this step - %s"
+msgstr "Mise à jour des paramètres du test A/B pour cette étape - %s"
+
+#. translators: %s flow id
+#: modules/ab-test/classes/class-cartflows-pro-ab-test-meta.php:853
+#, fuzzy
+msgid "Can't restore this variation - %1$s. Flow - %2$s"
+msgstr "Ne peut pas restaurer cette variation - %1$s. Flux - %2$s"
+
+#. translators: %s flow id
+#: modules/ab-test/classes/class-cartflows-pro-ab-test-meta.php:905
+msgid "Variation - %1$s restored. Flow  - %2$s"
+msgstr "Variation - %1$s restaurée. Débit - %2$s"
+
+#. translators: %s flow id
+#: modules/ab-test/classes/class-cartflows-pro-ab-test-meta.php:933
+#, fuzzy
+msgid "Can't delete this variation - %1$s. Flow - %2$s"
+msgstr "Ne peut pas supprimer cette variation - %1$s. Flux - %2$s"
+
+#. translators: %s flow id
+#: modules/ab-test/classes/class-cartflows-pro-ab-test-meta.php:980
+msgid "Variation - %1$s deleted. Flow  - %2$s"
+msgstr "Variation - %1$s supprimé. Flux - %2$s"
+
+#: modules/ab-test/view/view-ab-test-archieved-step.php:34
+#, fuzzy
+msgid "Archived on: "
+msgstr "Archivé sur: "
+
+#: modules/ab-test/view/view-ab-test-archieved-step.php:37
+msgid "Deleted on: "
+msgstr "Supprimé : "
+
+#: modules/ab-test/view/view-ab-test-archieved-step.php:71
+msgid "Deleted variation can't be restored."
+msgstr "La variation supprimée ne sera pas  restaurée."
+
+#: modules/ab-test/view/view-ab-test-step-head.php:22
+msgid "Split Test"
+msgstr "Test partagé"
+
+#: modules/ab-test/view/view-ab-test-step-head.php:26
+msgid "Split Test Settings"
+msgstr "Paramètres du Spit Test"
+
+#: modules/ab-test/view/view-ab-test-step-settings-content.php:16
+msgid "Traffic"
+msgstr "Trafic"
+
+#: modules/ab-test/view/view-ab-test-step-settings-popup.php:23
+msgid "A/B Test Settings"
+msgstr "Paramètres des tests A/B"
+
+#: modules/ab-test/view/view-ab-test-step-settings-popup.php:35
+msgid "Cancel"
+msgstr "Annuler"
+
+#: modules/ab-test/view/view-ab-test-step-settings-popup.php:36
+msgid "Save"
+msgstr "Sauvegarder"
+
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:453
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:541
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:999
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:1008
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:1164
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-description/cartflows-pro-bb-offer-product-description.php:82
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:420
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Yes"
+msgstr "Oui"
+
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:454
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:542
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:1000
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:1009
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:1165
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-description/cartflows-pro-bb-offer-product-description.php:83
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:421
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "No"
+msgstr "Non"
+
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:465
+#: modules/checkout/classes/class-cartflows-pro-checkout-default-meta.php:346
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:205
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Get Your FREE copy of CartFlows in just few steps."
+msgstr "Obtenez votre copie GRATUITE de CartFlows en quelques étapes."
+
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:471
+#: modules/checkout/classes/class-cartflows-pro-checkout-default-meta.php:361
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:227
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Shipping"
+msgstr "Livraison"
+
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:477
+#: modules/checkout/classes/class-cartflows-pro-checkout-default-meta.php:365
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:236
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Where to ship it?"
+msgstr "Où l'expédier?"
+
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:483
+#: modules/checkout/classes/class-cartflows-pro-checkout-default-meta.php:370
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:245
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Payment"
+msgstr "Paiement"
+
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:489
+#: modules/checkout/classes/class-cartflows-pro-checkout-default-meta.php:374
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:254
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Of your order"
+msgstr "De votre commande"
+
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:495
+#: modules/checkout/classes/class-cartflows-pro-checkout-default-meta.php:378
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:273
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "For Special Offer Click Here"
+msgstr "Pour l'offre spéciale Cliquez ici"
+
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:501
+#: modules/checkout/classes/class-cartflows-pro-checkout-default-meta.php:382
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:283
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Yes! I want this offer!"
+msgstr "Oui ! Je veux cette offre !"
+
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:512
+msgid "Select Position"
+msgstr "Sélectionnez la position"
+
+#. translators: %1$1s, %2$2s Link to meta
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:522
+msgid "Please enable \"Product-Option\" from %1$1shere%2$2s to edit options."
+msgstr ""
+"Veuillez activer \"Product-Option\" à partir de %1$1s ici%2$2s pour modifier "
+"les options."
+
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:529
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:987
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:403
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:828
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Skin"
+msgstr "Apparence"
+
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:547
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:429
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Section Title Text"
+msgstr "Texte titre section"
+
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:699
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:316
+#, fuzzy
+msgid "Note Text Color"
+msgstr "Note Couleur du texte"
+
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:713
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:332
+msgid "Note Background Color"
+msgstr "Couleur de fond des notes"
+
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:727
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:351
+#, fuzzy
+msgid "Note Typography"
+msgstr "Note Typographie"
+
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:773
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:880
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:1085
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-image/cartflows-pro-bb-offer-product-image.php:111
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-image/cartflows-pro-bb-offer-product-image.php:199
+msgid ""
+"The type of border to use. Double borders must have a width of at least 3px "
+"to render properly."
+msgstr ""
+"Le type de bordure à utiliser. Double bordure doit avoir une largeur d'au "
+"moins 3px afin de rendre correctement."
+
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:779
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:886
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:1091
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-image/cartflows-pro-bb-offer-product-image.php:117
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-image/cartflows-pro-bb-offer-product-image.php:205
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:510
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:599
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:957
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Double"
+msgstr "Double"
+
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:804
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:910
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:1110
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-image/cartflows-pro-bb-offer-product-image.php:141
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-image/cartflows-pro-bb-offer-product-image.php:229
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:523
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:612
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:971
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Border Width"
+msgstr "Largeur de la bordure"
+
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:834
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:938
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:1140
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-image/cartflows-pro-bb-offer-product-image.php:169
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-image/cartflows-pro-bb-offer-product-image.php:257
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Border Radius"
+msgstr "Rayon de la bordure"
+
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:878
+msgid "Highlight Product Border Style"
+msgstr "Mettre en évidence le style de la bordure du produit"
+
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:996
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:851
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Enable Arrow"
+msgstr "Activer les flèches"
+
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:1005
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:863
+#: modules/gutenberg/dist/blocks.build.js:1
+#, fuzzy
+msgid "Enable Arrow Animation"
+msgstr "Activer l’animation Arrow"
+
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:1157
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:1151
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Pre Checkout Offer"
+msgstr "Offre de pré-commande"
+
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:1161
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:1161
+msgid "Enable Preview"
+msgstr "Activer l’aperçu"
+
+#. translators: %1$1s, %2$2s Link to meta
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:1173
+msgid ""
+"Please enable \"Pre Checkout Offer\" from %1$1shere%2$2s to edit options."
+msgstr ""
+"Veuillez activer \"Offre de pré-commande\" à partir de %1$1s ici%2$2s pour "
+"modifier les options."
+
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:1180
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:1175
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Overlay Background Color"
+msgstr "Définir la couleur de recouvrement de l'arrière plan"
+
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:1188
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:1186
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Modal Background Color"
+msgstr "Couleur d'arrière-plan de la fenêtre modale"
+
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:1196
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:1198
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Title Color"
+msgstr "Couleur du titre"
+
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:1204
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:1211
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Subtitle Color"
+msgstr "Couleur du sous-titre"
+
+#: modules/beaver-builder/cartflows-pro-bb-checkout-form-extend/cartflows-pro-bb-checkout-form-extend.php:1212
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:1223
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Description Color"
+msgstr "Couleur de la description"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:33
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-button.php:69
+#: modules/gutenberg/classes/class-cartflows-pro-block-config.php:73
+msgid "Offer Yes/No Button"
+msgstr "Bouton \"Offrir oui/non"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:34
+msgid "Offer Yes/No Button."
+msgstr "Bouton Oui/Non de l'offre."
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:35
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:36
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-link/cartflows-pro-bb-offer-action-link.php:35
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-link/cartflows-pro-bb-offer-action-link.php:36
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-description/cartflows-pro-bb-offer-product-description.php:35
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-description/cartflows-pro-bb-offer-product-description.php:36
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-image/cartflows-pro-bb-offer-product-image.php:36
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-image/cartflows-pro-bb-offer-product-image.php:37
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-price/cartflows-pro-bb-offer-product-price.php:35
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-price/cartflows-pro-bb-offer-product-price.php:36
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-quantity/cartflows-pro-bb-offer-product-quantity.php:34
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-quantity/cartflows-pro-bb-offer-product-quantity.php:35
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-title/cartflows-pro-bb-offer-product-title.php:35
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-title/cartflows-pro-bb-offer-product-title.php:36
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-variation/cartflows-pro-bb-offer-product-variation.php:35
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-variation/cartflows-pro-bb-offer-product-variation.php:36
+msgid "Cartflows Modules"
+msgstr "Modules Cartflows"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:146
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-link/cartflows-pro-bb-offer-action-link.php:91
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-button.php:155
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-button.php:297
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-link.php:141
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-link.php:247
+#: modules/offer/classes/class-cartflows-pro-base-offer-meta-data.php:378
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "General"
+msgstr "Général"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:153
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:163
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-link/cartflows-pro-bb-offer-action-link.php:98
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-link/cartflows-pro-bb-offer-action-link.php:108
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-button.php:162
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-button.php:177
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-link.php:148
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-link.php:163
+#: modules/gutenberg/dist/blocks.build.js:1
+#, fuzzy
+msgid "Offer Action"
+msgstr "Action d’offre"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:156
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-link/cartflows-pro-bb-offer-action-link.php:101
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-button.php:166
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-link.php:152
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Accept Offer"
+msgstr "Accepter l'offre"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:157
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-link/cartflows-pro-bb-offer-action-link.php:102
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-button.php:167
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-link.php:153
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Reject Offer"
+msgstr "Rejeter l'offre"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:162
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-button.php:175
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Title"
+msgstr "Titre"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:172
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-button.php:184
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Sub Title"
+msgstr "Sous-titre"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:181
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-link/cartflows-pro-bb-offer-action-link.php:117
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-button.php:192
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-link.php:170
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Icon"
+msgstr "Icône"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:189
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-link/cartflows-pro-bb-offer-action-link.php:125
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-button.php:200
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-link.php:178
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Icon Position"
+msgstr "Position de l'icône"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:192
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-link/cartflows-pro-bb-offer-action-link.php:128
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-button.php:204
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Before Title"
+msgstr "Avant le Titre"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:193
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-link/cartflows-pro-bb-offer-action-link.php:129
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-button.php:205
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "After Title"
+msgstr "Après le titre"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:194
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-button.php:206
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Before Title & Sub Title"
+msgstr "Avant titre et sous-titre"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:195
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-button.php:207
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "After Title & Sub Title"
+msgstr "Après le titre et le sous-titre"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:211
+msgid "Vertical Alignment"
+msgstr "Alignement vertical"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:214
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-button.php:224
+msgid "Top"
+msgstr "Haut"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:215
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-button.php:228
+msgid "Middle"
+msgstr "Milieu"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:223
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-link/cartflows-pro-bb-offer-action-link.php:137
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-button.php:245
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-link.php:194
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Icon Spacing"
+msgstr "Espacement Icônes"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:234
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:237
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-link/cartflows-pro-bb-offer-action-link.php:148
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-link/cartflows-pro-bb-offer-action-link.php:151
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-description/cartflows-pro-bb-offer-product-description.php:72
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-description/cartflows-pro-bb-offer-product-description.php:75
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-image/cartflows-pro-bb-offer-product-image.php:73
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-price/cartflows-pro-bb-offer-product-price.php:72
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-price/cartflows-pro-bb-offer-product-price.php:75
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-quantity/cartflows-pro-bb-offer-product-quantity.php:70
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-quantity/cartflows-pro-bb-offer-product-quantity.php:73
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-title/cartflows-pro-bb-offer-product-title.php:71
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-title/cartflows-pro-bb-offer-product-title.php:74
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-variation/cartflows-pro-bb-offer-product-variation.php:72
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-variation/cartflows-pro-bb-offer-product-variation.php:75
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Style"
+msgstr "Style"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:241
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1456
+#: modules/optin/classes/class-cartflows-pro-optin-meta-data.php:122
+msgid "Type"
+msgstr "Type"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:246
+msgid "Flat"
+msgstr "Plat"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:247
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Gradient"
+msgstr "Dégradé"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:248
+msgid "Transparent"
+msgstr "Transparent"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:249
+msgid "3D"
+msgstr "3D"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:259
+msgid "Border Size"
+msgstr "Taille de la bordure"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:274
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:290
+msgid "Hover Styles"
+msgstr "Styles au survol"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:278
+msgid "Fade Background"
+msgstr "Arrière-plan en fondu"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:279
+msgid "Fill Background From Top"
+msgstr "Remplir l’arrière-plan par le haut"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:280
+msgid "Fill Background From Bottom"
+msgstr "Remplir l’arrière-plan par le bas"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:281
+msgid "Fill Background From Left"
+msgstr "Remplir l’arrière-plan par la gauche"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:282
+msgid "Fill Background From Right"
+msgstr "Remplir l’arrière-plan par la droite"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:283
+msgid "Fill Background Vertical"
+msgstr "Remplir l'arrière-plan vertical"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:284
+msgid "Fill Background Diagonal"
+msgstr "Remplir l'arrière-plan en diagonale"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:285
+msgid "Fill Background Horizontal"
+msgstr "Remplir l'arrière-plan horizontal"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:293
+msgid "Move Down"
+msgstr "Déplacer vers le bas"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:294
+msgid "Move Up"
+msgstr "Déplacer vers le haut"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:295
+msgid "Move Left"
+msgstr "Déplacer vers la gauche"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:296
+msgid "Move Right"
+msgstr "Déplacer vers la droite"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:297
+msgid "Animate Top"
+msgstr "Animer le haut"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:298
+msgid "Animate Bottom"
+msgstr "Animer le bas"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:304
+msgid "Structure"
+msgstr "Structure"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:308
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1540
+#: modules/optin/classes/class-cartflows-pro-optin-meta-data.php:179
+msgid "Width"
+msgstr "Largeur"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:311
+msgctxt "Width."
+msgid "Auto"
+msgstr "Auto"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:312
+msgid "Full Width"
+msgstr "Pleine largeur"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:313
+msgid "Custom"
+msgstr "Personnalisée"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:329
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-image/cartflows-pro-bb-offer-product-image.php:80
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-price/cartflows-pro-bb-offer-product-price.php:79
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-quantity/cartflows-pro-bb-offer-product-quantity.php:77
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-variation/cartflows-pro-bb-offer-product-variation.php:79
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-button.php:305
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-link.php:255
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-description.php:155
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-image.php:142
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-price.php:143
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-quantity.php:144
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-title.php:143
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-variation.php:143
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Alignment"
+msgstr "Alignement"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:332
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:342
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-image/cartflows-pro-bb-offer-product-image.php:83
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-price/cartflows-pro-bb-offer-product-price.php:82
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-quantity/cartflows-pro-bb-offer-product-quantity.php:80
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-variation/cartflows-pro-bb-offer-product-variation.php:82
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-button.php:313
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-button.php:486
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-link.php:263
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-description.php:163
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-image.php:150
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-price.php:151
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-quantity.php:152
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-title.php:151
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-variation.php:151
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Center"
+msgstr "Centre"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:333
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:343
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-image/cartflows-pro-bb-offer-product-image.php:84
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-price/cartflows-pro-bb-offer-product-price.php:83
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-quantity/cartflows-pro-bb-offer-product-quantity.php:81
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-variation/cartflows-pro-bb-offer-product-variation.php:83
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-button.php:309
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-button.php:482
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-link.php:259
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-description.php:159
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-image.php:146
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-price.php:147
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-quantity.php:148
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-title.php:147
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-variation.php:147
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Left"
+msgstr "Gauche"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:334
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:344
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-image/cartflows-pro-bb-offer-product-image.php:85
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-price/cartflows-pro-bb-offer-product-price.php:84
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-quantity/cartflows-pro-bb-offer-product-quantity.php:82
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-variation/cartflows-pro-bb-offer-product-variation.php:84
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-button.php:317
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-button.php:490
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-link.php:267
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-description.php:167
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-image.php:154
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-price.php:155
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-quantity.php:156
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-title.php:155
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-variation.php:155
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Right"
+msgstr "Droite"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:339
+msgid "Mobile Alignment"
+msgstr "Alignement mobile"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:349
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-button.php:343
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Padding"
+msgstr "Marges intérieures"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:378
+msgid "Border Hover Color"
+msgstr "Couleur de bordure au survol"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:389
+msgid "Custom Width"
+msgstr "Largeur personnalisée"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:398
+msgid "Custom Height"
+msgstr "Hauteur personnalisée"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:407
+msgid "Padding Top/Bottom"
+msgstr "Padding Haut/Bas"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:416
+msgid "Padding Left/Right"
+msgstr "Padding Gauche/Droite"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:425
+msgid "Round Corners"
+msgstr "Coins arrondis"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:434
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:876
+msgid "Colors"
+msgstr "Couleurs"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:452
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-link/cartflows-pro-bb-offer-action-link.php:171
+msgid "Text Hover Color"
+msgstr "Couleur du texte au survol"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:477
+msgid "Background Hover Color"
+msgstr "Couleur d'arrière plan au survol"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:488
+msgid "Apply Hover Color To"
+msgstr "Appliquer la couleur au survol à"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:492
+msgid "Background"
+msgstr "Arrière-plan"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:502
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:517
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-link/cartflows-pro-bb-offer-action-link.php:187
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-description/cartflows-pro-bb-offer-product-description.php:102
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-price/cartflows-pro-bb-offer-product-price.php:110
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-quantity/cartflows-pro-bb-offer-product-quantity.php:134
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-title/cartflows-pro-bb-offer-product-title.php:92
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-variation/cartflows-pro-bb-offer-product-variation.php:137
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-description.php:196
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-price.php:172
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-quantity.php:187
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-title.php:172
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-variation.php:210
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Typography"
+msgstr "Typographie"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:505
+msgid "Button Settings"
+msgstr "Paramètres du bouton"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-button/cartflows-pro-bb-offer-action-button.php:509
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-button.php:265
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-link.php:215
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Icon Size"
+msgstr "Taille de l’icône"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-link/cartflows-pro-bb-offer-action-link.php:33
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-link.php:68
+#: modules/gutenberg/classes/class-cartflows-pro-block-config.php:46
+#, fuzzy
+msgid "Offer Yes/No Link"
+msgstr "Offre Oui/No Link"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-link/cartflows-pro-bb-offer-action-link.php:34
+msgid "Offer Yes/No Link."
+msgstr "Offre Lien Oui/Non."
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-action-link/cartflows-pro-bb-offer-action-link.php:107
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-link.php:161
+msgid "Link Text"
+msgstr "Texte du lien"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-description/cartflows-pro-bb-offer-product-description.php:33
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-description.php:65
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-description.php:135
+#: modules/gutenberg/classes/class-cartflows-pro-block-config.php:174
+#, fuzzy
+msgid "Offer Product Description"
+msgstr "Description du produit de l’offre"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-description/cartflows-pro-bb-offer-product-description.php:34
+msgid "Offer Product Description."
+msgstr "Description du produit de l'offre."
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-description/cartflows-pro-bb-offer-product-description.php:79
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-description.php:143
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Short Description"
+msgstr "Description courte"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-image/cartflows-pro-bb-offer-product-image.php:34
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-image/cartflows-pro-bb-offer-product-image.php:76
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-image.php:63
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-image.php:134
+#: modules/gutenberg/classes/class-cartflows-pro-block-config.php:302
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Offer Product Image"
+msgstr "Offrir une image de produit"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-image/cartflows-pro-bb-offer-product-image.php:35
+#, fuzzy
+msgid "Offer Product Image."
+msgstr "Offrez l’image du produit."
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-image/cartflows-pro-bb-offer-product-image.php:95
+msgid "Image Bottom Spacing"
+msgstr "Espacement bas d’image"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-image/cartflows-pro-bb-offer-product-image.php:185
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-image.php:219
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Thumbnails"
+msgstr "Miniatures"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-image/cartflows-pro-bb-offer-product-image.php:189
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-image.php:227
+msgid "Spacing between Thumbnails"
+msgstr "Espacement entre les vignettes"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-image/cartflows-pro-bb-offer-product-image.php:197
+#, fuzzy
+msgid "Thumbnails Border Style"
+msgstr "Miniatures Border Style"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-price/cartflows-pro-bb-offer-product-price.php:33
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-price.php:65
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-price.php:135
+#: modules/gutenberg/classes/class-cartflows-pro-block-config.php:208
+msgid "Offer Product Price"
+msgstr "Offrir le prix du produit"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-price/cartflows-pro-bb-offer-product-price.php:34
+#, fuzzy
+msgid "Offer Product Price."
+msgstr "Offrez le prix du produit."
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-quantity/cartflows-pro-bb-offer-product-quantity.php:32
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-quantity.php:66
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-quantity.php:136
+#: modules/gutenberg/classes/class-cartflows-pro-block-config.php:236
+msgid "Offer Product Quantity"
+msgstr "Offrir une quantité de produits"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-quantity/cartflows-pro-bb-offer-product-quantity.php:33
+#, fuzzy
+msgid "Offer Product Quantity."
+msgstr "Offrez la quantité de produit."
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-quantity/cartflows-pro-bb-offer-product-quantity.php:92
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-variation/cartflows-pro-bb-offer-product-variation.php:94
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-quantity.php:167
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-variation.php:166
+msgid "Width(%)"
+msgstr "Largeur"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-quantity/cartflows-pro-bb-offer-product-quantity.php:120
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-variation/cartflows-pro-bb-offer-product-variation.php:123
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-quantity.php:208
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-variation.php:197
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Input Text Color"
+msgstr "Saisir la Couleur de Texte"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-title/cartflows-pro-bb-offer-product-title.php:33
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-title.php:65
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-title.php:135
+#: modules/gutenberg/classes/class-cartflows-pro-block-config.php:146
+msgid "Offer Product Title"
+msgstr "Titre de l’offre du  produit"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-title/cartflows-pro-bb-offer-product-title.php:34
+msgid "Offer Product Title."
+msgstr "Offrir un titre de produit."
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-variation/cartflows-pro-bb-offer-product-variation.php:33
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-variation.php:65
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-variation.php:135
+#: modules/gutenberg/classes/class-cartflows-pro-block-config.php:271
+msgid "Offer Product Variation"
+msgstr "Proposer la variation de produit"
+
+#: modules/beaver-builder/cartflows-pro-bb-offer-product-variation/cartflows-pro-bb-offer-product-variation.php:34
+msgid "Offer Product Variation."
+msgstr "Offrir une variation de produit."
+
+#: modules/checkout/classes/class-cartflows-pre-checkout-offer-product.php:302
+#, fuzzy
+msgid "Product not added in the cart."
+msgstr "Produit non ajouté dans le panier."
+
+#: modules/checkout/classes/class-cartflows-pre-checkout-offer-product.php:322
+#: modules/checkout/classes/class-cartflows-pre-checkout-offer-product.php:333
+#: modules/checkout/classes/class-cartflows-pre-checkout-offer-product.php:379
+msgid "Oops, can't add the product to the cart"
+msgstr "Oups, on ne peut pas ajouter le produit au panier"
+
+#: modules/checkout/classes/class-cartflows-pre-checkout-offer-product.php:388
+#: modules/checkout/classes/class-cartflows-pre-checkout-offer-product.php:434
+msgid "Product is Out of Stock"
+msgstr "Ce véhicule n'est pas disponible"
+
+#: modules/checkout/classes/class-cartflows-pre-checkout-offer-product.php:428
+msgid "Product Added Successfully"
+msgstr "Produit ajouté avec succès"
+
+#: modules/checkout/classes/class-cartflows-pro-checkout-default-meta.php:117
+msgid "___Don't miss out the offer___"
+msgstr "___Ne ratez pas l'offre___"
+
+#: modules/checkout/classes/class-cartflows-pro-checkout-default-meta.php:134
+msgid "We have a special one time offer just for you."
+msgstr "Nous avons une offre spéciale, juste pour vous !"
+
+#: modules/checkout/classes/class-cartflows-pro-checkout-default-meta.php:190
+msgid "Yes, I will take it!"
+msgstr "Oui, j'en ai envie !"
+
+#: modules/checkout/classes/class-cartflows-pro-checkout-default-meta.php:194
+msgid "ONE TIME OFFER"
+msgstr "OFFRE UNIQUE"
+
+#: modules/checkout/classes/class-cartflows-pro-checkout-default-meta.php:198
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, quod hic "
+"expedita consectetur vitae nulla sint adipisci cupiditate at. Commodi, "
+"dolore hic eaque tempora a repudiandae obcaecati deleniti mollitia possimus."
+msgstr ""
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, quod hic "
+"expedita consectetur vitae nulla sint adipisci cupiditate at. Commodi, "
+"dolore hic eaque tempora a repudiandae obcaecati deleniti mollitia possimus."
+
+#. Translators: %s: Field Name
+#: modules/checkout/classes/class-cartflows-pro-checkout-field-optimization.php:170
+msgid "<div class=\"dashicons dashicons-arrow-right\"></div> Add %s"
+msgstr "<div class=\"dashicons dashicons-arrow-right\"></div> Ajouter %s"
+
+#: modules/checkout/classes/class-cartflows-pro-checkout-field-optimization.php:177
+msgid "<div class=\"dashicons dashicons-arrow-right\"></div>Add Order Notes"
+msgstr ""
+"<div class=\"dashicons dashicons-arrow-right\"></div>Ajouter des notes de "
+"commande"
+
+#: modules/checkout/classes/class-cartflows-pro-checkout-field-optimization.php:182
+msgid "<div class=\"dashicons dashicons-arrow-right\"></div> Have a coupon?"
+msgstr ""
+"<div class=\"dashicons dashicons-arrow-right\"></div> Vous avez un coupon ?"
+
+#: modules/checkout/classes/class-cartflows-pro-checkout-markup.php:1336
+#: modules/optin/classes/class-cartflows-pro-optin-markup.php:145
+msgid "Billing Custom Fields"
+msgstr "Champs personnalisés - Facturation"
+
+#: modules/checkout/classes/class-cartflows-pro-checkout-markup.php:1373
+msgid "Shipping Custom Fields"
+msgstr "Champs personnalisés - Expédition"
+
+#: modules/checkout/classes/class-cartflows-pro-checkout-markup.php:1418
+msgid "Processing..."
+msgstr "En cours..."
+
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:176
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:408
+#, fuzzy
+msgid "Type to search for a coupon..."
+msgstr "Tapez pour rechercher un coupon..."
+
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:300
+msgid "Enable order bump"
+msgstr "Activer Order Bump"
+
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:305
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:647
+#: modules/checkout/templates/your-product/product-table-titles.php:20
+#: modules/offer/classes/class-cartflows-pro-base-offer-meta-data.php:148
+#: modules/thankyou/template/child-order-details.php:58
+msgid "Product"
+msgstr "Produit"
+
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:321
+#: modules/offer/classes/class-cartflows-pro-base-offer-meta-data.php:154
+msgid "Type to search for a product..."
+msgstr "Tapez pour rechercher un produit..."
+
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:324
+msgid "Select the Product"
+msgstr "Sélectionnez le produit gratuit"
+
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:373
+msgid "Add discount type"
+msgstr "Ajouté un Coupons de réduction"
+
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:388
+msgid "Add discount value"
+msgstr "Ajouter une valeur d'escompte"
+
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:431
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:731
+#: modules/offer/classes/class-cartflows-pro-base-offer-meta-data.php:220
+#, fuzzy
+msgid "This is the unit price of product"
+msgstr "C’est le prix unitaire du produit"
+
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:449
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:748
+#: modules/offer/classes/class-cartflows-pro-base-offer-meta-data.php:227
+#, fuzzy
+msgid "This is the unit discounted price of product"
+msgstr "Il s’agit du prix unitaire réduit du produit"
+
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:572
+msgid "Advanced Settings"
+msgstr "Paramètres avancés"
+
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:587
+#, fuzzy
+msgid ""
+"It will replace the first selected product (from checkout products) with the "
+"order bump product."
+msgstr ""
+"Il remplacera le premier produit sélectionné (à partir des produits de "
+"caisse) par le produit bosse de commande."
+
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:619
+msgid "Doc"
+msgstr "Document"
+
+#. translators: %s: content
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:622
+msgid ""
+"Note: Select the step if you want to redirect to a different step on the "
+"order bump purchase. %1$1sLearn More »%2$2s"
+msgstr ""
+"Remarque : sélectionnez l'étape si vous souhaitez passer à une autre étape "
+"de la commande d'achat groupé. En savoir plus\"%2$2s"
+
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:665
+msgid "Type to search for a product"
+msgstr "Type pour rechercher un produit"
+
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:912
+msgid "Enable Note Text"
+msgstr "Activer note de texte"
+
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1059
+msgid "It will add images on checkout page."
+msgstr "Il ajoutera des images sur la page de paiement."
+
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1077
+#, fuzzy
+msgid "Highlight Product Design"
+msgstr "Mettre en évidence la conception du produit"
+
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1346
+msgid "Enable Coupon Field"
+msgstr "Activer le champ du coupon"
+
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1352
+msgid "Collapsible Coupon Field"
+msgstr "Champ de coupon promo"
+
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1375
+msgid "Collapsible Additional Field"
+msgstr "Champ supplémentaire"
+
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1439
+msgid "Add to"
+msgstr "Ajouter à"
+
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1462
+#: modules/optin/classes/class-cartflows-pro-optin-meta-data.php:128
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Text"
+msgstr "Texte"
+
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1466
+#: modules/optin/classes/class-cartflows-pro-optin-meta-data.php:132
+msgid "TextArea"
+msgstr "Zone de texte"
+
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1470
+#: modules/optin/classes/class-cartflows-pro-optin-meta-data.php:136
+msgid "Checkbox"
+msgstr "Case à cocher"
+
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1474
+#: modules/checkout/templates/your-product/item-title.php:38
+#: modules/optin/classes/class-cartflows-pro-optin-meta-data.php:140
+msgid "Select"
+msgstr "Sélectionner"
+
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1478
+#: modules/optin/classes/class-cartflows-pro-optin-meta-data.php:144
+msgid "Hidden"
+msgstr "Masqué"
+
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1485
+#: modules/optin/classes/class-cartflows-pro-optin-meta-data.php:151
+msgid "Label"
+msgstr "Label"
+
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1636
+#: modules/checkout/classes/class-cartflows-pro-checkout-meta-data.php:1802
+#: modules/optin/classes/class-cartflows-pro-optin-meta-data.php:276
+#: modules/optin/classes/class-cartflows-pro-optin-meta-data.php:410
+msgid "Enable Field"
+msgstr "Activer le champ"
+
+#: modules/checkout/classes/class-cartflows-pro-variation-product.php:1074
+msgid "Choose a Variation"
+msgstr "Choisissez une variante"
+
+#. translators: %s: Attribute name.
+#: modules/checkout/classes/class-cartflows-pro-variation-product.php:1235
+msgid "Invalid value posted for %s"
+msgstr "Valeur non valide publiée pour %s"
+
+#. translators: %s: Attribute name.
+#: modules/checkout/classes/class-cartflows-pro-variation-product.php:1244
+msgid "%s is a required field"
+msgid_plural "%s are required fields"
+msgstr[0] "%s est un champ obligatoire"
+msgstr[1] "%s sont des champs obligatoires"
+
+#: modules/checkout/templates/pre-checkout-offer/pre-checkout-offer.php:19
+msgid "Order Submitted"
+msgstr "Commande soumise"
+
+#: modules/checkout/templates/pre-checkout-offer/pre-checkout-offer.php:27
+msgid "Special Offer"
+msgstr "Offre spéciale"
+
+#: modules/checkout/templates/pre-checkout-offer/pre-checkout-offer.php:35
+msgid "Order Receipt"
+msgstr "Reçu de commande"
+
+#: modules/checkout/templates/your-product/item-title.php:54
+msgid " every "
+msgstr " chaque "
+
+#: modules/checkout/templates/your-product/item-title.php:57
+msgid " and a "
+msgstr " et un"
+
+#: modules/checkout/templates/your-product/item-title.php:59
+#, fuzzy
+msgid " sign-up fee "
+msgstr "Frais d’inscription (%s)"
+
+#: modules/checkout/templates/your-product/product-table-titles.php:26
+msgid "Price"
+msgstr "Prix"
+
+#: modules/downsell/classes/class-cartflows-downsell-markup.php:82
+#: modules/downsell/classes/class-cartflows-downsell-markup.php:136
+#: modules/upsell/classes/class-cartflows-pro-upsell-markup.php:85
+#: modules/upsell/classes/class-cartflows-pro-upsell-markup.php:140
+msgid "Order does not exist"
+msgstr "La commande n'existe pas"
+
+#: modules/downsell/classes/class-cartflows-downsell-markup.php:90
+msgid "Downsell Payment Failed"
+msgstr "Paiement Downsell Échec"
+
+#: modules/downsell/classes/class-cartflows-downsell-markup.php:128
+#: modules/upsell/classes/class-cartflows-pro-upsell-markup.php:132
+msgid "Current Step Not Found"
+msgstr "Étape actuelle non trouvée"
+
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:193
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:1163
+msgid "YES"
+msgstr "OUI"
+
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:194
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:1164
+msgid "NO"
+msgstr "NON"
+
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:389
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Position"
+msgstr "Position"
+
+#. translators: %1$1s, %2$2s Link to meta
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:442
+msgid ""
+"Please enable \"Product Options\" from %1$1smeta settings%2$2s to edit "
+"options."
+msgstr ""
+"Veuillez activer \"Product Options\" dans %1$1smeta settings%2$2s pour "
+"modifier les options."
+
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:547
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:636
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:997
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-button.php:403
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-quantity.php:243
+msgid "Rounded Corners"
+msgstr "Coins arrondis"
+
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:561
+msgid "Highlight Product"
+msgstr "Produit en surbrillance"
+
+#. translators: %1$1s, %2$2s Link to meta
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:673
+msgid ""
+"Please enable \"Product Options\" from %1$1smeta settings%2$2s to apply "
+"styles."
+msgstr ""
+"Veuillez activer \"Options du produit\" dans les paramètres méta %1$1s%2$2s "
+"pour appliquer les styles."
+
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:842
+msgid "Arrow"
+msgstr "Flèche"
+
+#. translators: %1$1s, %2$2s Link to meta
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:1012
+msgid ""
+"Please enable \"Order Bump\" from %1$1smeta settings%2$2s to apply styles."
+msgstr ""
+"S’il vous plaît activer « Order Bump » à partir %1$1smètres%2$2s d’appliquer "
+"des styles."
+
+#. translators: %1$1s, %2$2s Link to meta
+#: modules/elementor/widgets/class-cartflows-pro-el-checkout-form-extend.php:1240
+msgid ""
+"Please enable \"Checkout Offer\" from %1$1smeta settings%2$2s to to apply "
+"styles."
+msgstr ""
+"Veuillez activer \"Offre de paiement\" à partir des paramètres méta %1$1s "
+"%2$2s pour appliquer les styles."
+
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-button.php:218
+msgid "Icon Vertical Alignment"
+msgstr "Alignement vertical de l'icône"
+
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-button.php:321
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-link.php:271
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-description.php:171
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-price.php:159
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-title.php:159
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Justify"
+msgstr "Justifier"
+
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-button.php:333
+msgid "Button Size"
+msgstr "Taille du bouton"
+
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-button.php:357
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-link.php:295
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-price.php:183
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-title.php:183
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Normal"
+msgstr "Normal"
+
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-button.php:417
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-link.php:316
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-price.php:213
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-title.php:213
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Hover"
+msgstr "Survol"
+
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-button.php:424
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-price.php:220
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-title.php:220
+msgid "Hover Text Color"
+msgstr "Couleur du texte au survol"
+
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-button.php:437
+msgid "Hover Background Color"
+msgstr "Couleur d’arrière-plan au survol"
+
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-button.php:470
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Content"
+msgstr "Contenu"
+
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-button.php:478
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Text Alignment"
+msgstr "Alignement du texte"
+
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-button.php:509
+msgid "Title Typography"
+msgstr "Typographie du titre"
+
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-button.php:519
+msgid "Sub Title Typography"
+msgstr "Sous-titre Typographie"
+
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-button.php:531
+msgid "Title and Sub Title Spacing"
+msgstr "Espace Titre et Sous Titre"
+
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-link.php:182
+msgid "Before Link"
+msgstr "Avant le lien"
+
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-link.php:183
+msgid "After Link"
+msgstr "Après le lien"
+
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-link.php:284
+msgid "Link Typography"
+msgstr "Typographie du lien"
+
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-link.php:302
+msgid "Link Color"
+msgstr "Couleur du lien"
+
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-action-link.php:323
+msgid "Hover Link Color"
+msgstr "Couleur du lien au survol"
+
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-description.php:145
+msgid "Show"
+msgstr "Afficher"
+
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-description.php:146
+msgid "Hide"
+msgstr "Cacher"
+
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-description.php:206
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-price.php:203
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-quantity.php:256
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-title.php:203
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-variation.php:222
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Text Shadow"
+msgstr "Ombre du texte"
+
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-image.php:168
+msgid "Image bottom Spacing"
+msgstr "Espacement du fond de l'image"
+
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-image.php:184
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Image Border"
+msgstr "Bordure de l'image"
+
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-image.php:195
+#, fuzzy
+msgid "Image Rounded Corners"
+msgstr "Image Coins arrondis"
+
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-image.php:243
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Thumbnail Border"
+msgstr "Thumbnail Bordure"
+
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-image.php:254
+msgid "Thumbnail Rounded Corners"
+msgstr "Vignette Coin arrondi"
+
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-price.php:233
+#: modules/elementor/widgets/class-cartflows-pro-el-offer-product-title.php:233
+msgid "Hover Text Shadow"
+msgstr "Ombre de texte au survol"
+
+#: modules/elementor/widgets/class-cartflows-pro-el-optin-form-extend.php:83
+msgid "Fields Width"
+msgstr "Largeur des champs"
+
+#. translators: %1$1s, %2$2s Link to meta
+#: modules/elementor/widgets/class-cartflows-pro-el-optin-form-extend.php:116
+#, fuzzy
+msgid ""
+"Please enable \"Custom Field Editor\" from %1$1smeta settings%2$2s to to "
+"edit options."
+msgstr ""
+"S’il vous plaît activer « Custom Field Editor » %1$1s paramètres de %2$2s à "
+"modifier les options."
+
+#. translators: %1s Release payment
+#: modules/gateways/class-cartflows-pro-gateway-authorize-net.php:383
+msgid "%1$s - Release Payment for Order %2$s"
+msgstr ""
+"Libérer le paiement de l'ordre %1$s - Libérer le paiement de l'ordre %2$s"
+
+#: modules/gateways/class-cartflows-pro-gateway-authorize-net.php:387
+msgid "Payment token missing/invalid."
+msgstr "Jeton de paiement manquant/invalide."
+
+#. translators: %1s payment released
+#: modules/gateways/class-cartflows-pro-gateway-authorize-net.php:410
+#, fuzzy
+msgid "%1$s %2$s Release Payment Approved: %3$s ending in %4$s (expires %5$s)"
+msgstr ""
+"%1$s %2$s de libération approuvée : %3$s se terminant %4$s (expire %5$s)"
+
+#. translators: %1s transaction id
+#: modules/gateways/class-cartflows-pro-gateway-authorize-net.php:417
+msgid "(Transaction ID %s)"
+msgstr "(Numéro de transaction %s)"
+
+#: modules/gateways/class-cartflows-pro-gateway-authorize-net.php:434
+msgid "Authorization only transaction"
+msgstr "Transaction d'autorisation uniquement"
+
+#. translators: %1s payment failed message
+#: modules/gateways/class-cartflows-pro-gateway-authorize-net.php:451
+msgid "Pre-Order Release Payment Failed: %s"
+msgstr "Le paiement de la  précommande a échoué : %s"
+
+#. translators: %1s error message
+#: modules/gateways/class-cartflows-pro-gateway-authorize-net.php:706
+msgid "Authorize.net CIM Transaction Failed (%s)"
+msgstr "Échec de la transaction CIM Authorize.net (%s)"
+
+#. translators: %1s site name
+#: modules/gateways/class-cartflows-pro-gateway-authorize-net.php:716
+#, fuzzy
+msgid "Authorize.Net CIM Transaction Failed (%s)"
+msgstr "Authorize.Net transaction de l’ICM a échoué (%s)"
+
+#: modules/gateways/class-cartflows-pro-gateway-mollie-credit-card.php:199
+#: modules/gateways/class-cartflows-pro-gateway-mollie-ideal.php:198
+msgid "0 value product"
+msgstr "0 valeur produit"
+
+#: modules/gateways/class-cartflows-pro-gateway-mollie-credit-card.php:243
+#: modules/gateways/class-cartflows-pro-gateway-mollie-ideal.php:242
+#, fuzzy
+msgid "Customer id not found. Payment failed"
+msgstr "Id client ina pas trouvé. Paiement échoué"
+
+#: modules/gateways/class-cartflows-pro-gateway-mollie-credit-card.php:325
+msgid "Mollie credit card payment processed."
+msgstr "Paiement par carte de crédit Mollie traité."
+
+#: modules/gateways/class-cartflows-pro-gateway-mollie-ideal.php:324
+#, fuzzy
+msgid "Mollie ideal payment processed."
+msgstr "Mollie paiement idéal traité."
+
+#. translators: placeholder is blogname.
+#: modules/gateways/class-cartflows-pro-gateway-paypal-express.php:418
+#: modules/gateways/class-cartflows-pro-gateway-paypal-standard.php:620
+msgctxt "data sent to paypal"
+msgid "Orders with %s"
+msgstr "Les commandes avec %s"
+
+#. translators: blog name.
+#: modules/gateways/class-cartflows-pro-gateway-paypal-express.php:543
+msgctxt "data sent to PayPal"
+msgid "Orders with %s"
+msgstr "Les commandes avec %s"
+
+#: modules/gateways/class-cartflows-pro-gateway-paypal-express.php:670
+#: modules/gateways/class-cartflows-pro-gateway-paypal-standard.php:1182
+msgid "Unable to find order for PayPal billing agreement."
+msgstr "Impossible de trouver l’accord de facturation PayPal."
+
+#: modules/gateways/class-cartflows-pro-gateway-paypal-express.php:724
+#: modules/gateways/class-cartflows-pro-gateway-paypal-standard.php:1236
+msgid ""
+"An error occurred, please try again or try an alternate form of payment."
+msgstr ""
+"Une erreur est survenue. Veuillez essayer de nouveau ou choisir un autre "
+"mode de paiement."
+
+#. translators: exception message.
+#: modules/gateways/class-cartflows-pro-gateway-paypal-express.php:1043
+msgid "PayPal Exp Transaction Failed (%s)"
+msgstr "PayPal Exp Transaction Echouée (%s)"
+
+#. translators: %1$s: site name, %2$s: order id, %3$s: step id
+#: modules/gateways/class-cartflows-pro-gateway-square.php:268
+msgid "%1$s - Order %2$s_%3$s - One Click Payment"
+msgstr "Commande - Paiement en un clic"
+
+#. translators: %1s site name
+#: modules/gateways/class-cartflows-pro-gateway-stripe.php:400
+msgid "%1$s - Order %2$s - One Time offer"
+msgstr "%1$s - Commande %2$s - Offre spéciale"
+
+#. translators: %1s order number
+#: modules/gateways/class-cartflows-pro-gateway-stripe.php:403
+msgid "Order %1$s-OTO"
+msgstr "Ordre %1$s-OTO"
+
+#: modules/gateways/class-cartflows-pro-gateway-stripe.php:415
+msgid "customer_name"
+msgstr "Nom du client"
+
+#: modules/gateways/class-cartflows-pro-gateway-stripe.php:416
+msgid "customer_email"
+msgstr "email du client."
+
+#: modules/gateways/class-cartflows-pro-paypal-gateway-helper.php:159
+msgid "Total Discount"
+msgstr "Remise totale"
+
+#. translators: placeholder is blogname.
+#: modules/gateways/class-cartflows-pro-paypal-gateway-helper.php:251
+msgid "%s - Order"
+msgstr "%s - Commande"
+
+#: modules/gutenberg/classes/class-cartflows-pro-init-blocks.php:350
+#, fuzzy
+msgid "Cartflows Pro"
+msgstr "Cartflows Pro"
+
+#: modules/offer/classes/class-cartflows-pro-base-offer-markup.php:305
+msgid "Redirecting..."
+msgstr "Redirection..."
+
+#: modules/offer/classes/class-cartflows-pro-base-offer-meta-data.php:110
+msgid "Products"
+msgstr "Produits"
+
+#. translators: %1$1s, %2$2s Link to meta
+#: modules/offer/classes/class-cartflows-pro-base-offer-meta-data.php:247
+msgid ""
+"Do you want to cancel the main order on the purchae of upsell/downsell offer?"
+"<br>Please set the \"Create a new child order\" option in the %1$1sOffer "
+"Global Settings%2$2s to use the cancel primary order option."
+msgstr ""
+"Vous souhaitez annuler la commande principale sur l'achat d'une offre de "
+"vente à la hausse ou à la baisse ?<br>Veuillez définir l'option \"Créer une "
+"nouvelle commande secondaire\" dans les paramètres globaux de l'offre %1$1s"
+"%2$2s pour utiliser l'option d'annulation de la commande principale."
+
+#: modules/offer/classes/class-cartflows-pro-base-offer-meta-data.php:255
+#, fuzzy
+msgid "Replace Main Order"
+msgstr "Remplacer l’ordre principal"
+
+#. translators: %1$1s, %2$2s Link to meta
+#: modules/offer/classes/class-cartflows-pro-base-offer-meta-data.php:259
+msgid ""
+"Note: If \"Cancel Main Order?\" option is enabled then on the purchase of "
+"upsell/downsell offer it will charge the difference of main order total and "
+"this product. Learn More"
+msgstr ""
+"Remarque : si l'option \"Annuler la commande principale\" est activée, "
+"l'achat d'une offre de vente à la hausse ou à la baisse entraînera la "
+"facturation de la différence entre le total de la commande principale et ce "
+"produit. En savoir plus"
+
+#: modules/offer/classes/class-cartflows-pro-base-offer-meta-data.php:331
+#, fuzzy
+msgid "Product Variation "
+msgstr "Variation du produit "
+
+#: modules/offer/classes/class-cartflows-pro-base-offer-meta-data.php:365
+msgid "This shortcode will show the products single quantity price."
+msgstr "Ce shortcode indiquera le prix de quantité unique des produits."
+
+#: modules/offer/classes/class-cartflows-pro-base-offer-meta-data.php:384
+msgid "Step Title"
+msgstr "Titre de l'étape"
+
+#: modules/offer/classes/class-cartflows-pro-base-offer-meta-data.php:390
+msgid "Step Slug"
+msgstr "Étape"
+
+#: modules/offer/classes/class-cartflows-pro-base-offer-meta-data.php:397
+msgid "Conditional Redirection"
+msgstr "Redirection conditionnelle"
+
+#: modules/offer/classes/class-cartflows-pro-base-offer-shortcodes.php:186
+msgid "Shipping: "
+msgstr "Expédition : "
+
+#: modules/offer/classes/class-cartflows-pro-base-offer-shortcodes.php:188
+msgid " via Flat rate"
+msgstr " par le biais d'un tarif forfaitaire"
+
+#: modules/offer/classes/class-cartflows-pro-base-offer-shortcodes.php:291
+msgid "Awaiting product image"
+msgstr "En attente de l’image du produit"
+
+#: modules/offer/classes/class-cartflows-pro-base-offer-shortcodes.php:528
+msgid "Buy Now"
+msgstr "Acheter maintenant"
+
+#: modules/offer/classes/class-cartflows-pro-base-offer-shortcodes.php:530
+msgid "No, Thanks"
+msgstr "Non merci"
+
+#: modules/offer/classes/class-cartflows-pro-offer-order-meta.php:66
+msgid "CartFlows Order Auto Cancelled"
+msgstr "CartFlows commande auto annulée"
+
+#: modules/offer/classes/class-cartflows-pro-offer-order-meta.php:74
+msgid "CartFlows Upsell"
+msgstr "CartFlows Upsell"
+
+#: modules/offer/classes/class-cartflows-pro-offer-order-meta.php:76
+#, fuzzy
+msgid "CartFlows Downsell"
+msgstr "CartFlows Downsell"
+
+#: modules/offer/classes/class-cartflows-pro-offer-order-meta.php:101
+msgid "Amount Charged: "
+msgstr "Montant facturé "
+
+#: modules/offer/classes/class-cartflows-pro-offer-order-meta.php:102
+msgid ""
+"This order has charged the difference, and the same amount will be "
+"considered while refunding this order. You need to refund the rest of the "
+"amount from the parent order."
+msgstr ""
+"Cette commande a facturé la différence, et le même montant sera pris en "
+"compte lors du remboursement de cette commande. Vous devez rembourser le "
+"reste du montant à partir de la commande parentale."
+
+#: modules/offer/classes/class-cartflows-pro-offer-order-meta.php:111
+#, fuzzy
+msgid "CartFlows Parent Order"
+msgstr "Ordre des parents CartFlows"
+
+#: modules/offer/classes/class-cartflows-pro-offer-order-meta.php:123
+msgid "CartFlows Upsell&sol;Downsell Orders"
+msgstr "Commandes de vente en hausse/en baisse de CartFlows"
+
+#: modules/offer/classes/class-cartflows-pro-offer-order-meta.php:132
+msgid "Upsell"
+msgstr "Montée en gamme"
+
+#: modules/offer/classes/class-cartflows-pro-offer-order-meta.php:134
+#, fuzzy
+msgid "Downsell"
+msgstr "Downsell ( Downsell )"
+
+#: modules/orders/class-cartflows-pro-orders.php:78
+msgctxt "Order status"
+msgid "Main Order Accepted (CF)"
+msgstr "Commande principale acceptée (CF)"
+
+#. translators: %s: Single count value
+#: modules/orders/class-cartflows-pro-orders.php:100
+msgid "Main Order Accepted <span class=\"count\">(%s)</span>"
+msgid_plural "Main Order Accepted <span class=\"count\">(%s)</span>"
+msgstr[0] "Commande acceptée <span class=\"count\">(%s)</span>"
+msgstr[1] "Commande acceptée <span class=\"count\">(%s)</span>"
+
+#: modules/orders/class-cartflows-pro-orders.php:499
+msgid "Order has been cancelled as the user has upgraded to the CartFlows "
+msgstr ""
+"La commande a été annulée car l'utilisateur est passé à la version CartFlows "
+
+#: modules/thankyou/template/child-order-details.php:37
+msgid "Order number:"
+msgstr "Numéro de commande:"
+
+#: modules/thankyou/template/child-order-details.php:42
+msgid "Total:"
+msgstr "Total :"
+
+#: modules/thankyou/template/child-order-details.php:49
+msgid "Order details"
+msgstr "Détails de la commande"
+
+#: modules/thankyou/template/child-order-details.php:100
+msgid "Note:"
+msgstr "Note :"
+
+#: modules/tracking/class-cartflows-pro-analytics-reports.php:117
+#, fuzzy
+msgid "Are you sure you want to reset the analytics for this flow?"
+msgstr "Etes-vous sûr de vouloir réinitialiser l’analyse de ce flux ?"
+
+#: modules/tracking/class-cartflows-pro-analytics-reports.php:118
+msgid "Flow analytics data has been reset successfully."
+msgstr "Les données d'analyse des flux ont été réinitialisées avec succès."
+
+#: modules/tracking/class-cartflows-pro-analytics-reports.php:164
+msgid "Analytics"
+msgstr "Analytics"
+
+#: modules/tracking/class-cartflows-pro-analytics-reports.php:194
+msgid "Enable Flow Analytics"
+msgstr "Activer l'analyse des flux"
+
+#: modules/tracking/class-cartflows-pro-analytics-reports.php:205
+msgid ""
+"Analytics offers data that helps you understand how your flows are "
+"performing."
+msgstr ""
+"Analytics offre des données qui vous aident à comprendre la performance de "
+"vos flux."
+
+#: modules/tracking/class-cartflows-pro-analytics-reports.php:232
+msgid "View Analytics"
+msgstr "Voir Analytics"
+
+#: modules/tracking/class-cartflows-pro-analytics-reports.php:254
+msgid "Resetting"
+msgstr "Réinitialiser"
+
+#: modules/tracking/class-cartflows-pro-analytics-reports.php:255
+msgid "Reset Analytics"
+msgstr "Réinitialiser les Analytics"
+
+#: modules/tracking/view/analytics-popup.php:24
+msgid "Analytics Report"
+msgstr "Rapport d'analyse"
+
+#: modules/tracking/view/analytics-template-bck.php:18
+#: modules/tracking/view/analytics-template.php:18
+msgid "Gross Sale"
+msgstr "Vente brute"
+
+#: modules/tracking/view/analytics-template-bck.php:24
+#: modules/tracking/view/analytics-template.php:24
+msgid "Average Order Value"
+msgstr "Valeur moyenne de commande"
+
+#: modules/tracking/view/analytics-template-bck.php:30
+#: modules/tracking/view/analytics-template.php:30
+msgid "Bump Offer Revenue"
+msgstr "Chiffre d'affaires de l'offre Bump"
+
+#: modules/tracking/view/analytics-template-bck.php:40
+#: modules/tracking/view/analytics-template.php:40
+msgid "Last Month"
+msgstr "Mois dernier"
+
+#: modules/tracking/view/analytics-template-bck.php:41
+#: modules/tracking/view/analytics-template.php:41
+msgid "Last Week"
+msgstr "La semaine dernière"
+
+#: modules/tracking/view/analytics-template-bck.php:42
+#: modules/tracking/view/analytics-template.php:42
+msgid "Today"
+msgstr "Aujourd’hui"
+
+#: modules/tracking/view/analytics-template-bck.php:57
+#: modules/tracking/view/analytics-template.php:56
+msgid "Step"
+msgstr "Étape"
+
+#: modules/tracking/view/analytics-template-bck.php:58
+#: modules/tracking/view/analytics-template.php:57
+msgid "Total visits"
+msgstr "Total de visites"
+
+#: modules/tracking/view/analytics-template-bck.php:59
+#: modules/tracking/view/analytics-template.php:58
+msgid "Unique Visits"
+msgstr "Visiteurs uniques"
+
+#: modules/tracking/view/analytics-template-bck.php:60
+#: modules/tracking/view/analytics-template.php:61
+msgid "Revenue"
+msgstr "Revenu"
+
+#: modules/tracking/view/analytics-template-bck.php:74
+#: modules/tracking/view/analytics-template.php:121
+msgid "No Data Found"
+msgstr "Aucune donnée trouvée"
+
+#: modules/tracking/view/analytics-template.php:59
+msgid "Conversions"
+msgstr "Conversions"
+
+#: modules/tracking/view/analytics-template.php:60
+msgid "Conversion Rate"
+msgstr "Taux de conversion"
+
+#: modules/upsell/classes/class-cartflows-pro-upsell-markup.php:93
+msgid "Upsell Payment Failed"
+msgstr "Paiement Upsell échec"
+
+#: modules/widgets/class-cartflows-next-step.php:28
+msgid "CartFlows Next Step"
+msgstr "CartFlows Prochaine Étape"
+
+#: modules/widgets/class-cartflows-next-step.php:30
+msgid "Next Step Widgets"
+msgstr "Widgets prochaine étape"
+
+#: modules/widgets/class-cartflows-next-step.php:82
+msgid "Next Step"
+msgstr "Étape suivante"
+
+#: modules/widgets/class-cartflows-next-step.php:110
+msgid "New title"
+msgstr "Nouveau titre"
+
+#: modules/widgets/class-cartflows-next-step.php:127
+#, fuzzy
+msgid "Title:"
+msgstr ""
+"<span class=\"meta-nav\">Publié dans</span><span class=\"post-title\">%s</"
+"span>"
+
+#: modules/widgets/class-cartflows-next-step.php:131
+msgid "Flow ID:"
+msgstr "ID du flux:"
+
+#: modules/widgets/class-cartflows-next-step.php:135
+msgid "Step ID:"
+msgstr "ID de l'étape:"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Hide Advanced"
+msgstr "Masquer les avancées"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Advanced"
+msgstr "Avancé"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Line Height"
+msgstr "Hauteur de ligne"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Font Size"
+msgstr "Taille de la police"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "cartflows pro"
+msgstr "cartflows pro"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Offer yes no link"
+msgstr "Lien oui non"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "cfp"
+msgstr "cfp"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Select Icon"
+msgstr "Sélectionnez une icône"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+#, fuzzy
+msgid "Before Link Text"
+msgstr "Avant le texte du lien"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "After Link Text"
+msgstr "Après le texte du lien"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Spacing"
+msgstr "Espacement"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Margin (px)"
+msgstr "Marge (px)"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Add text…"
+msgstr "Ajouter du texte..."
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "px"
+msgstr "px"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "em"
+msgstr "em"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Size Type"
+msgstr "Type de taille"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "offer yes no button"
+msgstr "Bouton oui non"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Decline Offer"
+msgstr "Refuser l'offre"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Button"
+msgstr "Bouton"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Background Type"
+msgstr "Type d’arrière-plan"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Color"
+msgstr "Couleur"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Image"
+msgstr "Image"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Background Image"
+msgstr "Image de fond"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Select Background Image"
+msgstr "Sélectionner une image d’arrière-plan"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Replace image"
+msgstr "Remplacer l'image"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Remove Image"
+msgstr "Supprimer l'image"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Image Position"
+msgstr "Position de l’Image"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Top Left"
+msgstr "En haut à gauche"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Top Center"
+msgstr "En haut au centre"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Top Right"
+msgstr "En haut à droite"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Center Left"
+msgstr "Centré à gauche"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Center Center"
+msgstr "Centre centre"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Center Right"
+msgstr "Centré à droite"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Bottom Left"
+msgstr "En bas à gauche"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Bottom Center"
+msgstr "Bas Centre"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Bottom Right"
+msgstr "En bas à droite"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Attachment"
+msgstr "Pièce jointe"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Fixed"
+msgstr "Fixe"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Scroll"
+msgstr "Défilement"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Repeat"
+msgstr "Répéter"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "No Repeat"
+msgstr "Ne pas répéter"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Repeat-x"
+msgstr "Repeat-x"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Repeat-y"
+msgstr "Répéter verticalement"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Size"
+msgstr "Taille"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Auto"
+msgstr "Auto"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Cover"
+msgstr "Couverture"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Contain"
+msgstr "Contient"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Opacity"
+msgstr "Opacité"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Icon Color"
+msgstr "Couleur de l’icône"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Groove"
+msgstr "Groove"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Inset"
+msgstr "Intérieure"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Outset"
+msgstr "Extérieure"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Ridge"
+msgstr "Ridge"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Title Bottom Spacing (px)"
+msgstr "Espacement du fond en (px)"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Color Settings"
+msgstr "Réglages des couleurs"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Overlay Color"
+msgstr "Couleur de superposition"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "cartflows"
+msgstr "CartFlows"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "offer product title"
+msgstr "titre  du  produit"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "product title"
+msgstr "﻿Titre du produit"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Horizontal"
+msgstr "Horizontal"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Vertical"
+msgstr "Vertical"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Blur"
+msgstr "Flou"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "offer product description"
+msgstr "Description produit"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "offer product price"
+msgstr "prix du produit"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "offer product quantity"
+msgstr "Quantité du produit"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Input Field Border"
+msgstr "Champ de saisie Frontière"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "offer product variation"
+msgstr "variation du produit "
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "offer product image"
+msgstr "image  produit "
+
+#: modules/gutenberg/dist/blocks.build.js:1
+#, fuzzy
+msgid "Product Option"
+msgstr "Option produit"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Your Proucts"
+msgstr "Vos Produits"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Border Width (px)"
+msgstr "Largeur de bordure (px)"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+#, fuzzy
+msgid "Product option"
+msgstr "Option produit"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Please enable Product option from meta settings."
+msgstr "Veuillez activer l'option Produit dans les méta-paramètres."
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "On"
+msgstr "Activé"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Off"
+msgstr "Désactivé"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Text Background Color"
+msgstr "Couleur d’arrière-plan du texte"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Description Background Color"
+msgstr "Description de la couleur d'arrière-plan"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+#, fuzzy
+msgid "Please enable Order Bump from meta settings."
+msgstr "S’il vous plaît activer Order Bump à partir de paramètres meta."
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Enable preview"
+msgstr "Activer la prévisualisation"
+
+#: modules/gutenberg/dist/blocks.build.js:1
+msgid "Overlay color visible at front-end."
+msgstr "Couleur de superposition visible à l'avant."
+
+#: modules/gutenberg/dist/blocks.build.js:1
+#, fuzzy
+msgid "Please enable Pre Checkout Offer from meta settings."
+msgstr ""
+"S’il vous plaît activer l’offre de pré-caisse à partir de paramètres meta."

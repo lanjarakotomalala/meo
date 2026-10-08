@@ -1,0 +1,46 @@
+.cr-reviews-slider, .cr-reviews-grid-inner {
+  .reviewer-name {
+    color: #075b37 !important;
+    font-family: "Brother1816Printed",Arial,sans-serif !important;
+  }
+
+  .reviewer-verified, .rating-label, .review-text, .cr-slider-read-more, .cr-slider-details, .cr-slider-read-less, .datetime, .product-title {
+    font-family: sans-serif !important;
+  }
+
+  .reviewer-verified {
+    color: #2D2727 !important;
+  }
+
+  .review-product {
+    background: none !important;
+
+    .product-title a {
+      text-decoration: underline;
+    }
+  }
+
+  .reviews_slider_content__read-more {
+    font-weight: 700;
+    cursor: pointer;
+  }
+}
+
+.cr-summaryBox-wrap {
+  .ivole-meter {
+    background: unset;
+    box-shadow: unset;
+    border-radius: 4px;
+    background-color: white;
+
+    .ivole-meter-bar {
+      background: unset;
+      box-shadow: unset;
+      background-color: #FFBC00;
+
+      &::before {
+        background-color: unset;
+      }
+    }
+  }
+}

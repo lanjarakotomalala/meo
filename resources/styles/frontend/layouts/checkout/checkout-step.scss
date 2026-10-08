@@ -1,0 +1,150 @@
+form.checkout.woocommerce-checkout #checkout-op-steps {
+  color: black;
+  flex-grow: 1;
+
+  @media screen and (min-width: 1024px) {
+    flex-basis: 40%;
+  }
+
+  .recap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #F0F0F0;
+    border-bottom: .5px solid #D9D9D9;
+    color: #525151;
+    font-size: 12px;
+
+    padding: 8px 15px;
+    margin-bottom: 20px;
+
+    a {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      column-gap: 6px;
+
+      span {
+        text-decoration: underline;
+      }
+    }
+
+    .cost {
+      font-weight: bold;
+    }
+
+    @media screen and (min-width: 1024px) {
+      background-color: transparent;
+      border-bottom: none;
+      font-size: 15px;
+
+      > div {
+        display: none;
+      }
+    }
+  }
+
+  .step {
+    border: 2px solid #F0F0F0;
+    border-radius: 5px;
+    padding: 28px 21px;
+    margin-bottom: 30px;
+    transition: padding .3s ease-in-out;
+
+    .head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      user-select: none;
+
+      .title {
+        flex-grow: 1;
+        font-size: 16px;
+        font-family: $title-font-family;
+        font-weight: bold;
+        text-transform: uppercase;
+
+        @media screen and (min-width: 1024px) {
+          font-size: 24px;
+        }
+
+        span {
+          display: inline-flex;
+          width: 20px;
+          height: 20px;
+          justify-content: center;
+          align-items: center;
+          margin-right: 6px;
+
+
+          background-color: #B9B9B9;
+          border-radius: 9999px;
+          color: white;
+          font-size: 12px;
+
+          @media screen and (min-width: 1024px) {
+            width: 35px;
+            height: 35px;
+            font-size: 24px;
+            padding: 3px 13px;
+            margin-right: 13px;
+          }
+        }
+      }
+
+      .toggle img {
+        transform: rotate(90deg);
+        transition: transform 0.3s ease;
+      }
+    }
+
+    .step-content {
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, opacity 0.3s ease;
+
+      @media screen and (min-width: 1024px) {
+        padding: 0 3.5rem;
+      }
+
+      .woocommerce-billing-fields h3, .woocommerce-checkout-payment h3 {
+        display: none;
+      }
+
+      .next-step {
+        background: $primary-color;
+        color: white;
+        border-radius: 5px;
+        font-weight: bold;
+        width: fit-content;
+        padding: 10px 50px;
+        margin-top: 30px;
+        cursor: pointer;
+      }
+    }
+
+    // Step Open
+    &[data-toggle="1"] {
+      padding: 42px 21px;
+
+      .head {
+        margin-bottom: 20px;
+
+        span {
+          background: $primary-text-color;
+        }
+
+        .toggle img {
+          transform: rotate(0deg);
+        }
+      }
+
+      .step-content {
+        max-height: 100%;
+        opacity: 1;
+      }
+    }
+  }
+}

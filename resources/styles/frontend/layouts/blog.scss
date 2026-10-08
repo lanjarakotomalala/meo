@@ -1,0 +1,25 @@
+@media screen and (max-width: 992px) {
+  body.blog .site-content .shoptimizer-archive .archive-header + .col-full{
+    display: flex;
+    flex-direction: column-reverse;
+
+    #secondary.widget-area{
+      padding-top: 0;
+    }
+  }
+}
+
+body.blog, body.archive.category {
+  .site-content .shoptimizer-archive article a.post-thumbnail img{
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+
+  .site-footer-wrapper{
+    margin-top: 3rem;
+  }
+}
+
+.vcard.author {
+  display: none !important;
+}

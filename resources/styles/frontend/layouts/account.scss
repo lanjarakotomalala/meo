@@ -1,0 +1,54 @@
+.page-template-template-fullwidth-php .col2-set#customer_login .col-1,
+.page-template-template-fullwidth-php .col2-set#customer_login .col-2 {
+	padding: 30px 30px 10px;
+	background: $secondary-bg-color;
+}
+
+.woocommerce-form-login,
+.woocommerce-form-register {
+	.woocommerce-button {
+		padding: 18px 0;
+		width: 100%;
+    background-color: var(--secondary-ctas-color);
+
+		&:hover, &:focus {
+			background-color: var(--ctas-color);
+		}
+	}
+
+	.form-row input[type="checkbox"] {
+		margin: 4px 4px 0 0 !important;
+	}
+}
+
+.required {
+	color: $primary-color;
+}
+
+.woocommerce-MyAccount-navigation-link--downloads {
+	display: none;
+}
+
+.woocommerce-MyAccount-content {
+	.woocommerce-info {
+		background-color: transparent !important;
+		color: $primary-text-color;
+		position: relative;
+	}
+}
+
+.button.wcs_deletion_error {
+  background-color: var(--secondary-ctas-color);
+  &:hover {
+    background-color: var(--ctas-color);
+  }
+}
+
+
+.field-description {
+  font-size: 0.8rem;
+  color: $primary-text-color;
+  margin-bottom: 0;
+  margin-top: 1rem;
+  line-height: 1;
+}

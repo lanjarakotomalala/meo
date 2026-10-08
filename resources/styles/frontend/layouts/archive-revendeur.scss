@@ -1,0 +1,344 @@
+.post-type-archive-revendeur {
+  .shoptimizer-archive {
+    > .col-full {
+      max-width: 100%;
+      padding-right: 0;
+    }
+
+    .content-area {
+      width: 100%;
+
+      .revendeurs {
+        display: flex;
+        position: relative;
+
+        .revendeurs__list {
+          @media screen and (min-width: 993px) {
+            width: 50%;
+          }
+
+          &:first-child {
+            margin-right: 70px;
+
+            & > .wpgb-facet {
+              width: 20%;
+              margin: 25px auto;
+
+              @media screen and (max-width: 550px) {
+                width: 40%;
+              }
+            }
+          }
+
+          .store-locator-founded p {
+            margin-bottom: 12px;
+            padding-top: 12px;
+            border-top: solid 0.5px #d6d6d6;
+            margin-top: 25px;
+            font-weight: bold;
+            font-size: 17px;
+            text-align: center;
+            color: #292727;
+          }
+
+          .wp-grid-builder {
+            .wpgb-card {
+              min-height: 200px;
+              padding: 30px 40px;
+
+              &:hover {
+                cursor: pointer;
+              }
+
+              &, * {
+                background-color: #fbfbfb;
+              }
+
+              .wpgb-card-wrapper {
+                height: auto;
+
+                .wpgb-card-content {
+                  h3 {
+                    font-size: 20px;
+                  }
+                }
+              }
+
+              &.active-store {
+                &, * {
+                  background-color: #e4e4e4;
+                }
+
+                button {
+                  color: $primary-color;
+                }
+              }
+            }
+          }
+        }
+
+        .revendeurs__map {
+          @media screen and (min-width: 993px) {
+            z-index: 1;
+            position: sticky;
+            top: 25vh;
+            height: 75vh;
+            width: 50%;
+          }
+
+          .wpgb-facet-1 {
+            .wpgb-map-facet {
+              z-index: 1;
+
+              .leaflet-cluster-icon {
+                &.leaflet-digits-1,
+                &.leaflet-digits-2,
+                &.leaflet-digits-3,
+                &.leaflet-digits-4,
+                &.leaflet-digits-5 {
+                  background-image: none;
+                  font-size: 16px;
+
+                  &::before {
+                    z-index: -1;
+                    content: ' ';
+                    position: absolute;
+                    width: 40px;
+                    height: 40px;
+                    background-color: #fff;
+                    border-radius: 50%;
+                  }
+                }
+
+                &.leaflet-digits-1::before {
+                  top: 7px;
+                  left: 7px;
+                }
+
+                &.leaflet-digits-2::before {
+                  top: 9px;
+                  left: 9px;
+                }
+
+                &.leaflet-digits-3::before {
+                  top: 13px;
+                  left: 14px;
+                }
+
+                &.leaflet-digits-4::before {
+                  top: 20px;
+                  left: 20px;
+                }
+
+                &.leaflet-digits-5::before {
+                  top: 25px;
+                  left: 25px;
+                }
+              }
+
+              .leaflet-popup-content-wrapper {
+                .wpgb-map-marker-body {
+                  padding: 12px;
+
+                  p:last-child {
+                    margin-bottom: 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .facets {
+          display: flex;
+          flex-wrap: wrap;
+
+          .wpgb-facet fieldset {
+            margin-bottom: 0;
+          }
+
+          .wpgb-facet-2,
+          .wpgb-facet-4 {
+            flex: 0 0 25%;
+          }
+
+          .wpgb-facet-2,
+          .wpgb-facet-3 {
+            margin-right: 10px;
+          }
+
+          .wpgb-facet-3 {
+            flex: 1 0 70%;
+
+            .wpgb-geolocation-facet {
+              display: flex;
+              column-gap: 15px;
+
+              .wpgb-geolocation-input {
+                width: 70%;
+              }
+
+              .wpgb-geo-radius {
+                font-size: 16px;
+                margin-top: 10px;
+
+                input {
+                  width: 25px;
+                  text-align: center;
+                }
+              }
+            }
+          }
+
+          .wpgb-facet-4 {
+            width: 25%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+
+            button.wpgb-reset {
+              display: initial!important;
+              background: transparent;
+              border: 2px solid #ccc;
+              border-radius: 4px;
+              color: #444;
+              padding: 8px 36px;
+              text-decoration: underline;
+              margin-top: 7px!important;
+              width: auto!important;
+            }
+          }
+
+          .wpgb-facet-17 {
+            display: none;
+          }
+
+          @media screen and (max-width: 768px) {
+            row-gap: 15px;
+
+            .wpgb-facet-2,
+            .wpgb-facet-3,
+            .wpgb-facet-4 {
+              flex: 0 0 100%;
+            }
+          }
+        }
+
+        .store-products-btn-popup {
+          background-color: rgb(255, 255, 255);
+          color: rgb(151, 151, 151);
+          padding: 0px;
+          text-decoration: underline;
+          font-size: 14px;
+        }
+      }
+    }
+
+    @media (max-width: 992px) {
+      > .col-full {
+        padding-right: 1em;
+      }
+
+      .revendeurs {
+        flex-direction: column-reverse;
+
+        & > div:first-child,
+        div.wpgb-facet-1 {
+          width: 100%;
+        }
+
+        .facets {
+          justify-content: center;
+        }
+      }
+    }
+  }
+
+  .container-store-product-popup {
+    z-index: 9999;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+
+    .store-product-popup {
+      position: relative;
+      width: 60%;
+      max-height: 750px;
+      margin: auto;
+      margin-top: 11%;
+      background-color: #fff;
+      overflow: auto;
+
+      .close-popup {
+        position: absolute;
+        top: 35px;
+        right: 60px;
+        width: 17px;
+        height: 17px;
+        cursor: pointer;
+
+        &:before, &:after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 7px;
+          margin-left: 0;
+          width: 2px;
+          height: 17px;
+          background-color: #333;
+        }
+
+        &:before {
+          transform: rotate(45deg);
+        }
+
+        &:after {
+          transform: rotate(-45deg);
+        }
+      }
+
+      .products-container {
+        padding: 35px 60px;
+
+        .container-product-thumbnail {
+          border: 1px solid #eee;
+        }
+      }
+
+      @media (max-width: 768px) {
+        width: 90%;
+      }
+
+      @media (max-width: 550px) {
+        .wpgb-map-marker-title {
+          font-size: 1.2em;
+        }
+
+        .wpgb-map-marker-content {
+          font-size: 0.9em;
+        }
+
+        .close-popup {
+          right: 40px;
+        }
+      }
+
+      @media (max-width: 450px) {
+        .wpgb-map-marker-title {
+          font-size: 1em;
+        }
+
+        .wpgb-map-marker-content {
+          font-size: 0.8em;
+        }
+
+        .wpgb-grid-woocommerce-store-products-loop .product {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

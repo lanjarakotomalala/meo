@@ -1,0 +1,15 @@
+// Helper to import font
+@mixin font($name, $file, $weight: normal, $style: normal, $otf: false) {
+  @font-face {
+    font-family: $name;
+    @if $otf {
+      src: url(~@fonts/#{$file}.otf) format('opentype');
+    } @else {
+      src: url(~@fonts/#{$file}.woff2) format('woff2'),
+      url(~@fonts/#{$file}.woff) format('woff');
+    }
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+

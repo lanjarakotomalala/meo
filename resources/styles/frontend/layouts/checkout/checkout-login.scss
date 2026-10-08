@@ -1,0 +1,134 @@
+form.checkout.woocommerce-checkout #checkout-op-steps .step .loggedUser{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.2rem;
+  padding-top: 15px;
+
+  p{
+    margin: 0;
+  }
+
+  a{
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+}
+
+form.checkout.woocommerce-checkout #checkout-op-steps .step .step-content.step-login {
+  h3{
+    line-height: 1.85rem;
+  }
+
+  .toggle-login-form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (min-width: 1024px){
+      justify-content: start;
+      column-gap: 3rem;
+    }
+
+    span.create-account, span.login-account{
+      cursor: pointer;
+    }
+
+    div span:first-child{
+        opacity: 0.5;
+        margin-right: .5rem;
+    }
+
+    .login-account {
+      font-weight: bold;
+    }
+
+    .noAccountYet{
+      display: none;
+      @media screen and (min-width: 1280px){
+        display: inline-block;
+      }
+    }
+
+    &.showLoginForm {
+      & ~ #customer_login{
+        .loginAccount{
+          display: block;
+          width: 100%;
+
+          .woocommerce-form-login{
+            padding: 0;
+
+            @media screen and (min-width: 1024px){
+              padding: 2.5rem 0;
+            }
+          }
+        }
+        .registerAccount{
+          display: none;
+        }
+      }
+    }
+
+    &.showRegisterForm {
+      .create-account{
+        text-decoration: underline;
+      }
+
+      & ~ #customer_login{
+        .loginAccount{
+          display: none;
+        }
+        .registerAccount{
+          display: block;
+        }
+      }
+    }
+  }
+
+  // Woocommerce Login / Register Forms
+  #customer_login{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    width: 100%;
+
+    @media screen and (min-width: 1024px){
+      flex-direction: row;
+      column-gap: 1rem;
+    }
+
+    > div {
+      background: white;
+      padding: 0;
+
+      @media screen and (min-width: 1024px){
+        width: 50%;
+      }
+
+      &.loginAccount, &.registerAccount{
+        > h2{
+          display: none;
+        }
+      }
+
+      &.loginAccount .woocommerce-form-login {
+        background-color: white!important;
+      }
+
+      .woocommerce-form-login__rememberme{
+        margin-bottom: 1rem;
+      }
+
+      button[type="submit"]{
+        background: $primary-color;
+        font-weight: bold;
+        width: fit-content;
+        padding: 15px 40px;
+      }
+
+    }
+
+  }
+
+}
