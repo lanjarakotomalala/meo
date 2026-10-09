@@ -263,7 +263,7 @@
 .editorial-home .editorial-visual { position: absolute; inset: 0 0 0 auto; width: 55%; overflow: hidden; pointer-events: none; }
 .editorial-home .editorial-visual-ring { position: absolute; top: 49%; left: 47%; width: min(59vw, 760px); aspect-ratio: 1; border: 1px solid rgba(255,249,238,.37); border-radius: 50%; transform: translate(-50%,-50%); }
 .editorial-home .editorial-visual-ring::after { content: ""; position: absolute; inset: 8%; border: 1px solid rgba(255,249,238,.13); border-radius: 50%; }
-.editorial-home .editorial-product-frame { position: absolute; top: 53%; left: 47%; width: min(33vw, 470px); height: min(65vh, 590px); display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 18px; background: #ead7ba; color: #3e3025; box-shadow: 0 32px 90px rgba(0,0,0,.35); transform: translate(-50%,-50%) rotate(4deg) scale(.96); transition: transform 1.2s cubic-bezier(.15,.7,.2,1); }
+.editorial-home .editorial-product-frame { position: absolute; top: 58%; left: 47%; width: min(33vw, 470px); height: min(65vh, 590px); display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 18px; background: #ead7ba; color: #3e3025; box-shadow: 0 32px 90px rgba(0,0,0,.35); transform: translate(-50%,-50%) rotate(4deg) scale(.96); transition: transform 1.2s cubic-bezier(.15,.7,.2,1); }
 .editorial-home .editorial-slide.is-active .editorial-product-frame { transform: translate(-50%,-50%) rotate(-3deg) scale(1); }
 .editorial-home .editorial-slide-coffee .editorial-product-frame { background: #dddbc8; }
 .editorial-home .editorial-slide-coffee.is-active .editorial-product-frame { transform: translate(-50%,-50%) rotate(3deg) scale(1); }
@@ -517,11 +517,11 @@
 .editorial-home .monthly-copy p { max-width: 260px; font-size: 16px; line-height: 1.45; }
 .editorial-home .monthly-copy a { display: inline-flex; align-items: center; gap: 20px; padding: 11px 0; border-bottom: 1px solid #fffaf1; font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
 .editorial-home .monthly-copy a span { font-size: 20px; font-weight: 400; }
-.editorial-home .monthly-art { position: absolute; right: -4%; bottom: -18%; width: 69%; height: 78%; display: grid; place-items: center; transform: rotate(8deg); }
-.editorial-home .monthly-art::before { content: ""; position: absolute; inset: 5%; border: 1px solid rgba(255,250,241,.4); border-radius: 50%; }
+.editorial-home .monthly-art { position: absolute; right: -8%; bottom: -25%; width: 64%; height: 77%; display: grid; place-items: center; background: #eadbc5; box-shadow: 0 24px 55px rgba(16,11,8,.24); transform: rotate(8deg); }
+.editorial-home .monthly-art::before { content: ""; position: absolute; inset: 5%; border: 1px solid rgba(74,51,35,.2); }
 .editorial-home .monthly-art img { position: absolute; width: 88%; height: 88%; object-fit: contain; }
 .editorial-home .monthly-art .monthly-fallback { width: 47%; height: auto; opacity: .45; }
-.editorial-home .monthly-art .home-remote-photo { filter: drop-shadow(0 20px 20px rgba(15,11,9,.25)); }
+.editorial-home .monthly-art .home-remote-photo { mix-blend-mode: multiply; filter: drop-shadow(0 20px 20px rgba(15,11,9,.25)); }
 
 .editorial-home .subscription { background: #443225; }
 .editorial-home .subscription-inner { min-height: 625px; }
@@ -610,9 +610,9 @@
   .editorial-home .monthly-stories { padding: 78px 0 85px; }
   .editorial-home .monthly-heading h2 { font-size: clamp(45px, 10vw, 66px); }
   .editorial-home .monthly-grid { grid-template-columns: 1fr; gap: 10px; }
-  .editorial-home .monthly-card { min-height: 500px; padding: 27px; }
+  .editorial-home .monthly-card { min-height: 540px; padding: 27px; }
   .editorial-home .monthly-copy h3 { max-width: 290px; font-size: clamp(43px, 10vw, 56px); }
-  .editorial-home .monthly-art { right: -5%; bottom: -20%; width: 75%; height: 66%; }
+  .editorial-home .monthly-art { right: -18%; bottom: -24%; width: 72%; height: 64%; }
   .editorial-home .subscription-inner { display: flex; flex-direction: column; min-height: 0; padding-top: 45px; padding-bottom: 67px; }
   .editorial-home .subscription-photo { width: 100%; min-height: 250px; }
   .editorial-home .subscription-copy { width: 100%; padding: 35px 0 0; }
@@ -633,7 +633,8 @@
 }
 
 @media (max-width: 380px) {
-  .editorial-home .editorial-actions .editorial-text-link { display: none; }
+  .editorial-home .editorial-visual { height: 46%; }
+  .editorial-home .editorial-product-frame { top: 44%; height: min(31vh, 250px); }
+  .editorial-home .editorial-brand-disc { top: 44%; width: min(58vw, 245px); }
   .editorial-home .finder-card strong { font-size: 29px; }
-  .editorial-home .monthly-card { min-height: 460px; }
 }

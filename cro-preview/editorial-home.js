@@ -15,9 +15,15 @@
   if (!hero || !header || slides.length === 0) return;
 
   document.querySelectorAll('.editorial-product-photo, .home-remote-photo').forEach(img => {
+    const fallback = img.parentElement.querySelector('.editorial-product-fallback, .monthly-fallback');
     const hideBrokenImage = () => { img.hidden = true; };
+    const hideFallback = () => { if (fallback && img.naturalWidth > 0) fallback.hidden = true; };
     img.addEventListener('error', hideBrokenImage, { once: true });
-    if (img.complete && img.naturalWidth === 0) hideBrokenImage();
+    img.addEventListener('load', hideFallback, { once: true });
+    if (img.complete) {
+      if (img.naturalWidth === 0) hideBrokenImage();
+      else hideFallback();
+    }
   });
 
   let currentSlide = 0;
