@@ -5,7 +5,7 @@ Cette maquette statique est stockée dans le dépôt Git, dans `cro-preview/`, a
 ## Portée
 
 - La direction artistique reprend les ressources du thème Méo (logo, polices, icônes, couleurs) et la structure visuelle observée sur la page d’accueil le 8 octobre 2026.
-- Les images de la première section sont chargées depuis les URLs publiques de meo.fr. Les photos et les promotions peuvent changer sur le site réel.
+- Les deux packshots du carrousel sont chargés depuis le DAM public de Méo (`dam.meo.fr`), déjà utilisé par les fiches produit de la maquette. Le panneau « marque » et la tasse de la section abonnement utilisent des ressources locales ou du CSS. Si un packshot échoue, le logo local reste visible.
 - Le catalogue figé du 8 octobre 2026 vient de l’API publique WooCommerce Store de meo.fr : **123 produits publics et 49 catégories**. Les produits et catégories des exports CSV ont servi au contrôle des données ; les commandes ne sont pas utilisées.
 - Les routes `/catalogue/`, `/categorie-produit/.../`, `/produit/.../`, `/abonnement/`, `/panier/`, `/commander/` et `/recherche/` affichent les pages de la boutique. La règle Apache dans `.htaccess` les réécrit vers `catalog.html`, qui charge `data/catalog.json`.
 - La homepage garde un parcours express en trois actions : choisir le mode, ajouter un café, consulter le paiement simulé. Le panier est conservé localement entre les pages.
@@ -21,7 +21,7 @@ Le thème WordPress ne référence aucun fichier de ce dossier. Le script de pub
 
 L’hébergement séparé `test.meo.fr` est créé dans N-admin sur le serveur Méo `nc3199` (`185.46.230.199`), avec `htdocs` comme racine web. Les fichiers de la maquette (`index.html`, `catalog.html`, CSS/JS, `assets/`, `data/catalog.json`, `.htaccess`) y ont été publiés le 8 octobre 2026. Les routes principales et l’en-tête `X-Robots-Tag: noindex, nofollow` ont été vérifiés directement sur l’IP du serveur. La clé SSH temporaire utilisée pour le transfert a été retirée du compte Nexylan et supprimée localement.
 
-Le DNS public de `test.meo.fr` pointe désormais sur `185.46.230.199`. Au 9 octobre 2026, Nexylan n’a aucun certificat SSL assigné à cet hébergement ; le navigateur refuse donc `https://test.meo.fr/` avec `ERR_CERT_COMMON_NAME_INVALID`. Un certificat valide pour ce sous-domaine doit être créé puis assigné dans Nexylan. Ne pas assigner à cet hébergement le certificat existant de `blog.meo.fr`.
+Le DNS public de `test.meo.fr` pointe sur `185.46.230.199`. Le 9 octobre 2026, un certificat Let’s Encrypt dédié à `test.meo.fr` a été créé et assigné dans Nexylan. `https://test.meo.fr/` répond en HTTP 200 avec une vérification TLS réussie.
 
 La refonte éditoriale de la homepage se trouve dans `index.html`, `editorial-home.css` et `editorial-home.js`. Ces trois fichiers doivent être copiés ensemble dans `/var/www/test.meo.fr/htdocs/`. Un push Git seul ne met pas cette prévisualisation à jour : aucun déploiement automatique vers Nexylan n’est configuré ici.
 
