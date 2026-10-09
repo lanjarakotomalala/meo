@@ -73,8 +73,10 @@ class AssetsServiceProvider implements ServiceProviderInterface
 		\MyApp::core()->assets()->enqueueStyle( 'theme-styles', get_template_directory_uri() . '/style.css' );
 
 		if ( is_front_page() ) {
-			wp_enqueue_style( 'meo-home-editorial', get_stylesheet_directory_uri() . '/resources/styles/home-editorial.css', [], '1.0' );
-			wp_enqueue_script( 'meo-home-editorial', get_stylesheet_directory_uri() . '/resources/scripts/frontend/home-editorial.js', [], '1.0', true );
+			$home_css = '/resources/styles/home-editorial.css';
+			$home_js = '/resources/scripts/frontend/home-editorial.js';
+			wp_enqueue_style( 'meo-home-editorial', get_stylesheet_directory_uri() . $home_css, [], filemtime( get_stylesheet_directory() . $home_css ) );
+			wp_enqueue_script( 'meo-home-editorial', get_stylesheet_directory_uri() . $home_js, [], filemtime( get_stylesheet_directory() . $home_js ), true );
 		}
 	}
 

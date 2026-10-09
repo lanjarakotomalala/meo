@@ -21,7 +21,9 @@ Le thème WordPress ne référence aucun fichier de ce dossier. Le script de pub
 
 L’hébergement séparé `test.meo.fr` est créé dans N-admin sur le serveur Méo `nc3199` (`185.46.230.199`), avec `htdocs` comme racine web. Les fichiers de la maquette (`index.html`, `catalog.html`, CSS/JS, `assets/`, `data/catalog.json`, `.htaccess`) y ont été publiés le 8 octobre 2026. Les routes principales et l’en-tête `X-Robots-Tag: noindex, nofollow` ont été vérifiés directement sur l’IP du serveur. La clé SSH temporaire utilisée pour le transfert a été retirée du compte Nexylan et supprimée localement.
 
-Le DNS public de `meo.fr` est géré par Cloudflare. Il faut créer une entrée **A**, nom **test**, cible **185.46.230.199**, **DNS only** dans la zone `meo.fr`, puis activer un certificat Let’s Encrypt pour `test.meo.fr` dans Nexylan. Jusqu’à ces étapes, l’URL `https://test.meo.fr/` n’est pas accessible publiquement. Ne pas changer les autres enregistrements DNS.
+Le DNS public de `test.meo.fr` pointe désormais sur `185.46.230.199`. Au 9 octobre 2026, Nexylan n’a aucun certificat SSL assigné à cet hébergement ; le navigateur refuse donc `https://test.meo.fr/` avec `ERR_CERT_COMMON_NAME_INVALID`. Un certificat valide pour ce sous-domaine doit être créé puis assigné dans Nexylan. Ne pas assigner à cet hébergement le certificat existant de `blog.meo.fr`.
+
+La refonte éditoriale de la homepage se trouve dans `index.html`, `editorial-home.css` et `editorial-home.js`. Ces trois fichiers doivent être copiés ensemble dans `/var/www/test.meo.fr/htdocs/`. Un push Git seul ne met pas cette prévisualisation à jour : aucun déploiement automatique vers Nexylan n’est configuré ici.
 
 Le catalogue peut être reconstruit à partir des réponses des endpoints publics `https://www.meo.fr/wp-json/wc/store/v1/products?per_page=100&page=1`, `...page=2` et `https://www.meo.fr/wp-json/wc/store/v1/products/categories?per_page=100&page=1` avec `scripts/build_catalog.py`. Les réponses brutes ne sont pas conservées dans le dépôt.
 
