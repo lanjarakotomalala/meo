@@ -1,2 +1,5 @@
 .vercel
 .env*
+.products-page*.json
+.categories-sample.json
+.catalog-sample.json

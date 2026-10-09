@@ -6,17 +6,23 @@ Cette maquette statique est stockée dans le dépôt Git, dans `cro-preview/`, a
 
 - La direction artistique reprend les ressources du thème Méo (logo, polices, icônes, couleurs) et la structure visuelle observée sur la page d’accueil le 8 octobre 2026.
 - Les images de la première section sont chargées depuis les URLs publiques de meo.fr. Les photos et les promotions peuvent changer sur le site réel.
-- Les noms et prix des six cafés de démonstration proviennent de l’export produits fourni. Les commandes ne sont pas utilisées.
-- Le parcours achat unique et le parcours abonnement mènent à un panier et à une confirmation simulés.
-- Une proposition d’abonnement apparaît dans le panier d’achat unique à partir de **2 articles et 20 €**. Ce seuil est une hypothèse de maquette à valider.
-- Le seuil de **20 €** pour la simulation d’abonnement et les fréquences proposées ne sont pas des conditions commerciales publiées.
+- Le catalogue figé du 8 octobre 2026 vient de l’API publique WooCommerce Store de meo.fr : **123 produits publics et 49 catégories**. Les produits et catégories des exports CSV ont servi au contrôle des données ; les commandes ne sont pas utilisées.
+- Les routes `/catalogue/`, `/categorie-produit/.../`, `/produit/.../`, `/abonnement/`, `/panier/`, `/commander/` et `/recherche/` affichent les pages de la boutique. La règle Apache dans `.htaccess` les réécrit vers `catalog.html`, qui charge `data/catalog.json`.
+- La homepage garde un parcours express en trois actions : choisir le mode, ajouter un café, consulter le paiement simulé. Le panier est conservé localement entre les pages.
+- Une proposition d’abonnement apparaît à partir de **2 cafés en achat unique** dans le panier. Ce seuil est une hypothèse de maquette. Les produits non café restent en achat unique.
+- Les fréquences proposées et l’éligibilité à l’abonnement sont des hypothèses à valider avec les règles WooCommerce. Aucune remise n’est supposée.
+- Le paiement reste simulé : aucune adresse, commande, transaction ou abonnement n’est envoyé à meo.fr.
 
 ## Isolation du thème
 
 Le thème WordPress ne référence aucun fichier de ce dossier. Le script de publication `resources/build/release/release.js` utilise la liste explicite `config.json > release.include`, qui n’inclut pas `cro-preview/`. Modifier la maquette ne modifie donc ni les templates ni le CSS actif de meo.fr. Une intégration future nécessitera un travail séparé dans WordPress et des tests sur préproduction.
 
-## Prévisualisation
+## Prévisualisation sur Nexylan
 
-Ouvrir `index.html` avec un serveur statique local, ou déployer ce dossier seul sur Vercel. L’URL de démonstration est [meo-cro-preview.vercel.app](https://meo-cro-preview.vercel.app/). La configuration `vercel.json` ajoute un en-tête `X-Robots-Tag: noindex, nofollow`.
+L’hébergement séparé `test.meo.fr` est créé dans N-admin sur le serveur Méo `nc3199` (`185.46.230.199`), avec `htdocs` comme racine web. Les fichiers de la maquette (`index.html`, `catalog.html`, CSS/JS, `assets/`, `data/catalog.json`, `.htaccess`) y ont été publiés le 8 octobre 2026. Les routes principales et l’en-tête `X-Robots-Tag: noindex, nofollow` ont été vérifiés directement sur l’IP du serveur. La clé SSH temporaire utilisée pour le transfert a été retirée du compte Nexylan et supprimée localement.
 
-Le dossier est actuellement une modification locale non commitée : GitHub Desktop l’affiche, mais GitHub.com ne la recevra qu’après un commit et un push.
+Le DNS public de `meo.fr` est géré par Cloudflare. Il faut créer une entrée **A**, nom **test**, cible **185.46.230.199**, **DNS only** dans la zone `meo.fr`, puis activer un certificat Let’s Encrypt pour `test.meo.fr` dans Nexylan. Jusqu’à ces étapes, l’URL `https://test.meo.fr/` n’est pas accessible publiquement. Ne pas changer les autres enregistrements DNS.
+
+Le catalogue peut être reconstruit à partir des réponses des endpoints publics `https://www.meo.fr/wp-json/wc/store/v1/products?per_page=100&page=1`, `...page=2` et `https://www.meo.fr/wp-json/wc/store/v1/products/categories?per_page=100&page=1` avec `scripts/build_catalog.py`. Les réponses brutes ne sont pas conservées dans le dépôt.
+
+Les changements de ce dossier sont visibles dans GitHub Desktop. GitHub.com ne les recevra qu’après un commit et un push.

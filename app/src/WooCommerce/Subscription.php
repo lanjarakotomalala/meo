@@ -110,17 +110,21 @@ class Subscription implements ServiceProviderInterface
 
     public function isSub($is_subscription, $product_id, $product)
     {
-        // Pour déterminer si le produit est un abonnement, on check dans les items du panier si le produit en cours
-        // a été sélectionner pour abonnement ou non pour les produits simples avec un plan d'abonnement
+        // A product with optional plans can be bought once or as a subscription.
+        // Keep native subscription products recurring even without WCSATT cart data.
         if ((is_cart() || is_checkout()) && ! empty(WC()->cart->cart_contents) && ! wcs_cart_contains_renewal()) {
+            $found_in_cart = false;
             foreach (WC()->cart->cart_contents as $cart_item) {
-                if ($cart_item['product_id'] == $product_id) {
-                    if ($cart_item['wcsatt_data']['active_subscription_scheme']) {
+                if (isset($cart_item['product_id']) && (int) $cart_item['product_id'] === (int) $product_id) {
+                    $found_in_cart = true;
+                    if (($product instanceof \WC_Product && $product->is_type(['subscription', 'subscription_variation']))
+                        || !empty($cart_item['wcsatt_data']['active_subscription_scheme'])) {
                         return true;
-                    } else {
-                        return false;
                     }
                 }
+            }
+            if ($found_in_cart) {
+                return false;
             }
         }
 
@@ -334,7 +338,7 @@ class Subscription implements ServiceProviderInterface
     {
         $product = $values['data'];
 
-        $is_subscription = $product->get_type() === 'subscription';
+        $is_subscription = $product->is_type(['subscription', 'subscription_variation']);
         $is_wcsatt = isset($values['wcsatt_data']['active_subscription_scheme']) && $values['wcsatt_data']['active_subscription_scheme'] !== false;
 
         if ($is_subscription || $is_wcsatt) {
@@ -360,26 +364,27 @@ class Subscription implements ServiceProviderInterface
     public function checkCartItemsMinimumAmount()
     {
         $sub_total = 0;
+        $has_subscription = false;
 
         foreach (WC()->cart->get_cart() as $cart_item) {
             $product = $cart_item['data'];
             $quantity = $cart_item['quantity'];
 
-            $is_subscription = $product->get_type() === 'subscription';
+            $is_subscription = $product->is_type(['subscription', 'subscription_variation']);
             $is_wcsatt = isset($cart_item['wcsatt_data']['active_subscription_scheme']) && $cart_item['wcsatt_data']['active_subscription_scheme'] !== false;
 
             if ($is_subscription || $is_wcsatt) {
+                $has_subscription = true;
                 $price = $product->get_price();
                 $sub_total += $price * $quantity;
             }
         }
 
-        if ($is_subscription || $is_wcsatt) {
-            if ($sub_total > 0 && $sub_total < 20) {
+        if ($has_subscription) {
+            if ($sub_total < 20) {
                 wc_add_notice(
                     sprintf(
-                        __('Le produit d’abonnement "%s" nécessite un montant minimum de 20€, actuellement %s€.', 'woocommerce'),
-                        $product->get_name(),
+                        __('Les produits d’abonnement nécessitent un montant minimum de 20€, actuellement %s€.', 'woocommerce'),
                         number_format($sub_total, 2, ',', '')
                     ),
                     'error'

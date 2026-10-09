@@ -1,5 +1,21 @@
 {
   "cleanUrls": true,
+  "rewrites": [
+    { "source": "/produit/:path*/", "destination": "/catalog" },
+    { "source": "/produit/:path*", "destination": "/catalog" },
+    { "source": "/categorie-produit/:path*/", "destination": "/catalog" },
+    { "source": "/categorie-produit/:path*", "destination": "/catalog" },
+    { "source": "/catalogue/", "destination": "/catalog" },
+    { "source": "/catalogue", "destination": "/catalog" },
+    { "source": "/abonnement/", "destination": "/catalog" },
+    { "source": "/abonnement", "destination": "/catalog" },
+    { "source": "/panier/", "destination": "/catalog" },
+    { "source": "/panier", "destination": "/catalog" },
+    { "source": "/commander/", "destination": "/catalog" },
+    { "source": "/commander", "destination": "/catalog" },
+    { "source": "/recherche/", "destination": "/catalog" },
+    { "source": "/recherche", "destination": "/catalog" }
+  ],
   "headers": [
     {
       "source": "/(.*)",

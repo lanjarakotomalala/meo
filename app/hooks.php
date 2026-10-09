@@ -1589,57 +1589,104 @@ add_action('meo/single-product/after_short_description', function () {
 // Update mini cart quantity
 function dynamic_qty_update()
 {
-    $cart = [
-        'count'      => 0,
-        'total'      => 0,
-        'item_price' => 0,
-    ];
-
-    if (! wp_verify_nonce($_POST['security'], 'dynamic-quantity-ajax')) {
-        wp_send_json_error($cart);
-        wp_die();
-    }
-
-    $key    = sanitize_text_field($_POST['key']);
-    $number = intval(sanitize_text_field($_POST['number']));
-    $product_id = (int) str_replace('product-', '', $_POST['product_id']);
-
-    if ($product_id > 0) {
-        $product = wc_get_product($product_id);
-
-        if ($product) {
-            $sub_datas = get_post_meta($product_id, '_wcsatt_schemes', true);
-            $price = $product->get_price();
-            if ($sub_datas[0]['subscription_pricing_method'] === 'override') { // si le produit de l'abonnement n'est pas celui du produit simple
-                $price = $sub_datas[0]['subscription_price'];
-            } else { // Si on garde le proix de l'abonnement
-                if (! empty($sub_datas[0]['subscription_discount'])) { // si on ajoute une réduction au prix de l'abonnement
-                    $price = $price - ($price * ($sub_datas[0]['subscription_discount'] / 100));
-                }
-            }
-            $total = $price * $number;
-
-            if ($total < 20) {
-                wp_send_json_error(['error' => 'sub_under_20', 'qty' => absint((20 / $price) + 1)]);
-                wp_die();
-            }
+    foreach (['security', 'key', 'number', 'product_id'] as $field) {
+        if (!isset($_POST[$field]) || !is_scalar($_POST[$field])) {
+            wp_send_json_error(['error' => 'invalid_request'], 400);
         }
     }
 
-    if ($key && $number === 0) {
-        WC()->cart->set_quantity($key, 0);
-        WC()->cart->remove_cart_item($key);
-    } elseif ($key && $number > 0) {
-        WC()->cart->set_quantity($key, $number);
-        $items              = WC()->cart->get_cart();
-        $cart               = [];
-        $cart['count']      = WC()->cart->cart_contents_count;
-        $cart['total']      = WC()->cart->get_cart_total();
-        $cart['item_price'] = WC()->cart->get_product_subtotal(wc_get_product($items[$key]['product_id']), $number);
+    $security = sanitize_text_field(wp_unslash((string) $_POST['security']));
+    if (!wp_verify_nonce($security, 'dynamic-quantity-ajax')) {
+        wp_send_json_error(['error' => 'invalid_nonce'], 403);
     }
 
-    wp_send_json_success($cart);
-    wp_die();
+    $key = sanitize_text_field(wp_unslash((string) $_POST['key']));
+    $number = filter_var(wp_unslash((string) $_POST['number']), FILTER_VALIDATE_INT, [
+        'options' => ['min_range' => 0],
+    ]);
+    $product_id_input = wp_unslash((string) $_POST['product_id']);
+    if ($product_id_input !== '0' && !preg_match('/^product-[1-9][0-9]*$/', $product_id_input)) {
+        wp_send_json_error(['error' => 'invalid_request'], 400);
+    }
+    $product_id = $product_id_input === '0' ? 0 : (int) substr($product_id_input, 8);
+    $cart = WC()->cart;
+
+    if ($number === false || !$cart || !isset($cart->cart_contents[$key])) {
+        wp_send_json_error(['error' => 'invalid_cart_item'], 400);
+    }
+
+    $item = $cart->cart_contents[$key];
+    if (($product_id > 0 && !in_array($product_id, [
+        (int) $item['product_id'],
+        (int) ($item['variation_id'] ?? 0),
+    ], true))
+        || !isset($item['data']) || !($item['data'] instanceof WC_Product)) {
+        wp_send_json_error(['error' => 'invalid_cart_item'], 400);
+    }
+
+    $product = $item['data'];
+    $max_quantity = $product->get_max_purchase_quantity();
+    if ($number > 0 && $max_quantity > 0 && $number > $max_quantity) {
+        wp_send_json_error(['error' => 'invalid_quantity'], 400);
+    }
+
+    $is_subscription = $product->is_type(['subscription', 'subscription_variation'])
+        || !empty($item['wcsatt_data']['active_subscription_scheme']);
+
+    if ($is_subscription && $number > 0) {
+        $item_product_id = (int) $item['product_id'];
+        $sub_datas = get_post_meta($item_product_id, '_wcsatt_schemes', true);
+        $catalog_product = wc_get_product(!empty($item['variation_id'])
+            ? (int) $item['variation_id']
+            : $item_product_id);
+        $price = $catalog_product
+            ? (float) $catalog_product->get_price()
+            : (float) $product->get_price();
+        if (is_array($sub_datas) && isset($sub_datas[0]) && is_array($sub_datas[0])) {
+            $scheme = $sub_datas[0];
+            $active_scheme = $item['wcsatt_data']['active_subscription_scheme'] ?? '';
+            foreach ($sub_datas as $candidate) {
+                if (!is_array($candidate)) {
+                    continue;
+                }
+                $candidate_key = ($candidate['subscription_period_interval'] ?? '')
+                    . '_' . ($candidate['subscription_period'] ?? '');
+                if ($candidate_key === $active_scheme) {
+                    $scheme = $candidate;
+                    break;
+                }
+            }
+            if (($scheme['subscription_pricing_method'] ?? '') === 'override') {
+                $price = (float) ($scheme['subscription_price'] ?? $price);
+            } elseif (!empty($scheme['subscription_discount'])) {
+                $price -= $price * ((float) $scheme['subscription_discount'] / 100);
+            }
+        }
+
+        if ($price * $number < 20) {
+            wp_send_json_error([
+                'error' => 'sub_under_20',
+                'qty' => $price > 0 ? (int) ceil(20 / $price) : (int) $item['quantity'],
+            ]);
+        }
+    }
+
+    if (!$cart->set_quantity($key, $number)) {
+        wp_send_json_error(['error' => 'invalid_quantity'], 400);
+    }
+
+    if ($number === 0) {
+        $cart->calculate_totals();
+    }
+
+    $updated = $cart->get_cart();
+    wp_send_json_success([
+        'count' => $cart->cart_contents_count,
+        'total' => $cart->get_cart_total(),
+        'item_price' => isset($updated[$key])
+            ? $cart->get_product_subtotal($updated[$key]['data'], $number)
+            : 0,
+    ]);
 }
 add_action('wp_ajax_dynamic_qty_update', 'dynamic_qty_update');
 add_action('wp_ajax_nopriv_dynamic_qty_update', 'dynamic_qty_update');

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#075b37">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Boutique Méo — Prévisualisation</title>
+  <meta name="description" content="Prévisualisation de la boutique Méo : catégories, produits, panier et abonnement. Aucun paiement réel.">
+  <link rel="icon" href="/assets/favicon.ico">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/meo.css">
+  <link rel="stylesheet" href="/catalog.css">
+  <script src="/store.js" defer></script>
+  <script src="/catalog.js" defer></script>
+</head>
+<body>
+  <div class="demo-banner">PRÉVISUALISATION UX · Aucun paiement réel · Aucun lien avec le panier de meo.fr <a href="/#method">En savoir plus</a></div>
+  <header class="site-header" id="top">
+    <div class="header-inner shell">
+      <div class="header-left">
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button>
+        <button class="header-link search-toggle" id="search-toggle" type="button" aria-label="Rechercher un produit" aria-expanded="false" aria-controls="search-wrap"><img src="/assets/icon-search.svg" alt=""><span>Rechercher</span></button>
+        <a class="header-link store-link" href="https://www.meo.fr/revendeurs/" target="_blank" rel="noopener"><img src="/assets/icon-store.svg" alt=""><span>Nous trouver</span></a>
+      </div>
+      <a class="logo-link" href="/" aria-label="Méo, retour à l'accueil"><img class="desktop-logo" src="/assets/logo.png" alt="Méo"><img class="mobile-logo" src="/assets/logo-small.png" alt="Méo"></a>
+      <div class="header-actions"><a class="blog-link" href="https://www.meo.fr/blog/" target="_blank" rel="noopener">Blog</a><a class="account-link" href="https://www.meo.fr/mon-compte/" target="_blank" rel="noopener" aria-label="Mon compte"><img src="/assets/icon-account.svg" alt=""></a><a class="cart-trigger" href="/panier/" aria-label="Voir le panier"><img src="/assets/icon-cart.svg" alt=""><span id="cart-count" class="cart-count">0</span></a></div>
+    </div>
+    <form class="search-wrap shell" id="search-wrap" action="/recherche/" method="get" hidden><label for="site-search">Rechercher dans le catalogue</label><input id="site-search" name="s" type="search" placeholder="Grains, moulu, capsules…" autocomplete="off" required><button type="submit">Rechercher</button></form>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Navigation mobile" hidden><a href="/categorie-produit/tous-les-cafes/cafe-en-grain/">Café en Grains</a><a href="/categorie-produit/tous-les-cafes/cafe-moulu/">Café Moulu</a><a href="/categorie-produit/tous-les-cafes/capsules-nespressotm-et-dosettes-senseotm/">Capsules &amp; Dosettes</a><a href="/categorie-produit/tous-les-cafes/cafes-biologiques/">Bio</a><a href="/categorie-produit/machines/">Machines &amp; Accessoires</a><a href="/categorie-produit/epicerie/">Épicerie</a><a href="/catalogue/">Tous les produits</a><a href="/abonnement/">L’abonnement</a></nav>
+    <nav class="desktop-nav" aria-label="Navigation principale"><div class="shell"><a href="/categorie-produit/tous-les-cafes/cafe-en-grain/">Café en Grains <span>⌄</span></a><a href="/categorie-produit/tous-les-cafes/cafe-moulu/">Café Moulu <span>⌄</span></a><a href="/categorie-produit/tous-les-cafes/capsules-nespressotm-et-dosettes-senseotm/">Capsules &amp; Dosettes <span>⌄</span></a><a href="/categorie-produit/tous-les-cafes/cafes-biologiques/">Bio</a><a href="/categorie-produit/machines/">Machines à café et Accessoires <span>⌄</span></a><a href="/categorie-produit/epicerie/">Épicerie</a><a href="/categorie-produit/tous-les-cafes/promos/">Bons Plans <span>⌄</span></a><a href="/abonnement/">L’abonnement <span>⌄</span></a></div></nav>
+    <div class="delivery-strip">Livraison offerte à partir de 40€ d’achat</div>
+  </header>
+  <main id="page-content" class="catalog-main"><div class="shell loading-state">Chargement du catalogue Méo…</div></main>
+  <section class="benefits" id="reassurance"><div class="shell"><div><img src="/assets/icon-france.svg" alt=""><span>Torréfacteur français<br>depuis 1928</span></div><div><img src="/assets/icon-coffee-cup.svg" alt=""><span>Savoir-faire artisanal<br>et produits d’exception</span></div><div><img src="/assets/icon-delivery.svg" alt=""><span>Livraison offerte dès<br>40 € d’achat</span></div><div><img src="/assets/icon-fidelity.svg" alt=""><span>Avantages fidélité</span></div></div></section>
+  <footer><div class="shell footer-inner"><a href="/"><img src="/assets/logo.png" alt="Méo, accueil"></a><span>Prévisualisation de la boutique · Aucun paiement réel</span><a href="/catalogue/">Tous les produits</a><a href="#top">Retour en haut ↑</a></div></footer>
+  <div class="mini-scrim" id="mini-scrim" hidden></div>
+  <aside class="mini-cart" id="mini-cart" role="dialog" aria-modal="true" aria-label="Produit ajouté au panier" aria-hidden="true"><div class="mini-cart-head"><h2>Ajouté au panier</h2><button type="button" id="mini-close" aria-label="Fermer">×</button></div><div id="mini-content"></div><div class="mini-actions"><a href="/panier/">Voir mon panier</a><a href="/commander/">Voir le paiement simulé →</a></div><small>Aucun achat ni abonnement réel.</small></aside>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>

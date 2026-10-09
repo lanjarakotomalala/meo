@@ -1,0 +1,30 @@
+.meo-abonnements-admin .nav-tab-wrapper { margin: 20px 0; }
+.meo-abonnements-admin .meo-summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin: 20px 0; max-width: 920px; }
+.meo-abonnements-admin .meo-summary-card { display: flex; flex-direction: column; gap: 8px; padding: 16px; background: #fff; border: 1px solid #c3c4c7; border-radius: 4px; text-decoration: none; color: #1d2327; }
+.meo-abonnements-admin .meo-summary-card strong { font-size: 26px; line-height: 1; }
+.meo-abonnements-admin .meo-filters { display: flex; align-items: end; flex-wrap: wrap; gap: 8px; margin: 20px 0 12px; }
+.meo-abonnements-admin .meo-filters label { font-weight: 600; }
+.meo-abonnements-admin .meo-filters input { min-width: 240px; }
+.meo-abonnements-admin .meo-table { max-width: 1200px; }
+.meo-abonnements-admin .meo-table td { vertical-align: middle; }
+.meo-abonnements-admin .meo-status { display: inline-block; padding: 4px 8px; border-radius: 12px; background: #f0f0f1; white-space: nowrap; }
+.meo-abonnements-admin .meo-status-active { color: #00611c; background: #d9f2df; }
+.meo-abonnements-admin .meo-status-on-hold { color: #704800; background: #fff1c7; }
+.meo-abonnements-admin .meo-status-cancelled { color: #8b1e1e; background: #fbe0e0; }
+.meo-abonnements-admin .meo-detail-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; max-width: 1200px; }
+.meo-abonnements-admin .meo-panel { max-width: 1200px; margin: 16px 0; padding: 18px; background: #fff; border: 1px solid #c3c4c7; border-radius: 4px; }
+.meo-abonnements-admin .meo-panel h3:first-child { margin-top: 0; }
+.meo-abonnements-admin dl { display: grid; grid-template-columns: minmax(130px, 1fr) 2fr; gap: 10px; }
+.meo-abonnements-admin dt { font-weight: 600; }
+.meo-abonnements-admin dd { margin: 0; }
+.meo-abonnements-admin .meo-items, .meo-abonnements-admin .meo-schemes { margin: 0; }
+.meo-abonnements-admin .meo-items li { padding: 8px 0; border-bottom: 1px solid #eee; }
+.meo-abonnements-admin .meo-actions { display: flex; flex-wrap: wrap; align-items: end; gap: 16px; }
+.meo-abonnements-admin .meo-date-form { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.meo-abonnements-admin .meo-danger { margin-top: 22px; padding-top: 12px; border-top: 1px solid #d63638; }
+.meo-abonnements-admin .meo-kind-switch { display: flex; gap: 8px; }
+@media (max-width: 782px) {
+    .meo-abonnements-admin .meo-table { display: block; overflow-x: auto; }
+    .meo-abonnements-admin .meo-detail-grid { grid-template-columns: 1fr; }
+    .meo-abonnements-admin .meo-panel { padding: 12px; }
+}
