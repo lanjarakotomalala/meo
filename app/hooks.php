@@ -38,24 +38,25 @@ add_action('customize_register', function ($customizer) {
     ];
 
     foreach ($slides as $key => $slide) {
-        foreach (['title' => $slide['title'], 'text' => $slide['text'], 'link' => '', 'image' => ''] as $field => $default) {
+        foreach (['title' => $slide['title'], 'text' => $slide['text'], 'link' => '', 'image' => '', 'mobile_image' => ''] as $field => $default) {
             $id = 'meo_hero_' . $key . '_' . $field;
             $customizer->add_setting($id, [
                 'default' => $default,
-                'sanitize_callback' => in_array($field, ['link', 'image'], true) ? 'esc_url_raw' : 'sanitize_text_field',
+                'sanitize_callback' => in_array($field, ['link', 'image', 'mobile_image'], true) ? 'esc_url_raw' : 'sanitize_text_field',
             ]);
             $labels = [
                 'title' => __('Titre', 'meo'),
                 'text' => __('Texte', 'meo'),
                 'link' => __('Lien du bouton', 'meo'),
                 'image' => __('Image', 'meo'),
+                'mobile_image' => __('Image mobile', 'meo'),
             ];
             $args = [
                 'label' => $slide['label'] . ' — ' . $labels[$field],
                 'section' => 'meo_home_hero',
                 'settings' => $id,
             ];
-            if ($field === 'image') {
+            if (in_array($field, ['image', 'mobile_image'], true)) {
                 $customizer->add_control(new WP_Customize_Image_Control($customizer, $id, $args));
             } else {
                 $customizer->add_control($id, $args + ['type' => $field === 'text' ? 'textarea' : 'text']);

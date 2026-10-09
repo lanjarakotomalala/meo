@@ -131,6 +131,10 @@
 
     <div class="col-full-nav">
 
+    <?php if (is_front_page()) : ?>
+        <button type="button" class="meo-menu-close" aria-label="Fermer le menu">✕</button>
+    <?php endif; ?>
+
     <?php
     /**
      * Functions hooked into shoptimizer_header action

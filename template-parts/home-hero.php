@@ -1,9 +1,19 @@
 <?php
 /** Editorial carousel displayed before the homepage content. */
 
-$shop_url = function_exists('wc_get_page_permalink') ? wc_get_page_permalink('shop') : home_url('/boutique/');
-$coffee_url = home_url('/categorie-produit/cafes/');
-$brand_url = home_url('/notre-histoire/');
+$shop_url = function_exists('wc_get_page_permalink') ? (wc_get_page_permalink('shop') ?: home_url('/boutique/')) : home_url('/boutique/');
+$coffee_url = $shop_url;
+if (taxonomy_exists('product_cat')) {
+    $coffee_term = get_term_by('slug', 'cafes', 'product_cat');
+    if ($coffee_term) {
+        $term_url = get_term_link($coffee_term);
+        if (!is_wp_error($term_url)) {
+            $coffee_url = $term_url;
+        }
+    }
+}
+$brand_page = get_page_by_path('notre-histoire');
+$brand_url = $brand_page ? get_permalink($brand_page) : '#content';
 
 // Editors can override each visual and link in the Customizer.
 $slides = [
@@ -14,6 +24,7 @@ $slides = [
         'button' => 'Découvrir l’offre',
         'url' => get_theme_mod('meo_hero_promo_link') ?: $shop_url,
         'image' => get_theme_mod('meo_hero_promo_image', ''),
+        'mobile_image' => get_theme_mod('meo_hero_promo_mobile_image', ''),
         'class' => 'meo-home-hero__slide--promo',
     ],
     [
@@ -23,6 +34,7 @@ $slides = [
         'button' => 'Explorer nos cafés',
         'url' => get_theme_mod('meo_hero_coffee_link') ?: $coffee_url,
         'image' => get_theme_mod('meo_hero_coffee_image', ''),
+        'mobile_image' => get_theme_mod('meo_hero_coffee_mobile_image', ''),
         'class' => 'meo-home-hero__slide--coffee',
     ],
     [
@@ -32,6 +44,7 @@ $slides = [
         'button' => 'Découvrir Méo',
         'url' => get_theme_mod('meo_hero_brand_link') ?: $brand_url,
         'image' => get_theme_mod('meo_hero_brand_image', ''),
+        'mobile_image' => get_theme_mod('meo_hero_brand_mobile_image', ''),
         'class' => 'meo-home-hero__slide--brand',
     ],
 ];
@@ -42,14 +55,18 @@ if (empty($slides[2]['image']) && has_post_thumbnail(get_queried_object_id())) {
 
 // Existing catalogue photography is used until dedicated campaign images are selected.
 if (function_exists('wc_get_products') && (empty($slides[0]['image']) || empty($slides[1]['image']))) {
-    $products = wc_get_products(['status' => 'publish', 'limit' => 2, 'orderby' => 'date', 'order' => 'DESC', 'category' => ['cafe-en-grain']]);
-    if (count($products) < 2) {
-        $products = wc_get_products(['status' => 'publish', 'limit' => 2, 'orderby' => 'date', 'order' => 'DESC']);
+    if (empty($slides[0]['image']) && empty($slides[0]['mobile_image'])) {
+        $sale_products = wc_get_products(['status' => 'publish', 'limit' => 1, 'on_sale' => true]);
+        if ($sale_products && $sale_products[0]->get_image_id()) {
+            $slides[0]['image'] = wp_get_attachment_image_url($sale_products[0]->get_image_id(), 'large');
+            $slides[0]['class'] .= ' meo-home-hero__slide--product-image';
+        }
     }
-    foreach ($products as $index => $product) {
-        if (empty($slides[$index]['image']) && $product->get_image_id()) {
-            $slides[$index]['image'] = wp_get_attachment_image_url($product->get_image_id(), 'full');
-            $slides[$index]['class'] .= ' meo-home-hero__slide--product-image';
+    if (empty($slides[1]['image']) && empty($slides[1]['mobile_image'])) {
+        $coffee_products = wc_get_products(['status' => 'publish', 'limit' => 1, 'orderby' => 'date', 'order' => 'DESC', 'category' => ['cafe-en-grain']]);
+        if ($coffee_products && $coffee_products[0]->get_image_id()) {
+            $slides[1]['image'] = wp_get_attachment_image_url($coffee_products[0]->get_image_id(), 'large');
+            $slides[1]['class'] .= ' meo-home-hero__slide--product-image';
         }
     }
 }
@@ -58,8 +75,8 @@ if (function_exists('wc_get_products') && (empty($slides[0]['image']) || empty($
     <div class="meo-home-hero__slides">
         <?php foreach ($slides as $index => $slide) : ?>
             <article class="meo-home-hero__slide <?php echo esc_attr($slide['class']); ?><?php echo $index === 0 ? ' is-active' : ''; ?>" aria-roledescription="diapositive" aria-label="<?php echo esc_attr(($index + 1) . ' sur ' . count($slides)); ?>" aria-hidden="<?php echo $index === 0 ? 'false' : 'true'; ?>">
-                <?php if ($slide['image']) : ?>
-                    <div class="meo-home-hero__visual" style="background-image: url('<?php echo esc_url($slide['image']); ?>')"></div>
+                <?php if ($slide['image'] || $slide['mobile_image']) : ?>
+                    <div class="meo-home-hero__visual" style="--meo-visual-desktop: url('<?php echo esc_url($slide['image'] ?: $slide['mobile_image']); ?>');<?php if ($slide['mobile_image']) : ?> --meo-visual-mobile: url('<?php echo esc_url($slide['mobile_image']); ?>');<?php endif; ?>"></div>
                 <?php endif; ?>
                 <div class="meo-home-hero__shade"></div>
                 <div class="meo-home-hero__body">

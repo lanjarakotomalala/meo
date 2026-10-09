@@ -46,6 +46,9 @@
     "include": [
       "app/",
       "dist/",
+      "template-parts/",
+      "resources/styles/home-editorial.css",
+      "resources/scripts/frontend/home-editorial.js",
       "languages/",
       "vendor/",
       "views/",
