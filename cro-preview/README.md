@@ -5,7 +5,7 @@ Cette maquette statique est stockée dans le dépôt Git, dans `cro-preview/`, a
 ## Portée
 
 - La direction artistique reprend les ressources du thème Méo (logo, polices, icônes, couleurs) et la structure visuelle observée sur la page d’accueil le 8 octobre 2026.
-- Les deux packshots du carrousel sont chargés depuis le DAM public de Méo (`dam.meo.fr`), déjà utilisé par les fiches produit de la maquette. Le panneau « marque » et la tasse de la section abonnement utilisent des ressources locales ou du CSS. Si un packshot échoue, le logo local reste visible.
+- Les packshots du carrousel et des cartes éditoriales sont chargés depuis le DAM public de Méo (`dam.meo.fr`), déjà utilisé par les fiches produit de la maquette. Le panneau « marque » et la tasse de la section abonnement utilisent des ressources locales ou du CSS. Si un packshot échoue, le logo local reste visible.
 - Le catalogue figé du 8 octobre 2026 vient de l’API publique WooCommerce Store de meo.fr : **123 produits publics et 49 catégories**. Les produits et catégories des exports CSV ont servi au contrôle des données ; les commandes ne sont pas utilisées.
 - Les routes `/catalogue/`, `/categorie-produit/.../`, `/produit/.../`, `/abonnement/`, `/panier/`, `/commander/` et `/recherche/` affichent les pages de la boutique. La règle Apache dans `.htaccess` les réécrit vers `catalog.html`, qui charge `data/catalog.json`.
 - La homepage suit un parcours guidé : promesse « Le café qu’il me faut », choix rapide du format, sélection filtrée, découverte du mois et bons plans, abonnement, histoire Méo, réponses aux questions fréquentes et appel final à choisir. Les boutons du guide filtrent réellement les six cafés mis en avant et amènent à la sélection.
@@ -25,6 +25,8 @@ L’hébergement séparé `test.meo.fr` est créé dans N-admin sur le serveur M
 Le DNS public de `test.meo.fr` pointe sur `185.46.230.199`. Le 9 octobre 2026, un certificat Let’s Encrypt dédié à `test.meo.fr` a été créé et assigné dans Nexylan. `https://test.meo.fr/` répond en HTTP 200 avec une vérification TLS réussie.
 
 La refonte éditoriale de la homepage se trouve dans `index.html`, `editorial-home.css`, `editorial-home.js` et `app.js`. Ces quatre fichiers doivent être copiés ensemble dans `/var/www/test.meo.fr/htdocs/` pour publier le parcours guidé. Un push Git seul ne met pas cette prévisualisation à jour : aucun déploiement automatique vers Nexylan n’est configuré ici. La dernière refonte de structure reste donc dans GitHub tant qu’un nouveau transfert n’est pas demandé.
+
+L’archive `meo-test-static-homepage-2026-10-09.zip` à la racine du dépôt contient ces quatre fichiers à jour pour une publication manuelle ultérieure.
 
 Le catalogue peut être reconstruit à partir des réponses des endpoints publics `https://www.meo.fr/wp-json/wc/store/v1/products?per_page=100&page=1`, `...page=2` et `https://www.meo.fr/wp-json/wc/store/v1/products/categories?per_page=100&page=1` avec `scripts/build_catalog.py`. Les réponses brutes ne sont pas conservées dans le dépôt.
 
