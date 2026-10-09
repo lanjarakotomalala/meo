@@ -11,9 +11,10 @@
     { id: '8595', short: 'Dégustation', type: 'moulu', kind: 'Café moulu', note: 'Doux · 250 g', tag: '' },
     { id: '848132', short: 'Biologique Décaféiné', type: 'capsules', kind: 'Capsules compostables', note: 'Sans caféine · x 20', tag: '' },
   ];
-  const ids = ['product-grid', 'mode-once', 'mode-subscribe', 'cart-count', 'drawer-count', 'cart-items', 'cart-empty', 'subtotal', 'recurring-note', 'subscription-nudge', 'checkout-button', 'drawer', 'scrim', 'empty-results', 'search', 'search-wrap', 'search-toggle'];
+  const ids = ['product-grid', 'selection-title', 'selection-count', 'mode-once', 'mode-subscribe', 'cart-count', 'drawer-count', 'cart-items', 'cart-empty', 'subtotal', 'recurring-note', 'subscription-nudge', 'checkout-button', 'drawer', 'scrim', 'empty-results', 'search', 'search-wrap', 'search-toggle'];
   const els = Object.fromEntries(ids.map(id => [id, document.getElementById(id)]));
   const state = { mode: 'once', filter: 'all', query: '', nudgedAway: false };
+  const filterTitles = { all: 'Une sélection pour vous.', grain: 'Votre sélection en grains.', moulu: 'Votre sélection moulue.', capsules: 'Votre sélection en capsules.', bio: 'Votre sélection bio.' };
 
   try { await store.ready; }
   catch { els['product-grid'].innerHTML = '<p>Le catalogue est momentanément indisponible. Actualisez la page pour réessayer.</p>'; return; }
@@ -32,6 +33,7 @@
   function renderProducts() {
     const products = curated().filter(product => (state.filter === 'all' || state.filter === product.type || (state.filter === 'bio' && /biologique/i.test(product.name))) && (!state.query || `${product.name} ${product.kind}`.toLocaleLowerCase('fr').includes(state.query)));
     els['empty-results'].hidden = products.length > 0;
+    els['selection-count'].textContent = `${products.length} café${products.length > 1 ? 's' : ''} à découvrir${state.query ? ` pour « ${state.query} »` : ''}`;
     els['product-grid'].innerHTML = products.map(product => {
       const path = store.cleanPath(product.path);
       const img = product.images[0]?.src || '/assets/logo.png';
@@ -69,16 +71,21 @@
   }
   function openDrawer() { els.drawer.classList.add('open'); els.drawer.setAttribute('aria-hidden', 'false'); els.scrim.hidden = false; document.body.style.overflow = 'hidden'; document.getElementById('close-cart').focus(); }
   function closeDrawer() { els.drawer.classList.remove('open'); els.drawer.setAttribute('aria-hidden', 'true'); els.scrim.hidden = true; document.body.style.overflow = ''; }
-  function setFilter(filter) {
+  function setFilter(filter, scroll = false) {
     state.filter = filter;
+    if (scroll) { state.query = ''; els.search.value = ''; }
     document.querySelectorAll('.filter').forEach(button => { const active = button.dataset.filter === filter; button.classList.toggle('active', active); button.setAttribute('aria-pressed', String(active)); });
+    document.querySelectorAll('[data-find]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.find === filter)));
+    els['selection-title'].textContent = filterTitles[filter] || filterTitles.all;
     renderProducts();
+    if (scroll) document.getElementById('selection').scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
   }
 
   document.querySelectorAll('[data-mode]').forEach(button => button.addEventListener('click', () => setMode(button.dataset.mode, true)));
   els['mode-once'].addEventListener('click', () => setMode('once'));
   els['mode-subscribe'].addEventListener('click', () => setMode('subscribe'));
   document.querySelectorAll('.filter').forEach(button => button.addEventListener('click', () => setFilter(button.dataset.filter)));
+  document.querySelectorAll('[data-find]').forEach(button => button.addEventListener('click', () => setFilter(button.dataset.find, true)));
   document.getElementById('menu-toggle').addEventListener('click', () => {
     const nav = document.getElementById('mobile-nav');
     nav.hidden = !nav.hidden;

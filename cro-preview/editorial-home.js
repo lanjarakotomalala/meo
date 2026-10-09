@@ -14,7 +14,7 @@
   const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
   if (!hero || !header || slides.length === 0) return;
 
-  document.querySelectorAll('.editorial-product-photo').forEach(img => {
+  document.querySelectorAll('.editorial-product-photo, .home-remote-photo').forEach(img => {
     const hideBrokenImage = () => { img.hidden = true; };
     img.addEventListener('error', hideBrokenImage, { once: true });
     if (img.complete && img.naturalWidth === 0) hideBrokenImage();
