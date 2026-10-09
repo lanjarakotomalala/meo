@@ -14,6 +14,56 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
+// Campaign copy and photography stay editable without changing the homepage blocks.
+add_action('customize_register', function ($customizer) {
+    $customizer->add_section('meo_home_hero', [
+        'title' => __('Accueil — carrousel', 'meo'),
+        'priority' => 35,
+    ]);
+
+    foreach (['first' => 'Le goût du café depuis 1928', 'second' => 'Nos cafés sont torréfiés en France'] as $key => $default) {
+        $id = 'meo_announcement_' . $key;
+        $customizer->add_setting($id, ['default' => $default, 'sanitize_callback' => 'sanitize_text_field']);
+        $customizer->add_control($id, [
+            'label' => __('Bandeau défilant', 'meo') . ' ' . ($key === 'first' ? '1' : '2'),
+            'section' => 'meo_home_hero',
+            'type' => 'text',
+        ]);
+    }
+
+    $slides = [
+        'promo' => ['label' => __('Promo du mois', 'meo'), 'title' => 'La promo du mois', 'text' => 'Vos cafés préférés à savourer à prix doux.'],
+        'coffee' => ['label' => __('Café du mois', 'meo'), 'title' => 'Le café du mois', 'text' => 'Une nouvelle rencontre, une nouvelle façon de prendre le temps.'],
+        'brand' => ['label' => __('La marque', 'meo'), 'title' => 'Le goût des belles histoires', 'text' => 'Une maison de café, un savoir-faire et le plaisir de partager.'],
+    ];
+
+    foreach ($slides as $key => $slide) {
+        foreach (['title' => $slide['title'], 'text' => $slide['text'], 'link' => '', 'image' => ''] as $field => $default) {
+            $id = 'meo_hero_' . $key . '_' . $field;
+            $customizer->add_setting($id, [
+                'default' => $default,
+                'sanitize_callback' => in_array($field, ['link', 'image'], true) ? 'esc_url_raw' : 'sanitize_text_field',
+            ]);
+            $labels = [
+                'title' => __('Titre', 'meo'),
+                'text' => __('Texte', 'meo'),
+                'link' => __('Lien du bouton', 'meo'),
+                'image' => __('Image', 'meo'),
+            ];
+            $args = [
+                'label' => $slide['label'] . ' — ' . $labels[$field],
+                'section' => 'meo_home_hero',
+                'settings' => $id,
+            ];
+            if ($field === 'image') {
+                $customizer->add_control(new WP_Customize_Image_Control($customizer, $id, $args));
+            } else {
+                $customizer->add_control($id, $args + ['type' => $field === 'text' ? 'textarea' : 'text']);
+            }
+        }
+    }
+});
+
 function meo_disable_sidebar($body_class)
 {
     $blacklisted_classes = [

@@ -30,7 +30,23 @@
     do_action('shoptimizer_before_header');
     ?>
 
-    <?php do_action('shoptimizer_topbar'); ?>
+    <?php if (is_front_page()) : ?>
+    <?php
+    $announcement_first = get_theme_mod('meo_announcement_first', 'Le goût du café depuis 1928');
+    $announcement_second = get_theme_mod('meo_announcement_second', 'Nos cafés sont torréfiés en France');
+    ?>
+    <div class="meo-announcement" aria-label="Informations Méo">
+        <div class="meo-announcement__track" aria-hidden="true">
+            <?php for ($announcement = 0; $announcement < 4; $announcement++) : ?>
+                <span><?php echo esc_html($announcement_first); ?></span><span class="meo-announcement__star">✳</span>
+                <span><?php echo esc_html($announcement_second); ?></span><span class="meo-announcement__star">✳</span>
+            <?php endfor; ?>
+        </div>
+        <span class="screen-reader-text"><?php echo esc_html($announcement_first . '. ' . $announcement_second . '.'); ?></span>
+    </div>
+    <?php else : ?>
+        <?php do_action('shoptimizer_topbar'); ?>
+    <?php endif; ?>
 
     <header id="masthead" class="site-header">
 
@@ -129,6 +145,10 @@
     ?>
 
     </div>
+
+    <?php if (is_front_page()) : ?>
+        <?php get_template_part('template-parts/home', 'hero'); ?>
+    <?php endif; ?>
 
     <?php
     /**
