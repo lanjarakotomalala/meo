@@ -52,7 +52,7 @@ body.retail-home .sr-only { position: absolute; width: 1px; height: 1px; padding
 .retail-home .search-toggle { display: inline-flex; gap: 8px; align-items: center; font-size: 13px; text-decoration: underline; text-underline-offset: 7px; }
 .retail-home .cart-trigger { position: relative; display: grid; place-items: center; width: 27px; height: 30px; }
 .retail-home .cart-trigger:hover { background: transparent; }
-.retail-home .cart-count { position: absolute; right: -7px; bottom: -7px; width: 18px; height: 18px; background: #fff; color: var(--blue); border-radius: 50%; font-size: 10px; }
+.retail-home .cart-count { position: absolute; right: 0; bottom: -7px; width: 18px; height: 18px; background: #fff; color: var(--blue); border-radius: 50%; font-size: 10px; }
 .retail-home .search-wrap { position: absolute; left: 16px; right: 16px; top: calc(100% + 1px); width: auto; margin: 0; padding: 20px 24px; display: flex; gap: 14px; align-items: center; background: #fff; box-shadow: 0 20px 40px #0002; }
 .retail-home .search-wrap label { font-weight: 700; white-space: nowrap; }
 .retail-home .search-wrap input { flex: 1; max-width: none; min-width: 0; border-radius: 0; border: 1px solid #bbb; padding: 12px; }
