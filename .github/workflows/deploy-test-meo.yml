@@ -1,0 +1,41 @@
+name: Deploy test.meo.fr
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: test-meo-fr
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: Publish CRO preview
+    runs-on: ubuntu-latest
+    environment:
+      name: test.meo.fr
+      url: https://test.meo.fr/
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Check the preview files
+        run: |
+          bash -n .github/scripts/deploy-test-meo.sh
+          test -s cro-preview/index.html
+          test -s cro-preview/catalog.html
+          test -s cro-preview/.htaccess
+          test -s cro-preview/data/catalog.json
+          node --check cro-preview/app.js
+          node --check cro-preview/editorial-home.js
+          node --check cro-preview/catalog.js
+
+      - name: Upload and verify test.meo.fr
+        env:
+          TEST_MEO_SFTP_KEY: ${{ secrets.TEST_MEO_SFTP_KEY }}
+        run: bash .github/scripts/deploy-test-meo.sh

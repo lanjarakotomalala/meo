@@ -24,9 +24,11 @@ L’hébergement séparé `test.meo.fr` est créé dans N-admin sur le serveur M
 
 Le DNS public de `test.meo.fr` pointe sur `185.46.230.199`. Le 9 octobre 2026, un certificat Let’s Encrypt dédié à `test.meo.fr` a été créé et assigné dans Nexylan. `https://test.meo.fr/` répond en HTTP 200 avec une vérification TLS réussie.
 
-La refonte éditoriale de la homepage se trouve dans `index.html`, `editorial-home.css`, `editorial-home.js` et `app.js`. Ces quatre fichiers doivent être copiés ensemble dans `/var/www/test.meo.fr/htdocs/` pour publier le parcours guidé. Un push Git seul ne met pas cette prévisualisation à jour : aucun déploiement automatique vers Nexylan n’est configuré ici. La dernière refonte de structure reste donc dans GitHub tant qu’un nouveau transfert n’est pas demandé.
+La refonte éditoriale de la homepage se trouve dans `index.html`, `editorial-home.css`, `editorial-home.js` et `app.js`. Le workflow `.github/workflows/deploy-test-meo.yml` publie la prévisualisation à chaque **push sur `main`** (ou lancement manuel dans GitHub Actions). Il transfère uniquement les fichiers web suivis dans `cro-preview/` : HTML, CSS, JavaScript, `.htaccess`, `assets/` et `data/*.json`. Les fichiers du thème WordPress, les scripts de construction, la documentation et les archives ne sont pas publiés.
 
-L’archive `meo-test-static-homepage-2026-10-09.zip` à la racine du dépôt contient ces quatre fichiers à jour pour une publication manuelle ultérieure.
+Le transfert utilise SFTP vers `/var/www/test.meo.fr/htdocs/` sur le port 2121. La clé privée est conservée dans le secret `TEST_MEO_SFTP_KEY` de l’environnement GitHub `test.meo.fr`, dont les déploiements sont limités à `main`. Le workflow vérifie la clé publique du serveur avant le transfert, publie `index.html` en dernier et compare ensuite la page reçue sur `https://test.meo.fr/` avec celle du commit. Il n’efface pas les fichiers déjà présents sur le serveur.
+
+Un commit local ou une modification dans GitHub Desktop ne déclenche rien tant que le commit n’est pas **poussé** sur GitHub. Le suivi des déploiements est visible dans l’onglet Actions du dépôt. L’archive `meo-test-static-homepage-2026-10-09.zip` à la racine reste une copie manuelle des quatre fichiers de la refonte du 9 octobre.
 
 Le catalogue peut être reconstruit à partir des réponses des endpoints publics `https://www.meo.fr/wp-json/wc/store/v1/products?per_page=100&page=1`, `...page=2` et `https://www.meo.fr/wp-json/wc/store/v1/products/categories?per_page=100&page=1` avec `scripts/build_catalog.py`. Les réponses brutes ne sont pas conservées dans le dépôt.
 
