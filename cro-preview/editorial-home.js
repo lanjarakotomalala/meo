@@ -3,6 +3,8 @@
   const hero = document.querySelector('.editorial-hero');
   const slides = [...document.querySelectorAll('.editorial-slide')];
   const dots = [...document.querySelectorAll('.editorial-pagination button')];
+  const heroVideo = hero?.querySelector('.hero-video');
+  const desktopVideo = window.matchMedia('(min-width: 901px)');
   const header = document.querySelector('.site-header');
   const triggers = [...document.querySelectorAll('.nav-trigger')];
   const panels = [...document.querySelectorAll('.mega-panel')];
@@ -31,6 +33,13 @@
   let heroVisible = true;
   let touchStart = null;
 
+  function syncVideo() {
+    if (!heroVideo) return;
+    const shouldPlay = currentSlide === 0 && desktopVideo.matches && !motion.matches && heroVisible && !document.hidden;
+    if (shouldPlay && !heroVideo.hasAttribute('src')) heroVideo.src = heroVideo.dataset.src;
+    if (!shouldPlay && heroVideo.hasAttribute('src')) heroVideo.removeAttribute('src');
+  }
+
   function showSlide(index) {
     currentSlide = (index + slides.length) % slides.length;
     slides.forEach((slide, number) => {
@@ -44,6 +53,7 @@
       dot.classList.toggle('is-active', active);
       dot.setAttribute('aria-current', String(active));
     });
+    syncVideo();
   }
 
   function canAutoplay() {
@@ -51,20 +61,24 @@
   }
 
   function stopAutoplay() {
-    window.clearInterval(carouselTimer);
+    window.clearTimeout(carouselTimer);
     carouselTimer = undefined;
   }
 
   function startAutoplay() {
     stopAutoplay();
     if (!canAutoplay()) return;
-    carouselTimer = window.setInterval(() => {
-      if (canAutoplay()) showSlide(currentSlide + 1);
+    carouselTimer = window.setTimeout(() => {
+      if (canAutoplay()) { showSlide(currentSlide + 1); startAutoplay(); }
       else stopAutoplay();
-    }, 6500);
+    }, currentSlide === 0 ? 9000 : 6500);
   }
 
   dots.forEach(dot => dot.addEventListener('click', () => { showSlide(Number(dot.dataset.slide)); startAutoplay(); }));
+  hero.querySelectorAll('[data-slide-link]').forEach(button => button.addEventListener('click', () => {
+    showSlide(Number(button.dataset.slideLink));
+    startAutoplay();
+  }));
   hero.querySelectorAll('[data-direction]').forEach(button => button.addEventListener('click', () => {
     showSlide(currentSlide + Number(button.dataset.direction));
     startAutoplay();
@@ -112,12 +126,14 @@
   if ('IntersectionObserver' in window) {
     new IntersectionObserver(([entry]) => {
       heroVisible = entry.isIntersecting;
+      syncVideo();
       if (heroVisible) startAutoplay();
       else stopAutoplay();
     }, { threshold: .2 }).observe(hero);
   }
-  document.addEventListener('visibilitychange', startAutoplay);
-  motion.addEventListener?.('change', startAutoplay);
+  document.addEventListener('visibilitychange', () => { syncVideo(); startAutoplay(); });
+  motion.addEventListener?.('change', () => { syncVideo(); startAutoplay(); });
+  desktopVideo.addEventListener?.('change', syncVideo);
 
   function closeMegaMenu() {
     header.classList.remove('menu-open');
@@ -186,6 +202,7 @@
   window.addEventListener('resize', () => {
     if (window.matchMedia('(max-width: 900px)').matches) closeMegaMenu();
     syncHeader();
+    syncVideo();
   });
 
   showSlide(0);
