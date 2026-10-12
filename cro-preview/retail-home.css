@@ -86,8 +86,6 @@ body.mobile-menu-open::before { content: ""; position: fixed; inset: 0; z-index:
 .retail-home .hero-media img,
 .retail-home .hero-shade { display: block; position: absolute; inset: 0; width: 100%; height: 100%; }
 .retail-home .hero-media img { object-fit: cover; object-position: center; }
-.retail-home .hero-video { position: absolute; top: 50%; left: 50%; width: max(100vw, 177.78svh); height: max(100svh, 56.25vw); border: 0; transform: translate(-50%, -50%); pointer-events: none; }
-.retail-home .hero-video:not([src]) { display: none; }
 .retail-home .hero-monthly .hero-media img { object-position: 58% 54%; }
 .retail-home .hero-shade { background: linear-gradient(90deg, rgba(0,0,0,.72), rgba(0,0,0,.22) 53%, rgba(0,0,0,.05) 88%), linear-gradient(0deg, rgba(0,0,0,.3), transparent 50%); }
 .retail-home .hero-copy { position: absolute; left: clamp(26px, 3vw, 60px); bottom: clamp(88px, 10vh, 132px); width: min(840px, 72vw); color: #fff; z-index: 2; }
@@ -280,7 +278,6 @@ body.mobile-menu-open::before { content: ""; position: fixed; inset: 0; z-index:
   .retail-home .mobile-nav-head { padding-bottom: 35px; }
   .retail-home .mobile-nav > a { padding: 17px 0; font-size: 20px; }
   .retail-home .hero { min-height: 650px; height: calc(100svh - var(--editorial-top-offset, 50px)); }
-  .retail-home .hero-video { display: none; }
   .retail-home .hero-media img { object-position: center; }
   .retail-home .hero-shade { background: linear-gradient(0deg, #000b, #0002 70%), linear-gradient(90deg, #0003, transparent); }
   .retail-home .hero-copy { left: 15px; right: 15px; bottom: 83px; width: auto; }
@@ -351,10 +348,33 @@ body.mobile-menu-open::before { content: ""; position: fixed; inset: 0; z-index:
   .retail-home .editorial-slide.is-active .hero-copy,
   .retail-home .hero-promo.is-active .hero-media img,
   .retail-home .hero-promo.is-active .hero-shade::after { animation: none; }
-  .retail-home .hero-video { display: none; }
   .retail-home .editorial-slide,
   .retail-home .universe-card img,
   .retail-home .discover-card img,
   .retail-home .brand-tiles img { transition: none; }
   .retail-home .rail { scroll-behavior: auto; }
 }
+
+/* Savoir-faire film: a deliberate preview that opens the original video on demand. */
+.retail-home .hero-film-teaser { position: absolute; right: clamp(26px, 3vw, 60px); top: 50%; z-index: 3; width: min(320px, 28vw); aspect-ratio: 16 / 10; overflow: hidden; padding: 0; border: 1px solid #ffffff88; border-radius: 3px; background: #251c17; color: #fff; text-align: left; cursor: pointer; transform: translateY(-40%); box-shadow: 0 20px 55px #0007; transition: transform .25s ease, border-color .25s ease; }
+.retail-home .hero-film-teaser:hover, .retail-home .hero-film-teaser:focus-visible { transform: translateY(-40%) scale(1.035); border-color: #fff; }
+.retail-home .hero-film-teaser img { display: block; width: 100%; height: 100%; object-fit: cover; filter: brightness(.68); }
+.retail-home .hero-film-teaser::after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, #120a08dc, transparent 68%); pointer-events: none; }
+.retail-home .hero-film-caption { position: absolute; z-index: 1; left: 18px; right: 60px; bottom: 18px; display: grid; gap: 7px; line-height: 1.15; }
+.retail-home .hero-film-caption small { font-size: 10px; font-weight: 700; letter-spacing: .13em; }
+.retail-home .hero-film-caption strong { font-size: 15px; letter-spacing: .02em; }
+.retail-home .hero-film-play { position: absolute; z-index: 1; right: 18px; bottom: 18px; display: grid; place-items: center; width: 40px; height: 40px; border: 1px solid #fff; border-radius: 50%; font-size: 14px; text-indent: 2px; }
+.retail-home .hero-film-inline { display: none; width: fit-content; margin-top: 18px; padding: 5px 0; border: 0; border-bottom: 1px solid currentColor; background: none; color: #fff; font: inherit; font-size: 12px; font-weight: 700; letter-spacing: .08em; cursor: pointer; }
+body.film-open { overflow: hidden; }
+.retail-home .hero-film-dialog[hidden] { display: none; }
+.retail-home .hero-film-dialog { position: fixed; z-index: 100; inset: 0; display: grid; place-items: center; padding: 24px; }
+.retail-home .hero-film-backdrop { position: absolute; inset: 0; background: #080706ed; cursor: pointer; }
+.retail-home .hero-film-panel { position: relative; z-index: 1; width: min(960px, 100%); padding: 18px; background: #17120f; color: #fff; box-shadow: 0 30px 100px #000b; }
+.retail-home .hero-film-heading { display: flex; justify-content: space-between; align-items: center; gap: 15px; padding: 0 0 15px; font-size: 12px; font-weight: 700; letter-spacing: .1em; }
+.retail-home .hero-film-close { border: 0; background: none; color: #fff; font: inherit; font-size: 12px; font-weight: 700; cursor: pointer; }
+.retail-home .hero-film-frame { aspect-ratio: 16 / 9; background: #000; }
+.retail-home .hero-film-frame iframe { display: block; width: 100%; height: 100%; border: 0; }
+.retail-home .hero-film-source { display: inline-block; margin-top: 13px; color: #fff; font-size: 11px; font-weight: 700; letter-spacing: .08em; text-decoration: underline; }
+@media (max-width: 1150px) { .retail-home .hero-film-teaser { display: none; } .retail-home .hero-film-inline { display: inline-block; } }
+@media (max-width: 700px) { .retail-home .hero-film-inline { font-size: 10px; margin-top: 10px; } .retail-home .hero-film-dialog { padding: 10px; } .retail-home .hero-film-panel { padding: 12px; } .retail-home .hero-film-heading { font-size: 9px; } .retail-home .hero-film-close { font-size: 10px; } }
+@media (prefers-reduced-motion: reduce) { .retail-home .hero-film-teaser { transition: none; } }
