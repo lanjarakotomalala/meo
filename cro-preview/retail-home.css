@@ -432,3 +432,58 @@ body.film-open { overflow: hidden; }
 @media (max-width: 760px) { .retail-home .product-card { flex-basis: calc((100% - 14px) / 2); } .retail-home .selection-subrow { align-items: flex-end; } .retail-home .selection-subrow .rail-arrows { display: none; } }
 @media (max-width: 700px) { .retail-home .value-strip a { min-height: 145px; padding: 22px 13px; gap: 8px; } .retail-home .value-number { font-size: 9px; } .retail-home .value-copy strong { font-size: 11px; } .retail-home .value-copy small { font-size: 10px; } .retail-home .value-arrow { font-size: 11px; } .retail-home .selection { padding-top: 28px; } .retail-home .selection-intro h2 { font-size: clamp(25px, 7vw, 34px); } .retail-home .format-choices .filter { flex: 1 1 calc(50% - 8px); padding: 10px 8px; } .retail-home .selection-categories { gap: 20px; } .retail-home .selection-category { font-size: 11px; } .retail-home .product-card { flex-basis: min(78vw, 320px); } .retail-home .product-info h3 { font-size: 16px; } }
 @media (prefers-reduced-motion: reduce) { .retail-home .value-strip a { transition: none; } }
+
+/* Product reviews: editorial typography and real, linked customer words. */
+.retail-home .reviews-editorial { padding: clamp(66px, 7vw, 105px) 28px 30px; background: #211a16; color: #f7f2ec; }
+.retail-home .reviews-heading, .retail-home .reviews-grid, .retail-home .reviews-credit, .retail-home .commitment-heading, .retail-home .commitment-list, .retail-home .commitment-link { max-width: 1440px; margin-left: auto; margin-right: auto; }
+.retail-home .reviews-heading { display: flex; align-items: end; justify-content: space-between; gap: 35px; margin-bottom: 37px; }
+.retail-home .reviews-heading .section-kicker { color: #c6ae91; }
+.retail-home .reviews-heading h2 { margin: 14px 0 0; font-size: clamp(40px, 5vw, 73px); line-height: .94; color: #fffaf4; }
+.retail-home .reviews-heading p { width: min(100%, 330px); margin: 0 0 4px; color: #cabfb4; font-size: 15px; line-height: 1.5; }
+.retail-home .reviews-grid { display: grid; grid-template-columns: minmax(0, 1.13fr) minmax(0, .87fr); gap: 12px; }
+.retail-home .review-feature { display: grid; grid-template-columns: minmax(0, 1fr) minmax(200px, 34%); min-height: 570px; overflow: hidden; background: #e9e0d3; color: #29211c; }
+.retail-home .review-copy { display: flex; flex-direction: column; align-items: flex-start; min-width: 0; padding: 44px 8px 42px 44px; }
+.retail-home .review-number { font-size: 10px; font-weight: 700; letter-spacing: .17em; line-height: 1.4; }
+.retail-home .review-stars { margin: 38px 0 15px; color: #a07949; font-size: 18px; letter-spacing: .16em; white-space: nowrap; }
+.retail-home blockquote { margin: 0; }
+.retail-home .review-feature blockquote { max-width: 540px; font: italic 400 clamp(29px, 3.1vw, 49px)/1.16 Georgia, 'Times New Roman', serif; letter-spacing: -.025em; }
+.retail-home .review-signature { display: flex; flex-direction: column; gap: 4px; margin-top: auto; padding-top: 28px; font-size: 12px; line-height: 1.25; }
+.retail-home .review-signature strong { font-size: 13px; }
+.retail-home .review-signature span { color: #665d55; }
+.retail-home .review-product { display: flex; flex-direction: column; justify-content: flex-end; min-width: 0; padding: 20px 24px 38px 0; color: inherit; }
+.retail-home .review-product img { display: block; width: 100%; height: 440px; object-fit: contain; filter: drop-shadow(10px 14px 15px #4a342838); transition: transform .25s ease; }
+.retail-home .review-product:hover img { transform: translateY(-7px); }
+.retail-home .review-product > span { position: relative; display: block; width: 100%; padding-top: 12px; border-top: 1px solid #8f8376; font-size: 12px; font-weight: 700; line-height: 1.15; letter-spacing: .06em; }
+.retail-home .review-product small { display: block; margin-top: 4px; font-size: 10px; font-weight: 400; letter-spacing: .08em; }
+.retail-home .review-product b { position: absolute; top: 9px; right: 0; font-size: 18px; font-weight: 400; }
+.retail-home .reviews-secondary { display: grid; grid-template-rows: repeat(2, minmax(0, 1fr)); gap: 12px; min-width: 0; }
+.retail-home .review-small { display: grid; grid-template-columns: minmax(0, 1fr) minmax(105px, 27%); min-height: 279px; overflow: hidden; }
+.retail-home .review-small--light { background: #f2eee8; color: #29211c; }
+.retail-home .review-small--dark { background: #4a392f; color: #f9f2e9; }
+.retail-home .review-small-copy { display: flex; flex-direction: column; align-items: flex-start; min-width: 0; padding: 27px 4px 27px 30px; }
+.retail-home .review-small .review-stars { margin: 17px 0 9px; font-size: 13px; }
+.retail-home .review-small blockquote { font: italic 400 clamp(19px, 1.85vw, 26px)/1.2 Georgia, 'Times New Roman', serif; letter-spacing: -.018em; }
+.retail-home .review-small .review-signature { padding-top: 12px; font-size: 10px; }
+.retail-home .review-small .review-signature strong { font-size: 11px; }
+.retail-home .review-small--dark .review-signature span { color: #d8c8b9; }
+.retail-home .review-small-copy > a { display: inline-flex; gap: 8px; align-items: center; margin-top: 13px; padding-bottom: 4px; border-bottom: 1px solid currentColor; color: inherit; font-size: 10px; font-weight: 700; letter-spacing: .08em; }
+.retail-home .review-small img { display: block; align-self: center; width: 100%; height: 86%; object-fit: contain; padding: 11px 13px 11px 0; filter: drop-shadow(6px 9px 10px #271b172b); }
+.retail-home .reviews-credit { margin-top: 18px; margin-bottom: 0; color: #b5a89a; font-size: 11px; line-height: 1.45; }
+/* The three brand commitments follow the review showcase. */
+.retail-home .commitment-band { padding: 84px 28px 75px; background: #f1ece5; color: #251e19; }
+.retail-home .commitment-heading { display: flex; justify-content: space-between; align-items: end; gap: 35px; margin-bottom: 33px; }
+.retail-home .commitment-heading .section-kicker { color: #1725ad; }
+.retail-home .commitment-heading h2 { margin: 12px 0 0; font-size: clamp(38px, 4.5vw, 65px); line-height: .95; }
+.retail-home .commitment-heading p { width: min(100%, 370px); margin: 0 0 4px; font-size: 15px; line-height: 1.5; color: #5e544b; }
+.retail-home .commitment-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid #b8aa99; border-bottom: 1px solid #b8aa99; }
+.retail-home .commitment-list article { display: flex; flex-direction: column; min-height: 235px; padding: 25px 35px 27px; border-left: 1px solid #cfc4b6; }
+.retail-home .commitment-list article:first-child { border-left: 0; padding-left: 0; }
+.retail-home .commitment-number { color: #1725ad; font-size: 10px; font-weight: 700; letter-spacing: .14em; }
+.retail-home .commitment-list h3 { margin: 22px 0 8px; font-size: clamp(28px, 3vw, 42px); line-height: 1; }
+.retail-home .commitment-list p { max-width: 330px; margin: 0; font-size: 14px; line-height: 1.46; color: #594f46; }
+.retail-home .commitment-detail { margin-top: auto; padding-top: 18px; color: #786d61; font-size: 10px; font-weight: 700; letter-spacing: .1em; }
+.retail-home .commitment-link { display: flex; align-items: center; justify-content: space-between; gap: 25px; width: fit-content; margin-top: 26px; margin-right: max(0px, calc((100vw - 1440px)/2)); padding: 0 0 8px; border-bottom: 1px solid #251e19; color: #251e19; font-size: 12px; font-weight: 700; letter-spacing: .08em; }
+.retail-home .commitment-link span { font-size: 17px; font-weight: 400; }
+@media (max-width: 1050px) { .retail-home .reviews-grid { grid-template-columns: 1fr; } .retail-home .review-feature { min-height: 470px; } .retail-home .reviews-secondary { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: none; } .retail-home .review-small { grid-template-columns: minmax(0, 1fr) 105px; min-height: 315px; } .retail-home .review-small-copy { padding-left: 22px; } .retail-home .review-small blockquote { font-size: 21px; } }
+@media (max-width: 700px) { .retail-home .reviews-editorial { padding: 57px 15px 26px; } .retail-home .reviews-heading, .retail-home .commitment-heading { display: block; } .retail-home .reviews-heading h2 { font-size: clamp(35px, 10vw, 53px); } .retail-home .reviews-heading p { margin-top: 18px; font-size: 13px; } .retail-home .review-feature { grid-template-columns: 1fr; min-height: 0; } .retail-home .review-copy { min-height: 355px; padding: 28px 25px 15px; } .retail-home .review-stars { margin: 24px 0 12px; } .retail-home .review-feature blockquote { font-size: clamp(28px, 7vw, 38px); } .retail-home .review-product { display: grid; grid-template-columns: 42% 1fr; align-items: end; min-height: 200px; padding: 0 24px 20px; } .retail-home .review-product img { height: 210px; } .retail-home .review-product > span { margin-bottom: 7px; } .retail-home .reviews-secondary { grid-template-columns: 1fr; } .retail-home .review-small { min-height: 270px; grid-template-columns: minmax(0, 1fr) 110px; } .retail-home .review-small-copy { padding: 24px 4px 24px 22px; } .retail-home .review-small blockquote { font-size: clamp(20px, 5.5vw, 25px); } .retail-home .commitment-band { padding: 60px 15px; } .retail-home .commitment-heading h2 { font-size: clamp(36px, 10vw, 52px); } .retail-home .commitment-heading p { margin-top: 17px; font-size: 13px; } .retail-home .commitment-list { display: block; } .retail-home .commitment-list article, .retail-home .commitment-list article:first-child { min-height: 185px; padding: 24px 0; border-left: 0; border-bottom: 1px solid #cfc4b6; } .retail-home .commitment-list article:last-child { border-bottom: 0; } .retail-home .commitment-list h3 { margin-top: 13px; font-size: 32px; } .retail-home .commitment-list p { font-size: 13px; } .retail-home .commitment-link { margin-right: 0; font-size: 11px; } }
+@media (prefers-reduced-motion: reduce) { .retail-home .review-product img { transition: none; } }
