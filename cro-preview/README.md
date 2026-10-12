@@ -4,11 +4,12 @@ Cette maquette statique est stockée dans le dépôt Git, dans `cro-preview/`, a
 
 ## Portée
 
-- La direction artistique reprend les ressources du thème Méo (logo, polices, icônes, couleurs) et la structure visuelle observée sur la page d’accueil le 8 octobre 2026.
-- Les packshots du carrousel et des cartes éditoriales sont chargés depuis le DAM public de Méo (`dam.meo.fr`), déjà utilisé par les fiches produit de la maquette. Le panneau « marque » et la tasse de la section abonnement utilisent des ressources locales ou du CSS. Si un packshot échoue, le logo local reste visible.
+- La direction artistique reprend les ressources du thème Méo (logo, polices, icônes, couleurs). La homepage suit un rythme de boutique éditoriale inspiré de cabaia.fr : annonce, navigation, grand carrousel, sélection de produits, univers, récit de marque, découvertes, réassurance, journal et pied de page.
+- Les neuf photos de la homepage sont des copies WebP optimisées de visuels Méo présents dans `images-article-comment-choisir-son-cafe/` à la racine du dépôt. Les packshots des produits sont chargés depuis le DAM public de Méo (`dam.meo.fr`) ; si un packshot échoue, le logo local reste visible.
 - Le catalogue figé du 8 octobre 2026 vient de l’API publique WooCommerce Store de meo.fr : **123 produits publics et 49 catégories**. Les produits et catégories des exports CSV ont servi au contrôle des données ; les commandes ne sont pas utilisées.
 - Les routes `/catalogue/`, `/categorie-produit/.../`, `/produit/.../`, `/abonnement/`, `/panier/`, `/commander/` et `/recherche/` affichent les pages de la boutique. La règle Apache dans `.htaccess` les réécrit vers `catalog.html`, qui charge `data/catalog.json`.
-- La homepage suit un parcours guidé : promesse « Le café qu’il me faut », choix rapide du format, sélection filtrée, découverte du mois et bons plans, abonnement, histoire Méo, réponses aux questions fréquentes et appel final à choisir. Les boutons du guide filtrent réellement les six cafés mis en avant et amènent à la sélection.
+- La homepage met en avant « Le café qu’il me faut » dans un carrousel de trois temps, puis une sélection filtrable de six cafés. Les cartes « À chacun son rituel » filtrent réellement cette sélection selon le format choisi. Les rails horizontaux peuvent être parcourus au doigt ou avec leurs flèches.
+- Le formulaire du bloc « Journal Méo » est uniquement visuel : il n’envoie ni ne conserve l’adresse saisie et indique ce comportement après validation.
 - L’achat unique et l’abonnement restent deux choix explicites au niveau des produits. Le panier est conservé localement entre les pages.
 - Une proposition d’abonnement apparaît à partir de **2 cafés en achat unique** dans le panier. Ce seuil est une hypothèse de maquette. Les produits non café restent en achat unique.
 - Les fréquences proposées et l’éligibilité à l’abonnement sont des hypothèses à valider avec les règles WooCommerce. Aucune remise n’est supposée.
@@ -24,7 +25,7 @@ L’hébergement séparé `test.meo.fr` est créé dans N-admin sur le serveur M
 
 Le DNS public de `test.meo.fr` pointe sur `185.46.230.199`. Le 9 octobre 2026, un certificat Let’s Encrypt dédié à `test.meo.fr` a été créé et assigné dans Nexylan. `https://test.meo.fr/` répond en HTTP 200 avec une vérification TLS réussie.
 
-La refonte éditoriale de la homepage se trouve dans `index.html`, `editorial-home.css`, `editorial-home.js` et `app.js`. Le workflow `.github/workflows/deploy-test-meo.yml` publie la prévisualisation à chaque **push sur `main`** (ou lancement manuel dans GitHub Actions). Il transfère uniquement les fichiers web suivis dans `cro-preview/` : HTML, CSS, JavaScript, `.htaccess`, `assets/` et `data/*.json`. Les fichiers du thème WordPress, les scripts de construction, la documentation et les archives ne sont pas publiés.
+La homepage actuelle se trouve dans `index.html`, `retail-home.css`, `editorial-home.js` et `app.js`. Les anciennes feuilles `meo.css` et `editorial-home.css` restent dans le dépôt, mais la homepage ne les charge plus. Le workflow `.github/workflows/deploy-test-meo.yml` publie la prévisualisation à chaque **push sur `main`** (ou lancement manuel dans GitHub Actions). Il transfère uniquement les fichiers web suivis dans `cro-preview/` : HTML, CSS, JavaScript, `.htaccess`, `assets/` et `data/*.json`. Les fichiers du thème WordPress, les scripts de construction, la documentation et les archives ne sont pas publiés.
 
 Le transfert utilise SFTP vers `/var/www/test.meo.fr/htdocs/` sur le port 2121. La clé privée est conservée dans le secret `TEST_MEO_SFTP_KEY` de l’environnement GitHub `test.meo.fr`, dont les déploiements sont limités à `main`. Le workflow vérifie la clé publique du serveur avant le transfert, publie `index.html` en dernier et compare ensuite la page reçue sur `https://test.meo.fr/` avec celle du commit. Il n’efface pas les fichiers déjà présents sur le serveur.
 

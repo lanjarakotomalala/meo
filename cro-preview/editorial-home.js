@@ -70,6 +70,21 @@
     startAutoplay();
   }));
 
+  document.querySelectorAll('[data-rail][data-rail-dir]').forEach(button => {
+    button.addEventListener('click', () => {
+      const rail = document.getElementById(button.dataset.rail);
+      if (!rail) return;
+      const card = rail.firstElementChild;
+      const distance = (card?.getBoundingClientRect().width || rail.clientWidth * .8) + 8;
+      rail.scrollBy({ left: distance * Number(button.dataset.railDir), behavior: motion.matches ? 'auto' : 'smooth' });
+    });
+  });
+
+  document.getElementById('journal-signup')?.addEventListener('submit', event => {
+    event.preventDefault();
+    document.getElementById('journal-form-status').textContent = 'Cette prévisualisation ne transmet pas votre adresse. Retrouvez les actualités dans le journal Méo.';
+  });
+
   hero.addEventListener('keydown', event => {
     if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') return;
     event.preventDefault();
@@ -112,7 +127,7 @@
   }
 
   function openMegaMenu(name) {
-    if (window.matchMedia('(max-width: 760px)').matches) return;
+    if (window.matchMedia('(max-width: 900px)').matches) return;
     header.classList.add('menu-open');
     triggers.forEach(trigger => trigger.setAttribute('aria-expanded', String(trigger.dataset.menu === name)));
     panels.forEach(panel => { panel.hidden = panel.dataset.panel !== name; });
@@ -122,10 +137,7 @@
   triggers.forEach(trigger => {
     trigger.addEventListener('mouseenter', () => openMegaMenu(trigger.dataset.menu));
     trigger.addEventListener('focus', () => openMegaMenu(trigger.dataset.menu));
-    trigger.addEventListener('click', () => {
-      if (trigger.getAttribute('aria-expanded') === 'true') closeMegaMenu();
-      else openMegaMenu(trigger.dataset.menu);
-    });
+    trigger.addEventListener('click', () => openMegaMenu(trigger.dataset.menu));
   });
   header.querySelectorAll('.desktop-nav a').forEach(link => link.addEventListener('mouseenter', closeMegaMenu));
   header.addEventListener('mouseleave', closeMegaMenu);
@@ -133,7 +145,10 @@
     if (!header.contains(event.relatedTarget)) closeMegaMenu();
   });
   document.addEventListener('pointerdown', event => {
-    if (!header.contains(event.target)) closeMegaMenu();
+    if (!header.contains(event.target)) {
+      closeMegaMenu();
+      if (!mobileNav.hidden) menuToggle.click();
+    }
   });
   document.addEventListener('keydown', event => {
     if (event.key !== 'Escape') return;
@@ -169,7 +184,7 @@
   }
   window.addEventListener('scroll', syncHeader, { passive: true });
   window.addEventListener('resize', () => {
-    if (window.matchMedia('(max-width: 760px)').matches) closeMegaMenu();
+    if (window.matchMedia('(max-width: 900px)').matches) closeMegaMenu();
     syncHeader();
   });
 

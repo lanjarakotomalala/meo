@@ -28,6 +28,7 @@ jobs:
         run: |
           bash -n .github/scripts/deploy-test-meo.sh
           test -s cro-preview/index.html
+          test -s cro-preview/retail-home.css
           test -s cro-preview/catalog.html
           test -s cro-preview/.htaccess
           test -s cro-preview/data/catalog.json

@@ -14,7 +14,7 @@
   const ids = ['product-grid', 'selection-title', 'selection-count', 'mode-once', 'mode-subscribe', 'cart-count', 'drawer-count', 'cart-items', 'cart-empty', 'subtotal', 'recurring-note', 'subscription-nudge', 'checkout-button', 'drawer', 'scrim', 'empty-results', 'search', 'search-wrap', 'search-toggle'];
   const els = Object.fromEntries(ids.map(id => [id, document.getElementById(id)]));
   const state = { mode: 'once', filter: 'all', query: '', nudgedAway: false };
-  const filterTitles = { all: 'Une sélection pour vous.', grain: 'Votre sélection en grains.', moulu: 'Votre sélection moulue.', capsules: 'Votre sélection en capsules.', bio: 'Votre sélection bio.' };
+  const filterTitles = { all: 'LES CAFÉS DU MOMENT', grain: 'LES CAFÉS EN GRAINS', moulu: 'LES CAFÉS MOULUS', capsules: 'LES CAPSULES & DOSETTES', bio: 'LES CAFÉS BIOLOGIQUES' };
 
   try { await store.ready; }
   catch { els['product-grid'].innerHTML = '<p>Le catalogue est momentanément indisponible. Actualisez la page pour réessayer.</p>'; return; }
@@ -78,6 +78,7 @@
     document.querySelectorAll('[data-find]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.find === filter)));
     els['selection-title'].textContent = filterTitles[filter] || filterTitles.all;
     renderProducts();
+    els['product-grid'].scrollLeft = 0;
     if (scroll) document.getElementById('selection').scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
   }
 
