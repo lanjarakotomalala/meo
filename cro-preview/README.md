@@ -8,12 +8,18 @@ Cette maquette statique est stockée dans le dépôt Git, dans `cro-preview/`, a
 - Les neuf photos éditoriales de la homepage sont des copies WebP optimisées des assets 2153 à 2161 du dossier « Lanja / Articles SEO » dans le DAM Méo. Les quatre photos des formats viennent des assets 896 (grains), 890 (moulu), 891 (capsules) et 897 (bio) du dossier « Images categories ». Les versions optimisées sont publiées localement dans `assets/` ; les packshots des produits chargent depuis le DAM public (`dam.meo.fr`). Si un packshot échoue, le logo local reste visible.
 - Le catalogue figé du 8 octobre 2026 vient de l’API publique WooCommerce Store de meo.fr : **123 produits publics et 49 catégories**. Les produits et catégories des exports CSV ont servi au contrôle des données ; les commandes ne sont pas utilisées.
 - Les routes `/catalogue/`, `/categorie-produit/.../`, `/produit/.../`, `/abonnement/`, `/panier/`, `/commander/` et `/recherche/` affichent les pages de la boutique. La règle Apache dans `.htaccess` les réécrit vers `catalog.html`, qui charge `data/catalog.json`.
-- La homepage met en avant « Le café qu’il me faut » dans un carrousel de trois temps, puis une sélection filtrable de six cafés. Les cartes « À chacun son rituel » filtrent réellement cette sélection selon le format choisi. Les rails horizontaux peuvent être parcourus au doigt ou avec leurs flèches.
+- La homepage met en avant « Le café qu’il me faut » dans un carrousel de trois temps, puis un bandeau de quatre raisons d’acheter sur meo.fr et un carrousel de produits au format portrait (2:3). Le carrousel propose d’abord grains, moulu, capsules ou dosettes, puis les meilleures ventes, le bio, le décaféiné et les cafés de spécialité lorsque le catalogue du format le permet. Les cartes « À chacun son rituel » redirigent vers ces sélections. Les rails horizontaux peuvent être parcourus au doigt ou avec leurs flèches.
 - Le formulaire du bloc « Journal Méo » est uniquement visuel : il n’envoie ni ne conserve l’adresse saisie et indique ce comportement après validation.
 - L’achat unique et l’abonnement restent deux choix explicites au niveau des produits. Le panier est conservé localement entre les pages.
 - Une proposition d’abonnement apparaît à partir de **2 cafés en achat unique** dans le panier. Ce seuil est une hypothèse de maquette. Les produits non café restent en achat unique.
-- Les fréquences proposées et l’éligibilité à l’abonnement sont des hypothèses à valider avec les règles WooCommerce. Aucune remise n’est supposée.
+- Les fréquences proposées et l’éligibilité à l’abonnement sont des hypothèses à valider avec les règles WooCommerce. La remise abonnement de 5 % demandée pour cette maquette est simulée dans les cartes et dans le panier ; elle ne décrit pas une offre commerciale validée.
 - Le paiement reste simulé : aucune adresse, commande, transaction ou abonnement n’est envoyé à meo.fr.
+
+## Préparation de l’intégration WordPress
+
+- Deux pastilles sont rendues par carte produit. La maquette accepte `homepageBadges` dans les données du produit et utilise provisoirement quelques valeurs éditoriales dans `app.js`, puis des libellés déduits des catégories. Pour l’administration WordPress, prévoir deux champs de métadonnées produit, « Pastille homepage 1 » et « Pastille homepage 2 », modifiables sur la fiche produit, avec une limite de longueur et un contrôle des libellés commerciaux. Aucun champ n’a été créé dans l’admin WordPress à ce stade.
+- Le sous-menu réutilise les catégories WooCommerce du catalogue. L’ordre « Meilleures ventes » est illustratif dans la maquette ; son classement devra être alimenté par les ventes réelles ou un ordre éditorial validé dans WordPress.
+- Les rappels de réapprovisionnement sont une idée de fonctionnalité future : ils ne figurent pas dans le bandeau comme promesse existante.
 
 ## Isolation du thème
 

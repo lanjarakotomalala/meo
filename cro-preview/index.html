@@ -101,13 +101,21 @@
       </div>
     </div>
 
+    <section class="value-strip" id="reassurance" aria-label="Pourquoi choisir Méo en ligne">
+      <a href="/categorie-produit/tous-les-cafes/cafe-en-grain/pack-cafe-en-grain/"><span class="value-number">01</span><span class="value-copy"><strong>LE CAFÉ DU QUOTIDIEN À PRIX DOUX</strong><small>Packs économiques multi-kilos et prix au kilo pour comparer.</small></span><span class="value-arrow" aria-hidden="true">↗</span></a>
+      <a href="#cafe-du-mois"><span class="value-number">02</span><span class="value-copy"><strong>UNE DÉCOUVERTE CHAQUE MOIS</strong><small>Cafés du mois, pures origines et nouvelles saveurs.</small></span><span class="value-arrow" aria-hidden="true">↗</span></a>
+      <a href="https://www.meo.fr/notre-savoir-faire/" target="_blank" rel="noopener"><span class="value-number">03</span><span class="value-copy"><strong>TORRÉFIÉ EN FRANCE DEPUIS 1928</strong><small>Le savoir-faire Méo derrière chaque tasse.</small></span><span class="value-arrow" aria-hidden="true">↗</span></a>
+      <a href="/abonnement/"><span class="value-number">04</span><span class="value-copy"><strong>VOTRE CAFÉ À VOTRE RYTHME</strong><small>Achat ponctuel ou abonnement pour retrouver votre favori.</small></span><span class="value-arrow" aria-hidden="true">↗</span></a>
+    </section>
+
     <section class="selection retail-section" id="selection" aria-labelledby="selection-title">
-      <div class="section-head"><div><span class="section-kicker">DÉCOUVRIR MÉO</span><h2 id="selection-title">LES CAFÉS DU MOMENT</h2></div><div class="rail-arrows"><button type="button" data-rail="product-grid" data-rail-dir="-1" aria-label="Cafés précédents">←</button><button type="button" data-rail="product-grid" data-rail-dir="1" aria-label="Cafés suivants">→</button></div></div>
-      <div class="selection-controls"><div class="filters" role="group" aria-label="Filtrer les cafés"><button class="filter active" data-filter="all" aria-pressed="true">Tous</button><button class="filter" data-filter="grain" aria-pressed="false">Grains</button><button class="filter" data-filter="moulu" aria-pressed="false">Moulu</button><button class="filter" data-filter="capsules" aria-pressed="false">Capsules</button><button class="filter" data-filter="bio" aria-pressed="false">Bio</button></div><div class="mode-switch" role="group" aria-label="Mode d’achat"><button id="mode-once" type="button" class="active" aria-pressed="true">Achat unique</button><button id="mode-subscribe" type="button" aria-pressed="false">Abonnement</button></div></div>
+      <div class="selection-intro"><span class="section-kicker">À CHACUN SON CAFÉ MÉO</span><h2 id="selection-title">LE CAFÉ QU’IL ME FAUT EST EN FORMAT :</h2></div>
+      <div class="format-choices" role="group" aria-label="Choisir le format du café"><button class="filter active" type="button" data-filter="grain" aria-pressed="true">GRAINS</button><button class="filter" type="button" data-filter="moulu" aria-pressed="false">MOULU</button><button class="filter" type="button" data-filter="capsules" aria-pressed="false">CAPSULES</button><button class="filter" type="button" data-filter="dosettes" aria-pressed="false">DOSETTES</button></div>
+      <div class="selection-subrow"><div class="selection-categories" id="selection-categories" role="group" aria-label="Explorer la sélection"></div><div class="rail-arrows"><button type="button" data-rail="product-grid" data-rail-dir="-1" aria-label="Cafés précédents">←</button><button type="button" data-rail="product-grid" data-rail-dir="1" aria-label="Cafés suivants">→</button></div></div>
       <p class="selection-count" id="selection-count" aria-live="polite"></p>
       <div class="product-grid rail" id="product-grid"></div>
-      <p id="empty-results" class="empty-results" hidden>Aucun café trouvé. Essayez un autre format ou mot-clé.</p>
-      <div class="selection-footer"><p>Prix du catalogue public Méo capturés le 8 octobre 2026. Conditions d’abonnement à confirmer.</p><a href="/catalogue/">VOIR TOUS LES CAFÉS <span>↗</span></a></div>
+      <p id="empty-results" class="empty-results" hidden>Aucun café trouvé pour ce choix. Essayez un autre format ou une autre sélection.</p>
+      <div class="selection-footer"><p>Prix publics capturés le 8 octobre 2026. La remise abonnement de 5 % est simulée pour cette maquette et reste à valider.</p><a href="/catalogue/">VOIR TOUS LES CAFÉS <span>↗</span></a></div>
     </section>
 
     <section class="universe retail-section" id="trouver-mon-cafe" aria-labelledby="finder-title">
@@ -116,7 +124,8 @@
       <div class="universe-rail rail" id="universe-rail" role="group" aria-label="Choisir un format de café">
         <button class="universe-card" type="button" data-find="grain" aria-pressed="false"><img src="assets/dam-format-grains.webp" alt="" loading="lazy"><span>CAFÉ EN GRAINS <b>↗</b></span></button>
         <button class="universe-card" type="button" data-find="moulu" aria-pressed="false"><img src="assets/dam-format-moulu.webp" alt="" loading="lazy"><span>CAFÉ MOULU <b>↗</b></span></button>
-        <button class="universe-card" type="button" data-find="capsules" aria-pressed="false"><img src="assets/dam-format-capsules.webp" alt="" loading="lazy"><span>CAPSULES &amp; DOSETTES <b>↗</b></span></button>
+        <button class="universe-card" type="button" data-find="capsules" aria-pressed="false"><img src="assets/dam-format-capsules.webp" alt="" loading="lazy"><span>CAPSULES <b>↗</b></span></button>
+        <button class="universe-card" type="button" data-find="dosettes" aria-pressed="false"><img src="assets/dam-format-capsules.webp" alt="" loading="lazy"><span>DOSETTES <b>↗</b></span></button>
         <button class="universe-card" type="button" data-find="bio" aria-pressed="false"><img src="assets/dam-format-bio.webp" alt="" loading="lazy"><span>CAFÉS BIOLOGIQUES <b>↗</b></span></button>
         <a class="universe-card" href="/abonnement/"><img src="assets/home-09-origine-terroir.webp" alt="" loading="lazy"><span>L’ABONNEMENT <b>↗</b></span></a>
       </div>
@@ -138,8 +147,6 @@
       </div>
       <button type="button" class="discover-sub" id="discover-sub">DÉCOUVRIR L’ABONNEMENT <span>↗</span></button>
     </section>
-
-    <section class="proof-strip" id="reassurance" aria-label="Les repères Méo"><div><img src="assets/icon-france.svg" alt=""><span><strong>TORRÉFIÉ EN FRANCE</strong><small>Depuis 1928</small></span></div><div><img src="assets/icon-coffee-cup.svg" alt=""><span><strong>À CHACUN SON FORMAT</strong><small>Grains, moulu, capsules</small></span></div><div><img src="assets/icon-delivery.svg" alt=""><span><strong>À VOTRE RYTHME</strong><small>Achat unique ou abonnement</small></span></div><div><img src="assets/icon-fidelity.svg" alt=""><span><strong>UN CAFÉ À DÉCOUVRIR</strong><small>Une sélection pour vous</small></span></div></section>
 
     <section class="journal" aria-labelledby="journal-title">
       <div>

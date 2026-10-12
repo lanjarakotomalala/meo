@@ -25,11 +25,16 @@
     getCategory(id) { return this.categories.find(category => category.id === Number(id)); },
     isCoffee(product) { return Boolean(product?.categoryIds?.includes(1246)); },
     canSubscribe(product) { return this.isCoffee(product); },
+    // Requested 5% subscription benefit is a mock-up assumption until validated in WooCommerce.
+    unitPrice(product, mode = 'once') {
+      const value = Number(product?.price) || 0;
+      return mode === 'subscribe' && this.canSubscribe(product) ? Math.round(value * .95 * 100) / 100 : value;
+    },
     count() { return this.items.reduce((sum, item) => sum + item.qty, 0); },
     total(mode) {
       return this.items.reduce((sum, item) => {
         if (mode && item.mode !== mode) return sum;
-        return sum + (this.getProduct(item.id)?.price || 0) * item.qty;
+        return sum + this.unitPrice(this.getProduct(item.id), item.mode) * item.qty;
       }, 0);
     },
     nudgeCount() {
