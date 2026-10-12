@@ -21,6 +21,12 @@ Cette maquette statique est stockée dans le dépôt Git, dans `cro-preview/`, a
 - Le sous-menu réutilise les catégories WooCommerce du catalogue. L’ordre « Meilleures ventes » est illustratif dans la maquette ; son classement devra être alimenté par les ventes réelles ou un ordre éditorial validé dans WordPress.
 - Les rappels de réapprovisionnement sont une idée de fonctionnalité future : ils ne figurent pas dans le bandeau comme promesse existante.
 
+## Avis produits et engagements sur la homepage
+
+- Les trois cartes d’avis reprennent de courts extraits d’avis cinq étoiles affichés comme vérifiés sur les fiches publiques [Gastronomique en grains](https://www.meo.fr/produit/gastronomique-grains-500g/), [Biologique Original en grains](https://www.meo.fr/produit/biologique-loriginal-grains-500g/) et [Capsules Biologique Harmonie](https://www.meo.fr/produit/capsules-compostables-bio-harmonie-x-20/), consultées le 12 octobre 2026. Les noms de famille sont réduits à leur initiale dans la maquette. Les citations sont statiques et chaque carte renvoie à la fiche du produit.
+- Le bandeau Qualité / Biologique / Équitable reprend les engagements décrits par Méo sur [sa page officielle](https://www.meo.fr/nos-engagements/). Les formulations précisent que la certification biologique concerne une gamme et que Max Havelaar concerne une partie des cafés.
+- Pour une intégration commerciale, les avis et leur statut vérifié devront être reliés à la source de production afin de rester à jour.
+
 ## Isolation du thème
 
 Le thème WordPress ne référence aucun fichier de ce dossier. Le script de publication `resources/build/release/release.js` utilise la liste explicite `config.json > release.include`, qui n’inclut pas `cro-preview/`. Modifier la maquette ne modifie donc ni les templates ni le CSS actif de meo.fr. Une intégration future nécessitera un travail séparé dans WordPress et des tests sur préproduction.
