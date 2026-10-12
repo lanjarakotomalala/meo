@@ -3,8 +3,8 @@
   const hero = document.querySelector('.editorial-hero');
   const slides = [...document.querySelectorAll('.editorial-slide')];
   const dots = [...document.querySelectorAll('.editorial-pagination button')];
-  const heroVideo = hero?.querySelector('.hero-video');
-  const desktopVideo = window.matchMedia('(min-width: 901px)');
+  const filmDialog = document.getElementById('hero-film-dialog');
+  const filmPlayer = filmDialog?.querySelector('.hero-film-player');
   const header = document.querySelector('.site-header');
   const triggers = [...document.querySelectorAll('.nav-trigger')];
   const panels = [...document.querySelectorAll('.mega-panel')];
@@ -32,13 +32,7 @@
   let carouselTimer;
   let heroVisible = true;
   let touchStart = null;
-
-  function syncVideo() {
-    if (!heroVideo) return;
-    const shouldPlay = currentSlide === 0 && desktopVideo.matches && !motion.matches && heroVisible && !document.hidden;
-    if (shouldPlay && !heroVideo.hasAttribute('src')) heroVideo.src = heroVideo.dataset.src;
-    if (!shouldPlay && heroVideo.hasAttribute('src')) heroVideo.removeAttribute('src');
-  }
+  let filmReturnFocus;
 
   function showSlide(index) {
     currentSlide = (index + slides.length) % slides.length;
@@ -53,11 +47,10 @@
       dot.classList.toggle('is-active', active);
       dot.setAttribute('aria-current', String(active));
     });
-    syncVideo();
   }
 
   function canAutoplay() {
-    return !motion.matches && !document.hidden && heroVisible && !hero.matches(':hover') && !hero.contains(document.activeElement) && !header.classList.contains('menu-open') && mobileNav.hidden;
+    return !motion.matches && !document.hidden && heroVisible && !hero.matches(':hover') && !hero.contains(document.activeElement) && !header.classList.contains('menu-open') && mobileNav.hidden && filmDialog?.hidden !== false;
   }
 
   function stopAutoplay() {
@@ -83,6 +76,36 @@
     showSlide(currentSlide + Number(button.dataset.direction));
     startAutoplay();
   }));
+
+  function closeFilm() {
+    if (!filmDialog || filmDialog.hidden) return;
+    filmDialog.hidden = true;
+    filmPlayer?.removeAttribute('src');
+    document.body.classList.remove('film-open');
+    filmReturnFocus?.focus();
+    startAutoplay();
+  }
+  hero.querySelectorAll('[data-open-film]').forEach(button => button.addEventListener('click', () => {
+    if (!filmDialog || !filmPlayer) return;
+    filmReturnFocus = button;
+    filmDialog.hidden = false;
+    filmPlayer.src = filmPlayer.dataset.src;
+    document.body.classList.add('film-open');
+    stopAutoplay();
+    filmDialog.querySelector('.hero-film-close')?.focus();
+  }));
+  filmDialog?.querySelectorAll('[data-close-film]').forEach(button => button.addEventListener('click', closeFilm));
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && filmDialog && !filmDialog.hidden) { event.preventDefault(); closeFilm(); }
+  });
+  filmDialog?.addEventListener('keydown', event => {
+    if (event.key !== 'Tab') return;
+    const focusable = [...filmDialog.querySelectorAll('button, a, iframe')];
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+    else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+  });
 
   document.querySelectorAll('[data-rail][data-rail-dir]').forEach(button => {
     button.addEventListener('click', () => {
@@ -126,14 +149,12 @@
   if ('IntersectionObserver' in window) {
     new IntersectionObserver(([entry]) => {
       heroVisible = entry.isIntersecting;
-      syncVideo();
       if (heroVisible) startAutoplay();
       else stopAutoplay();
     }, { threshold: .2 }).observe(hero);
   }
-  document.addEventListener('visibilitychange', () => { syncVideo(); startAutoplay(); });
-  motion.addEventListener?.('change', () => { syncVideo(); startAutoplay(); });
-  desktopVideo.addEventListener?.('change', syncVideo);
+  document.addEventListener('visibilitychange', startAutoplay);
+  motion.addEventListener?.('change', startAutoplay);
 
   function closeMegaMenu() {
     header.classList.remove('menu-open');
@@ -202,7 +223,6 @@
   window.addEventListener('resize', () => {
     if (window.matchMedia('(max-width: 900px)').matches) closeMegaMenu();
     syncHeader();
-    syncVideo();
   });
 
   showSlide(0);
