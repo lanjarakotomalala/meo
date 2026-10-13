@@ -223,7 +223,7 @@
     button.addEventListener('click', () => showMobilePanel(button.dataset.menuGo));
   });
   mobileNav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
-    if (!mobileNav.hidden) menuToggle.click();
+    if (!mobileNav.hidden) { menuToggle.click(); menuToggle.focus(); }
   }));
   mobileNav.addEventListener('keydown', event => {
     if (event.key !== 'Tab') return;
