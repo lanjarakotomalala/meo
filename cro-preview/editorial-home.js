@@ -85,7 +85,7 @@
     filmReturnFocus?.focus();
     startAutoplay();
   }
-  hero.querySelectorAll('[data-open-film]').forEach(button => button.addEventListener('click', () => {
+  document.querySelectorAll('[data-open-film]').forEach(button => button.addEventListener('click', () => {
     if (!filmDialog || !filmPlayer) return;
     filmReturnFocus = button;
     filmDialog.hidden = false;

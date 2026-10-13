@@ -508,3 +508,84 @@ body.film-open { overflow: hidden; }
 @media (max-width: 1050px) { .retail-home .reviews-grid { grid-template-columns: 1fr; } .retail-home .review-feature { min-height: 470px; } .retail-home .reviews-secondary { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: none; } .retail-home .review-small { grid-template-columns: minmax(0, 1fr) 105px; min-height: 315px; } .retail-home .review-small-copy { padding-left: 22px; } .retail-home .review-small blockquote { font-size: 21px; } }
 @media (max-width: 700px) { .retail-home .reviews-editorial { padding: 57px 15px 26px; } .retail-home .reviews-heading, .retail-home .commitment-heading { display: block; } .retail-home .reviews-heading h2 { font-size: clamp(35px, 10vw, 53px); } .retail-home .reviews-heading p { margin-top: 18px; font-size: 13px; } .retail-home .review-feature { grid-template-columns: 1fr; min-height: 0; } .retail-home .review-copy { min-height: 355px; padding: 28px 25px 15px; } .retail-home .review-stars { margin: 24px 0 12px; } .retail-home .review-feature blockquote { font-size: clamp(28px, 7vw, 38px); } .retail-home .review-product { display: grid; grid-template-columns: 42% 1fr; align-items: end; min-height: 200px; padding: 0 24px 20px; } .retail-home .review-product img { height: 210px; } .retail-home .review-product > span { margin-bottom: 7px; } .retail-home .reviews-secondary { grid-template-columns: 1fr; } .retail-home .review-small { min-height: 270px; grid-template-columns: minmax(0, 1fr) 110px; } .retail-home .review-small-copy { padding: 24px 4px 24px 22px; } .retail-home .review-small blockquote { font-size: clamp(20px, 5.5vw, 25px); } .retail-home .commitment-band { padding: 60px 15px; } .retail-home .commitment-heading h2 { font-size: clamp(36px, 10vw, 52px); } .retail-home .commitment-heading p { margin-top: 17px; font-size: 13px; } .retail-home .commitment-list { display: block; } .retail-home .commitment-list article, .retail-home .commitment-list article:first-child { min-height: 185px; padding: 24px 0; border-left: 0; border-bottom: 1px solid #cfc4b6; } .retail-home .commitment-list article:last-child { border-bottom: 0; } .retail-home .commitment-list h3 { margin-top: 13px; font-size: 32px; } .retail-home .commitment-list p { font-size: 13px; } .retail-home .commitment-link { margin-right: 0; font-size: 11px; } }
 @media (prefers-reduced-motion: reduce) { .retail-home .review-product img { transition: none; } }
+
+/* Savoir-faire Méo: editorial bento section. */
+.retail-home .craft-section { padding: clamp(70px, 7vw, 112px) 28px clamp(75px, 8vw, 120px); border-top: 1px solid #e2d8cb; background: #faf7f1; color: #251e19; scroll-margin-top: 20px; }
+.retail-home .craft-wrap { max-width: 1440px; margin: 0 auto; }
+.retail-home .craft-heading { display: grid; grid-template-columns: minmax(0, 1fr) minmax(280px, 380px); align-items: end; gap: 36px; margin-bottom: 34px; }
+.retail-home .craft-heading .section-kicker { margin-bottom: 18px; color: #1725ad; letter-spacing: .16em; }
+.retail-home .craft-heading h2 { max-width: 850px; margin: 0; font-size: clamp(43px, 5.1vw, 76px); line-height: .95; }
+.retail-home .craft-heading h2 em { display: block; margin-top: 4px; font: italic 400 .84em/1.04 Georgia, 'Times New Roman', serif; letter-spacing: -.05em; }
+.retail-home .craft-heading-aside { padding-bottom: 3px; }
+.retail-home .craft-heading-aside p { margin: 0 0 23px; color: #5c5147; font-size: 15px; line-height: 1.55; }
+.retail-home .craft-film-button { display: inline-flex; align-items: center; justify-content: space-between; gap: 22px; min-height: 45px; padding: 12px 18px 12px 21px; border: 1px solid #251e19; border-radius: 999px; background: #251e19; color: #fff; font-size: 10px; font-weight: 700; letter-spacing: .09em; line-height: 1.3; text-align: left; cursor: pointer; transition: background .2s ease, border-color .2s ease, transform .2s ease; }
+.retail-home .craft-film-button span { font-size: 16px; font-weight: 400; line-height: 1; }
+.retail-home .craft-film-button:hover { border-color: #1725ad; background: #1725ad; transform: translateY(-2px); }
+.retail-home .craft-grid { display: grid; grid-template-columns: 1.08fr 1fr 1fr; grid-template-rows: repeat(2, minmax(0, 1fr)); gap: 12px; height: 660px; }
+.retail-home .craft-card { position: relative; min-width: 0; min-height: 0; overflow: hidden; border: 1px solid #d9cdbf; border-radius: 3px; background: #f0e9df; }
+.retail-home .craft-card-index { display: block; font-size: 10px; font-weight: 700; letter-spacing: .14em; line-height: 1.25; }
+.retail-home .craft-card h3 { margin: 0 0 9px; font-size: clamp(25px, 2.5vw, 36px); line-height: 1.03; }
+.retail-home .craft-card p { max-width: 310px; margin: 0; font-size: 13px; line-height: 1.45; }
+.retail-home .craft-card--hero { grid-row: span 2; border-color: #55453b; background: #3b3028; color: #fff; }
+.retail-home .craft-hero-photo { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 53% center; transition: transform .7s ease; }
+.retail-home .craft-card--hero:hover .craft-hero-photo { transform: scale(1.035); }
+.retail-home .craft-hero-shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(13, 10, 8, .46), transparent 35%, rgba(13, 10, 8, .18) 52%, rgba(13, 10, 8, .9)); }
+.retail-home .craft-hero-copy { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: space-between; padding: 30px; }
+.retail-home .craft-card--hero h3 { max-width: 370px; margin-bottom: 15px; color: #fff; font-size: clamp(38px, 3.6vw, 55px); }
+.retail-home .craft-card--hero p { max-width: 330px; color: #f0e5d9; font-size: 15px; line-height: 1.5; }
+.retail-home .craft-card--origin { display: flex; flex-direction: column; background: #eee6da; }
+.retail-home .craft-origin-photo { height: 46%; min-height: 0; overflow: hidden; }
+.retail-home .craft-origin-photo img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 47%; transition: transform .7s ease; }
+.retail-home .craft-card--origin:hover img { transform: scale(1.04); }
+.retail-home .craft-card--origin .craft-card-copy { flex: 1; padding: 19px 22px 21px; }
+.retail-home .craft-card--origin h3 { margin-top: 12px; }
+.retail-home .craft-card--blend { display: flex; flex-direction: column; padding: 22px; background: #e8dccb; }
+.retail-home .craft-card--blend .craft-card-index { color: #665345; }
+.retail-home .craft-blend-art { display: flex; flex: 1; align-items: center; justify-content: center; gap: 6px; min-height: 90px; padding-top: 4px; }
+.retail-home .craft-blend-art span { display: grid; place-items: center; width: min(39%, 123px); aspect-ratio: 1; border: 1px solid #8b745f; border-radius: 50%; color: #493b31; font-size: 11px; font-weight: 700; letter-spacing: .08em; line-height: 1.15; text-align: center; transform: rotate(-12deg); }
+.retail-home .craft-blend-art span:last-child { transform: rotate(11deg); }
+.retail-home .craft-blend-art b { color: #8b745f; font: italic 400 24px Georgia, serif; }
+.retail-home .craft-card--blend .craft-card-copy { margin-top: auto; }
+.retail-home .craft-card--taste { display: flex; flex-direction: column; padding: 22px; border-color: #1725ad; background: #1725ad; color: #fff; }
+.retail-home .craft-card--taste .craft-card-index { color: #d0d6ff; }
+.retail-home .craft-taste-art { display: flex; flex: 1; flex-direction: column; justify-content: center; align-items: flex-start; gap: 3px; padding: 5px 0 3px; }
+.retail-home .craft-taste-art span { color: #fff; font: italic 400 clamp(26px, 2.7vw, 41px)/1.02 Georgia, 'Times New Roman', serif; letter-spacing: -.04em; }
+.retail-home .craft-taste-art span:nth-child(2) { margin-left: 31px; color: #d8ddff; }
+.retail-home .craft-taste-art span:nth-child(3) { margin-left: 68px; color: #aebaff; }
+.retail-home .craft-card--taste .craft-card-copy { margin-top: auto; }
+.retail-home .craft-card--taste p { color: #e8e9fb; }
+.retail-home .craft-card--ritual { background: #e9e2d8; }
+.retail-home .craft-card--ritual > img { position: absolute; inset: 0 0 0 auto; display: block; width: 68%; height: 100%; object-fit: cover; object-position: 53% center; transition: transform .7s ease; }
+.retail-home .craft-card--ritual:hover > img { transform: scale(1.04); }
+.retail-home .craft-ritual-shade { position: absolute; inset: 0; background: linear-gradient(90deg, #ece5da 0%, rgba(236, 229, 218, .98) 28%, rgba(236, 229, 218, .6) 66%, rgba(236, 229, 218, .08)), linear-gradient(0deg, #ece5da 0%, transparent 48%); }
+.retail-home .craft-card--ritual .craft-card-copy { position: relative; z-index: 1; display: flex; height: 100%; flex-direction: column; justify-content: flex-end; align-items: flex-start; padding: 22px; }
+.retail-home .craft-card--ritual .craft-card-index { margin-bottom: auto; }
+.retail-home .craft-card--ritual h3, .retail-home .craft-card--ritual p { max-width: 270px; }
+@media (max-width: 1050px) {
+  .retail-home .craft-heading { grid-template-columns: minmax(0, 1fr) minmax(245px, 330px); }
+  .retail-home .craft-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: none; grid-auto-rows: minmax(285px, auto); height: auto; }
+  .retail-home .craft-card--hero { grid-column: span 2; grid-row: auto; min-height: 465px; }
+  .retail-home .craft-card--hero h3 { max-width: 520px; }
+  .retail-home .craft-card--origin .craft-card-copy { padding-top: 16px; }
+}
+@media (max-width: 700px) {
+  .retail-home .craft-section { padding: 62px 15px 68px; }
+  .retail-home .craft-heading { display: block; margin-bottom: 26px; }
+  .retail-home .craft-heading .section-kicker { margin-bottom: 13px; }
+  .retail-home .craft-heading h2 { font-size: clamp(39px, 10.7vw, 60px); }
+  .retail-home .craft-heading-aside { margin-top: 21px; }
+  .retail-home .craft-heading-aside p { margin-bottom: 17px; font-size: 14px; }
+  .retail-home .craft-grid { display: grid; grid-template-columns: minmax(0, 1fr); grid-auto-rows: auto; gap: 10px; }
+  .retail-home .craft-card--hero { grid-column: auto; min-height: 480px; }
+  .retail-home .craft-hero-copy { padding: 23px; }
+  .retail-home .craft-card--hero h3 { max-width: 325px; font-size: clamp(38px, 10vw, 51px); }
+  .retail-home .craft-card--hero p { font-size: 14px; }
+  .retail-home .craft-card--origin { min-height: 325px; }
+  .retail-home .craft-origin-photo { height: 165px; }
+  .retail-home .craft-card--blend, .retail-home .craft-card--taste, .retail-home .craft-card--ritual { min-height: 325px; }
+  .retail-home .craft-card h3 { font-size: 32px; }
+  .retail-home .craft-card--ritual .craft-card-copy { padding: 22px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .retail-home .craft-film-button, .retail-home .craft-hero-photo, .retail-home .craft-origin-photo img, .retail-home .craft-card--ritual > img { transition: none; }
+}
