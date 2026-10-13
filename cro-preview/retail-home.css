@@ -20,10 +20,21 @@ body.retail-home .shell { max-width: none; padding-left: 0; padding-right: 0; }
 body.retail-home :focus-visible { outline: 3px solid #f6b762; outline-offset: 3px; }
 body.retail-home .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 
-.retail-home .announcement { height: 30px; overflow: hidden; background: #f7f7f7; color: #292929; display: flex; align-items: center; }
-.retail-home .announcement-track { display: flex; width: max-content; gap: 28px; align-items: center; white-space: nowrap; animation: meo-marquee 28s linear infinite; font-size: 11px; letter-spacing: .08em; font-weight: 700; }
-.retail-home .announcement-track b { color: #a89472; font-size: 14px; }
-@keyframes meo-marquee { to { transform: translateX(-33.333%); } }
+.retail-home .announcement { position: relative; z-index: 32; background: #f3eee5; color: #171714; border-top: 1px solid #e8e0d4; border-bottom: 1px solid #e4d9c9; }
+.retail-home .announcement[hidden] { display: none; }
+.retail-home .announcement-inner { position: relative; width: min(100%, 1240px); min-height: 55px; margin: 0 auto; padding: 0 62px; display: flex; align-items: center; justify-content: center; }
+.retail-home .announcement-viewport { width: 100%; max-width: 900px; overflow: hidden; }
+.retail-home .announcement-track { display: flex; width: 100%; transform: translateX(0); transition: transform .55s cubic-bezier(.22,.61,.36,1); }
+.retail-home .announcement-slide { flex: 0 0 100%; width: 100%; min-height: 55px; display: flex; align-items: center; justify-content: center; gap: 9px; padding: 7px 4px 11px; text-align: center; font-size: 16px; line-height: 1.3; }
+.retail-home .announcement-icon { width: 20px; height: 20px; flex: none; color: #8a775e; }
+.retail-home .announcement-slide strong { font-weight: 700; }
+.retail-home .announcement-slide a { margin-left: 5px; color: #684507; font-weight: 700; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; white-space: nowrap; }
+.retail-home .announcement-pagination { position: absolute; bottom: 0; left: 50%; display: flex; transform: translateX(-50%); }
+.retail-home .announcement-pagination button { width: 19px; height: 12px; padding: 0; display: grid; place-items: center; border: 0; background: transparent; cursor: pointer; }
+.retail-home .announcement-pagination button::before { content: ""; width: 5px; height: 5px; border-radius: 9px; background: #baaF9f; transition: width .2s ease, background .2s ease; }
+.retail-home .announcement-pagination button[aria-current="true"]::before { width: 11px; background: #745017; }
+.retail-home .announcement-close { position: absolute; top: 50%; right: 13px; width: 32px; height: 32px; padding: 5px; display: grid; place-items: center; transform: translateY(-50%); border: 0; background: transparent; color: #171714; cursor: pointer; }
+.retail-home .announcement-close svg { display: block; width: 21px; height: 21px; }
 .retail-home .demo-banner { min-height: 24px; background: #171717; color: #fff; font-size: 10px; line-height: 1.25; padding: 3px 12px; position: relative; z-index: 31; }
 .retail-home .demo-banner a { text-decoration: underline; margin-left: 8px; }
 
@@ -255,8 +266,11 @@ body.mobile-menu-open::before { content: ""; position: fixed; inset: 0; z-index:
   .retail-home .proof-strip > div { justify-content: flex-start; }
 }
 @media (max-width: 700px) {
-  .retail-home .announcement { height: 26px; }
-  .retail-home .announcement-track { font-size: 9px; }
+  .retail-home .announcement-inner { min-height: 82px; padding: 0 43px 0 10px; }
+  .retail-home .announcement-slide { height: 82px; min-height: 82px; flex-wrap: wrap; align-content: center; column-gap: 6px; row-gap: 2px; padding: 5px 0 13px; font-size: 12px; line-height: 1.15; }
+  .retail-home .announcement-icon { width: 15px; height: 15px; }
+  .retail-home .announcement-slide a { margin-left: 0; }
+  .retail-home .announcement-close { right: 5px; }
   .retail-home .demo-banner { font-size: 9px; padding: 4px 8px; }
   .retail-home .site-header { inset: var(--editorial-top-offset, 50px) 0 auto; }
   .retail-home .header-inner { width: 100%; height: 65px; margin-top: 0; padding: 0 15px; justify-content: space-between; }
@@ -344,6 +358,7 @@ body.mobile-menu-open::before { content: ""; position: fixed; inset: 0; z-index:
   .retail-home .hero-copy p { font-size: 14px; }
 }
 @media (prefers-reduced-motion: reduce) {
+  .retail-home .announcement-track { transition: none; }
   .retail-home .announcement-track,
   .retail-home .editorial-slide.is-active .hero-copy,
   .retail-home .hero-promo.is-active .hero-media img,

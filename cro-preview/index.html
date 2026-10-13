@@ -17,13 +17,34 @@
   <script src="editorial-home.js" defer></script>
 </head>
 <body class="retail-home">
-  <div class="announcement" aria-label="À la une">
-    <div class="announcement-track" aria-hidden="true">
-      <span>LE CAFÉ QU’IL ME FAUT</span><b>✳</b><span>TORRÉFIÉ EN FRANCE DEPUIS 1928</span><b>✳</b>
-      <span>LE CAFÉ QU’IL ME FAUT</span><b>✳</b><span>TORRÉFIÉ EN FRANCE DEPUIS 1928</span><b>✳</b>
-      <span>LE CAFÉ QU’IL ME FAUT</span><b>✳</b><span>TORRÉFIÉ EN FRANCE DEPUIS 1928</span><b>✳</b>
+  <div class="announcement" id="announcement-slider" role="region" aria-roledescription="carrousel" aria-label="Informations Méo">
+    <div class="announcement-inner">
+      <div class="announcement-viewport" aria-live="off">
+        <div class="announcement-track">
+          <div class="announcement-slide" role="group" aria-roledescription="diapositive" aria-label="1 sur 3">
+            <svg class="announcement-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/><path d="M9 14h6"/></svg>
+            <strong>Livraison offerte dès 40 € d’achat</strong>
+            <a href="#selection">Je découvre les cafés</a>
+          </div>
+          <div class="announcement-slide" role="group" aria-roledescription="diapositive" aria-label="2 sur 3" aria-hidden="true">
+            <svg class="announcement-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/><path d="M9 14h6"/></svg>
+            <strong>Les packs Méo pour un café quotidien à prix doux</strong>
+            <a href="https://www.meo.fr/categorie-produit/pack-cafe-en-grain/" tabindex="-1">Je vois les packs</a>
+          </div>
+          <div class="announcement-slide" role="group" aria-roledescription="diapositive" aria-label="3 sur 3" aria-hidden="true">
+            <svg class="announcement-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/><path d="M9 14h6"/></svg>
+            <strong>Votre café torréfié en France depuis 1928</strong>
+            <a href="https://www.meo.fr/2024-meo-reprend-la-parole/" tabindex="-1">Je découvre notre savoir-faire</a>
+          </div>
+        </div>
+      </div>
+      <div class="announcement-pagination" role="group" aria-label="Choisir une annonce">
+        <button type="button" data-announcement="0" aria-label="Afficher la livraison offerte" aria-current="true"></button>
+        <button type="button" data-announcement="1" aria-label="Afficher les packs Méo"></button>
+        <button type="button" data-announcement="2" aria-label="Afficher le savoir-faire Méo"></button>
+      </div>
+      <button class="announcement-close" type="button" aria-label="Fermer le bandeau d’information"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M5 5l14 14M19 5 5 19"/></svg></button>
     </div>
-    <span class="sr-only">Le café qu’il me faut. Torréfié en France depuis 1928.</span>
   </div>
   <div class="demo-banner">PRÉVISUALISATION UX · Aucun paiement réel · Aucun lien avec le panier de meo.fr <a href="#method">En savoir plus</a></div>
 
