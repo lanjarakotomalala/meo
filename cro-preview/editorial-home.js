@@ -225,6 +225,61 @@
     syncHeader();
   });
 
+  const announcementSlides = [...announcement.querySelectorAll('.announcement-slide')];
+  const announcementDots = [...announcement.querySelectorAll('[data-announcement]')];
+  const announcementTrack = announcement.querySelector('.announcement-track');
+  let currentAnnouncement = 0;
+  let announcementTimer;
+
+  function showAnnouncement(index) {
+    currentAnnouncement = (index + announcementSlides.length) % announcementSlides.length;
+    announcementTrack.style.transform = `translateX(-${currentAnnouncement * 100}%)`;
+    announcementSlides.forEach((slide, number) => {
+      const active = number === currentAnnouncement;
+      slide.setAttribute('aria-hidden', String(!active));
+      slide.querySelector('a').tabIndex = active ? 0 : -1;
+    });
+    announcementDots.forEach((dot, number) => dot.setAttribute('aria-current', String(number === currentAnnouncement)));
+  }
+
+  function stopAnnouncement() {
+    window.clearTimeout(announcementTimer);
+    announcementTimer = undefined;
+  }
+
+  function canAdvanceAnnouncement() {
+    return !motion.matches && !document.hidden && !announcement.hidden && !announcement.matches(':hover') && !announcement.contains(document.activeElement);
+  }
+
+  function startAnnouncement() {
+    stopAnnouncement();
+    if (!canAdvanceAnnouncement()) return;
+    announcementTimer = window.setTimeout(() => {
+      if (!canAdvanceAnnouncement()) return;
+      showAnnouncement(currentAnnouncement + 1);
+      startAnnouncement();
+    }, 5500);
+  }
+
+  announcementDots.forEach(dot => dot.addEventListener('click', () => {
+    showAnnouncement(Number(dot.dataset.announcement));
+    startAnnouncement();
+  }));
+  announcement.addEventListener('mouseenter', stopAnnouncement);
+  announcement.addEventListener('mouseleave', startAnnouncement);
+  announcement.addEventListener('focusin', stopAnnouncement);
+  announcement.addEventListener('focusout', () => window.requestAnimationFrame(startAnnouncement));
+  announcement.querySelector('.announcement-close').addEventListener('click', () => {
+    stopAnnouncement();
+    announcement.hidden = true;
+    syncHeader();
+    menuToggle.focus();
+  });
+  document.addEventListener('visibilitychange', startAnnouncement);
+  motion.addEventListener?.('change', startAnnouncement);
+  showAnnouncement(0);
+  startAnnouncement();
+
   showSlide(0);
   syncHeader();
   startAutoplay();
