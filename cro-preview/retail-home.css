@@ -114,6 +114,7 @@ body.retail-home .sr-only { position: absolute; width: 1px; height: 1px; padding
 .retail-home .mobile-nav-signature strong { color: #211e1b; font-family: Brother, Cabin, Arial, sans-serif; font-size: 20px; letter-spacing: -.02em; }
 body.mobile-menu-open { overflow: hidden; }
 body.mobile-menu-open::before { content: ""; position: fixed; inset: 0; z-index: 29; background: #0008; }
+body.mobile-menu-open .site-header { z-index: 60; }
 
 /* Full-bleed campaign carousel. */
 .retail-home .hero { display: block; position: relative; min-height: 620px; height: calc(100svh - var(--editorial-top-offset, 54px)); overflow: hidden; background: #3c352e; }
