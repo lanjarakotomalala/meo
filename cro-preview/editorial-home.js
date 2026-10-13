@@ -194,12 +194,21 @@
   });
   panels.forEach(panel => panel.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMegaMenu)));
 
+  function showMobilePanel(name, focusHeading = true) {
+    const panels = [...mobileNav.querySelectorAll('[data-menu-panel]')];
+    const next = panels.find(panel => panel.dataset.menuPanel === name);
+    if (!next) return;
+    panels.forEach(panel => { panel.hidden = panel !== next; });
+    mobileNav.scrollTop = 0;
+    if (focusHeading) next.querySelector('h2')?.focus();
+  }
+
   function syncMobileMenu() {
     const open = !mobileNav.hidden;
     document.body.classList.toggle('mobile-menu-open', open);
     menuToggle.setAttribute('aria-label', open ? 'Fermer le menu' : 'Ouvrir le menu');
-    if (open) { closeMegaMenu(); mobileClose.focus(); }
-    else startAutoplay();
+    if (open) { closeMegaMenu(); showMobilePanel('root', false); mobileClose.focus(); }
+    else { showMobilePanel('root', false); startAutoplay(); }
   }
   menuToggle.addEventListener('click', event => {
     // The older store script also handles this button. Capture the homepage
@@ -210,9 +219,21 @@
     syncMobileMenu();
   }, true);
   mobileClose.addEventListener('click', () => { menuToggle.click(); menuToggle.focus(); });
+  mobileNav.querySelectorAll('[data-menu-go]').forEach(button => {
+    button.addEventListener('click', () => showMobilePanel(button.dataset.menuGo));
+  });
   mobileNav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
-    if (link.hash && !mobileNav.hidden) menuToggle.click();
+    if (!mobileNav.hidden) menuToggle.click();
   }));
+  mobileNav.addEventListener('keydown', event => {
+    if (event.key !== 'Tab') return;
+    const focusable = [...mobileNav.querySelectorAll('button, a')].filter(element => element.getClientRects().length && !element.closest('[hidden]'));
+    if (!focusable.length) return;
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+    else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+  });
 
   function syncHeader() {
     const offset = announcement.offsetHeight + demoBanner.offsetHeight;
