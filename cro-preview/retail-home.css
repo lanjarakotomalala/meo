@@ -82,12 +82,36 @@ body.retail-home .sr-only { position: absolute; width: 1px; height: 1px; padding
 .retail-home .mega-links { padding: 28px 6px; }
 .retail-home .mega-links a { display: block; padding: 9px 0; font-size: 17px; border-bottom: 1px solid #e1e1e1; }
 .retail-home .mega-links a:hover { color: var(--blue); }
-.retail-home .mobile-nav { display: block; position: fixed; top: 0; bottom: 0; left: 0; z-index: 45; width: min(440px, 100vw); padding: 30px 28px; background: var(--blue); color: #fff; overflow-y: auto; box-shadow: 20px 0 60px #0006; }
-.retail-home .mobile-nav[hidden] { display: none !important; }
-.retail-home .mobile-nav-head { display: flex; align-items: center; justify-content: space-between; padding-bottom: 42px; font-size: 11px; letter-spacing: .12em; }
-.retail-home .mobile-nav-close { border: 0; color: #fff; background: transparent; font-size: 26px; }
-.retail-home .mobile-nav > a { display: flex; justify-content: space-between; gap: 20px; align-items: center; padding: 19px 0; border-top: 1px solid #ffffff60; font-size: 22px; font-weight: 700; }
-.retail-home .mobile-nav > a span { font-size: 15px; }
+.retail-home .mobile-nav { display: block; position: fixed; top: 0; bottom: 0; left: 0; z-index: 45; width: min(510px, 100vw); padding: 28px 38px 34px; background: #f7f4ef; color: #211e1b; overflow-y: auto; box-shadow: 20px 0 60px #0005; text-shadow: none; }
+.retail-home .mobile-nav[hidden],
+.retail-home .mobile-nav-panel[hidden] { display: none !important; }
+.retail-home .mobile-nav-head { display: flex; align-items: center; justify-content: space-between; padding: 0 0 23px; margin-bottom: 34px; border-bottom: 1px solid #d8d0c5; color: #211e1b; font-size: 11px; font-weight: 700; letter-spacing: .14em; }
+.retail-home .mobile-nav-head b { color: var(--blue); font-size: 22px; letter-spacing: -.07em; margin-left: 5px; }
+.retail-home .mobile-nav-close { width: 36px; height: 36px; border: 1px solid #c9c1b6; border-radius: 50%; color: #211e1b; background: transparent; font-size: 15px; line-height: 1; }
+.retail-home .mobile-nav-close:hover { background: #e8e0d6; }
+.retail-home .mobile-nav-panel[data-menu-panel="root"] { min-height: calc(100svh - 154px); display: flex; flex-direction: column; }
+.retail-home .mobile-nav-kicker { display: block; margin: 0 0 15px; color: var(--blue); font-size: 10px; font-weight: 700; letter-spacing: .17em; }
+.retail-home .mobile-nav-panel h2 { max-width: 420px; margin: 0 0 20px; color: #211e1b; font-family: Brother, Cabin, Arial, sans-serif; font-size: clamp(34px, 5vw, 48px); line-height: 1.04; letter-spacing: -.035em; }
+.retail-home .mobile-nav-panel > p { margin: 0 0 38px; max-width: 310px; color: #6d675f; font-size: 15px; line-height: 1.5; }
+.retail-home .mobile-nav-rows { border-top: 1px solid #d8d0c5; }
+.retail-home .mobile-nav-row { box-sizing: border-box; width: 100%; min-height: 64px; padding: 16px 0; display: flex; align-items: center; justify-content: space-between; gap: 18px; border: 0; border-bottom: 1px solid #d8d0c5; background: transparent; color: #211e1b; text-align: left; font-size: 19px; font-weight: 700; line-height: 1.22; text-decoration: none; cursor: pointer; }
+.retail-home .mobile-nav-row > span:last-child { flex: none; color: var(--blue); font-size: 20px; font-weight: 400; transition: transform .2s ease; }
+.retail-home .mobile-nav-row:hover > span:last-child { transform: translateX(4px); }
+.retail-home .mobile-nav-row:hover { color: var(--blue); }
+.retail-home .mobile-nav-row small { display: inline-block; width: 28px; color: #9c9388; font-size: 10px; font-weight: 700; letter-spacing: .04em; vertical-align: 2px; }
+.retail-home .mobile-nav-row-primary { min-height: 72px; margin-bottom: 14px; padding: 18px 20px; background: var(--blue); color: #fff; border-bottom: 0; }
+.retail-home .mobile-nav-row-primary > span:last-child,
+.retail-home .mobile-nav-row-primary:hover { color: #fff; }
+.retail-home .mobile-nav-row-primary:hover { background: var(--blue-dark); }
+.retail-home .mobile-nav-back { display: inline-flex; align-items: center; gap: 11px; margin: 0 0 42px; padding: 0; border: 0; background: transparent; color: #514b45; font-size: 12px; font-weight: 700; cursor: pointer; }
+.retail-home .mobile-nav-back:hover { color: var(--blue); }
+.retail-home .mobile-nav-back span { font-size: 19px; font-weight: 400; }
+.retail-home .mobile-nav-panel[data-menu-panel="categories"] h2 { margin-bottom: 30px; }
+.retail-home .mobile-nav-subrows { margin-top: 32px; }
+.retail-home .mobile-nav-subrows .mobile-nav-row { font-size: 17px; font-weight: 600; }
+.retail-home .mobile-nav-all { display: inline-flex; align-items: center; gap: 15px; margin-top: 26px; color: var(--blue); font-size: 12px; font-weight: 700; letter-spacing: .03em; text-transform: uppercase; border-bottom: 1px solid currentColor; padding-bottom: 5px; }
+.retail-home .mobile-nav-signature { margin-top: auto; padding-top: 46px; color: #898176; font-size: 10px; line-height: 1.7; letter-spacing: .12em; }
+.retail-home .mobile-nav-signature strong { color: #211e1b; font-family: Brother, Cabin, Arial, sans-serif; font-size: 20px; letter-spacing: -.02em; }
 body.mobile-menu-open { overflow: hidden; }
 body.mobile-menu-open::before { content: ""; position: fixed; inset: 0; z-index: 29; background: #0008; }
 
@@ -291,9 +315,11 @@ body.mobile-menu-open::before { content: ""; position: fixed; inset: 0; z-index:
   .retail-home .search-wrap input { flex-basis: 100%; }
   .retail-home .search-wrap a { font-size: 12px; }
   .retail-home .mega-menu { display: none; }
-  .retail-home .mobile-nav { right: 0; left: auto; width: min(390px, 100vw); padding: 25px 22px 36px; box-shadow: -20px 0 60px #0006; }
-  .retail-home .mobile-nav-head { padding-bottom: 35px; }
-  .retail-home .mobile-nav > a { padding: 17px 0; font-size: 20px; }
+  .retail-home .mobile-nav { right: 0; left: auto; width: min(390px, 100vw); padding: 22px 24px 32px; box-shadow: -20px 0 60px #0005; }
+  .retail-home .mobile-nav-head { margin-bottom: 27px; padding-bottom: 18px; }
+  .retail-home .mobile-nav-panel h2 { font-size: 36px; }
+  .retail-home .mobile-nav-row { min-height: 59px; font-size: 17px; }
+  .retail-home .mobile-nav-subrows .mobile-nav-row { font-size: 16px; }
   .retail-home .hero { min-height: 650px; height: calc(100svh - var(--editorial-top-offset, 50px)); }
   .retail-home .hero-media img { object-position: center; }
   .retail-home .hero-shade { background: linear-gradient(0deg, #000b, #0002 70%), linear-gradient(90deg, #0003, transparent); }
