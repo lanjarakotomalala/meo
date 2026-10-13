@@ -29,6 +29,9 @@ body.retail-home .sr-only { position: absolute; width: 1px; height: 1px; padding
 .retail-home .announcement-icon { width: 20px; height: 20px; flex: none; color: #8a775e; }
 .retail-home .announcement-slide strong { font-weight: 700; }
 .retail-home .announcement-slide a { margin-left: 5px; color: #684507; font-weight: 700; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; white-space: nowrap; }
+.retail-home .announcement-slide a::after { content: "↗"; display: inline-block; margin-left: 8px; color: #1725ad; font-size: 1.12em; line-height: 1; text-decoration: none; transition: transform .2s ease; }
+.retail-home .announcement-slide a:hover::after,
+.retail-home .announcement-slide a:focus-visible::after { transform: translate(3px, -3px); }
 .retail-home .announcement-pagination { position: absolute; bottom: 0; left: 50%; display: flex; transform: translateX(-50%); }
 .retail-home .announcement-pagination button { width: 19px; height: 12px; padding: 0; display: grid; place-items: center; border: 0; background: transparent; cursor: pointer; }
 .retail-home .announcement-pagination button::before { content: ""; width: 5px; height: 5px; border-radius: 9px; background: #baaF9f; transition: width .2s ease, background .2s ease; }
@@ -358,7 +361,10 @@ body.mobile-menu-open::before { content: ""; position: fixed; inset: 0; z-index:
   .retail-home .hero-copy p { font-size: 14px; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .retail-home .announcement-track { transition: none; }
+  .retail-home .announcement-track,
+  .retail-home .announcement-slide a::after { transition: none; }
+  .retail-home .announcement-slide a:hover::after,
+  .retail-home .announcement-slide a:focus-visible::after { transform: none; }
   .retail-home .announcement-track,
   .retail-home .editorial-slide.is-active .hero-copy,
   .retail-home .hero-promo.is-active .hero-media img,
