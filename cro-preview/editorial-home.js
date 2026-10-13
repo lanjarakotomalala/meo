@@ -223,7 +223,15 @@
     button.addEventListener('click', () => showMobilePanel(button.dataset.menuGo));
   });
   mobileNav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
-    if (!mobileNav.hidden) { menuToggle.click(); menuToggle.focus(); }
+    if (mobileNav.hidden) return;
+    menuToggle.click();
+    const destination = link.hash ? document.getElementById(link.hash.slice(1)) : null;
+    window.requestAnimationFrame(() => {
+      if (destination) {
+        if (!destination.hasAttribute('tabindex')) destination.setAttribute('tabindex', '-1');
+        destination.focus({ preventScroll: true });
+      } else menuToggle.focus({ preventScroll: true });
+    });
   }));
   mobileNav.addEventListener('keydown', event => {
     if (event.key !== 'Tab') return;
